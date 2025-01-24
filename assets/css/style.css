@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oregano:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -31,6 +31,7 @@ h6 {
     margin: 0;
     padding: 0;
     font-family: var(--headingFont);
+    color: var(--colorBlack);
 }
 
 p,
@@ -75,20 +76,37 @@ button {
 
 :root {
     --themeColoeOne: #0A69D8;
-    --themeColoeTwo: #FF6736;
-    --themeColoeThree: #FF6736;
+    --themeColoeTwo: #ffa500;
     --paraColor: #5A5A5A;
     --colorBlack: #010F1C;
     --colorWhite: #ffffff;
+    --colorYellow: #FFD43A;
+    --colorRed: #DB4437;
     --lightBg: #edf5ff;
     --headingFont: "Jost", serif;
     --bodyFont: "Roboto", serif;
+    --cursiveFont: "Oregano", serif;
     --ratingColor: #F9A61C;
     --boxShadow: rgb(149 157 165 / 16%) 0px 3px 22px;
 }
 
-.common_btn {}
+.common_btn {
+    background: var(--themeColoeOne);
+    padding: 12px 25px;
+    color: var(--colorWhite);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
 
+.common_btn i {
+    margin-left: 5px;
+}
 
 
 
@@ -105,7 +123,6 @@ button {
     width: 100%;
     height: 40px;
     background: var(--colorBlack);
-    /* background: var(--themeColoeOne); */
     position: sticky;
     z-index: 999;
     transition: all linear .3s;
@@ -839,10 +856,10 @@ header .header_support h3 a:hover {
 .menu_droapdown>li>a::after {
     position: absolute;
     content: "";
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
     background: var(--themeColoeOne);
-    top: 18px;
+    top: 17px;
     left: 20px;
     opacity: 0;
     transition: all linear .3s;
@@ -850,6 +867,7 @@ header .header_support h3 a:hover {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    border-radius: 50%;
 }
 
 .menu_droapdown>li:hover>a,
@@ -951,15 +969,15 @@ header .header_support h3 a:hover {
     color: var(--themeColoeOne);
     opacity: 1;
     transition: all linear .3s;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .mini_cart .offcanvas-header .btn-close:hover {
@@ -1077,7 +1095,7 @@ header .header_support h3 a:hover {
     font-size: 15px;
     font-weight: 600;
     color: var(--colorBlack);
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 .mini_cart .cart_text p del {
@@ -1114,3 +1132,183 @@ header .header_support h3 a:hover {
 }
 
 /* MENU END */
+
+/* BANNER SLIDER START */
+.banner_slider {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+    height: 725px;
+    overflow: hidden;
+}
+
+.banner_slider div {
+    height: 100%;
+}
+
+.banner_slider {}
+
+.banner_slider_item {}
+
+.banner_slider_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.banner_slider_text h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.banner_slider_text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.banner_slider_text p {
+    font-size: 26px;
+    font-family: var(--cursiveFont);
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.banner_slider_text p span {
+    font-size: 26px;
+    font-family: var(--cursiveFont);
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: var(--themeColoeTwo);
+    position: relative;
+    z-index: 1;
+}
+
+.banner_slider_text p span::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 25px;
+    background: url(../images/line_shapes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: -18px;
+    left: -10px;
+    z-index: -1;
+}
+
+.banner_slider_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+    z-index: 1;
+}
+
+.banner_slider_img::after {
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 500px;
+    background: #0a69d812;
+    top: 70px;
+    left: 20px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.banner_slider_img .img {
+    height: 700px;
+}
+
+.banner_slider .slick-dots {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
+    -moz-transform: translateY(-60%);
+    -ms-transform: translateY(-60%);
+    -o-transform: translateY(-60%);
+}
+
+.banner_slider .slick-dots li {
+    text-align: center;
+}
+
+.banner_slider .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    background: #c8c8c8;
+    border-radius: 50%;
+    font-size: 0;
+    margin: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.banner_slider .slick-dots li.slick-active button {
+    background-color: var(--themeColoeOne);
+}
+
+
+
+/* BANNER SLIDER END */
+.slick-active .banner_slider_img .img,
+.slick-active .banner_slider_text h5,
+.slick-active .banner_slider_text h1,
+.slick-active .banner_slider_text p,
+.slick-active .banner_slider_text a {
+    animation: 1s ease 0s 1 normal none running fadeUp;
+    -webkit-animation: 1s ease 0s 1 normal none running fadeUp;
+}
+
+.slick-active .banner_slider_img .img,
+.slick-active .banner_slider_text h5,
+.slick-active .banner_slider_text h1 {
+    animation: 1.5s ease 0s 1 normal none running fadeUp;
+    -webkit-animation: 1.5s ease 0s 1 normal none running fadeUp;
+}
+
+.slick-active .banner_slider_text p {
+    animation: 2s ease 0s 1 normal none running fadeUp;
+    -webkit-animation: 2s ease 0s 1 normal none running fadeUp;
+}
+
+.slick-active .banner_slider_text a {
+    animation: 2.5s ease 0s 1 normal none running fadeUp;
+    -webkit-animation: 2.5s ease 0s 1 normal none running fadeUp;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+        -webkit-transform: translateY(40px);
+        -moz-transform: translateY(40px);
+        -ms-transform: translateY(40px);
+        -o-transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
