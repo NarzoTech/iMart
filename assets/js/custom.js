@@ -16,7 +16,7 @@ $(function () {
     });
 
 
-    //======HESDER FIX JS=======   
+    //======HEADER FIX JS=======   
     $(window).scroll(function () {
         var scrolling = $(this).scrollTop();
         if (scrolling > navoff) {
@@ -29,7 +29,7 @@ $(function () {
 
     //=====CATEGORY MENU======  
     $('.menu_category_bar').on('click', function () {
-        $('.toggle_menu').toggleClass('show_category');
+        $('.menu_category_area').toggleClass('show_category');
     });
 
     $('.menu_category_bar').on('click', function () {
@@ -75,7 +75,7 @@ $(function () {
     $('.banner_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
         dots: true,
         arrows: false,

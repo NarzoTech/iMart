@@ -350,13 +350,6 @@ header .header_support h3 a:hover {
     color: var(--themeColoeOne);
 }
 
-
-
-
-
-
-
-
 /* HEADER END */
 
 
@@ -364,7 +357,10 @@ header .header_support h3 a:hover {
 .main_menu {
     width: 100%;
     height: 60px;
-    background: var(--lightBg);
+    /* background: var(--lightBg); */
+    position: relative;
+    z-index: 9;
+    border-bottom: 1px solid #8585851a;
 }
 
 .menu_category_bar {
@@ -425,7 +421,6 @@ header .header_support h3 a:hover {
     background: var(--colorWhite);
     box-shadow: var(--boxShadow);
     width: 100%;
-    height: 503px;
     position: relative;
     z-index: 9;
 }
@@ -589,21 +584,6 @@ header .header_support h3 a:hover {
     left: 100%;
 }
 
-.toggle_menu.show_category {
-    transform: scaleY(1);
-    opacity: 1;
-    visibility: visible;
-}
-
-.toggle_menu {
-    transform: scaleY(.5);
-    transform-origin: top;
-    transition: all linear .3s;
-    opacity: 0;
-    visibility: hidden;
-    border-radius: 0px 0px 6px 6px;
-}
-
 .menu_item {
     line-height: 60px;
     position: relative;
@@ -723,6 +703,7 @@ header .header_support h3 a:hover {
     z-index: 999;
     animation: menu_animate 1.5s;
     -webkit-animation: menu_animate 1.5s;
+    background: var(--colorWhite);
 }
 
 @keyframes menu_animate {
@@ -751,6 +732,22 @@ header .header_support h3 a:hover {
 
 .main_menu .menu_category_area {
     width: 280px;
+    height: 60px;
+}
+
+.menu_category_area .menu_cat_item {
+    transform: scaleY(.5);
+    transform-origin: top;
+    transition: all linear .3s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 0px 0px 6px 6px;
+}
+
+.menu_category_area.show_category .menu_cat_item {
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
 }
 
 .main_menu.menu_fix .menu_category_bar {
@@ -1134,16 +1131,18 @@ header .header_support h3 a:hover {
 /* MENU END */
 
 /* BANNER SLIDER START */
-.banner_slider {
+.banner_area {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     position: relative;
-    height: 725px;
-    overflow: hidden;
+    height: 785px;
+    /* overflow: hidden; */
+    top: -60px;
+    padding-top: 60px;
 }
 
-.banner_slider div {
+.banner_area div {
     height: 100%;
 }
 
@@ -1212,13 +1211,27 @@ header .header_support h3 a:hover {
 .banner_slider_img::after {
     position: absolute;
     content: "";
-    width: 500px;
-    height: 500px;
-    background: #0a69d812;
+    width: 100px;
+    height: 100px;
+    background: url(../images/arrow_shapes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     top: 70px;
-    left: 20px;
-    z-index: -1;
-    border-radius: 50%;
+    right: -50px;
+    z-index: 1;
+    animation: bannerAnimi linear 1s infinite alternate;
+    -webkit-animation: bannerAnimi linear 1s infinite alternate;
+}
+
+@keyframes bannerAnimi {
+    from {
+        margin-right: 0px;
+    }
+
+    to {
+        margin-right: 30px;
+    }
 }
 
 .banner_slider_img .img {
@@ -1227,49 +1240,79 @@ header .header_support h3 a:hover {
 
 .banner_slider .slick-dots {
     position: absolute;
-    z-index: 9;
-    top: 50%;
-    right: 0;
-    width: 50px;
-    transform: translateY(-60%);
-    -webkit-transform: translateY(-60%);
-    -moz-transform: translateY(-60%);
-    -ms-transform: translateY(-60%);
-    -o-transform: translateY(-60%);
+    top: 0;
+    right: 120px;
+    z-index: 3;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner_slider .slick-dots li {
-    text-align: center;
+    margin-top: -7px;
 }
 
 .banner_slider .slick-dots li button {
-    width: 10px;
-    height: 10px;
-    background: #c8c8c8;
-    border-radius: 50%;
-    font-size: 0;
-    margin: 0;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
+    color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+    background: none;
+    position: relative;
+    transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
 }
 
-.banner_slider .slick-dots li.slick-active button {
-    background-color: var(--themeColoeOne);
+.banner_slider .slick-dots li button::before {
+    position: absolute;
+    content: "0";
+    font-family: var(--headingFont);
+    color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+    top: 0px;
+    left: -11px;
+    transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
 }
 
+.banner_slider .slick-dots li button::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 3px;
+    background: var(--themeColoeOne);
+    top: 10px;
+    right: -60px;
+    transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+}
 
+.banner_slider .slick-dots li button:hover,
+.banner_slider .slick-active button,
+.banner_slider .slick-dots li button:hover::before,
+.banner_slider .slick-active button::before {
+    color: var(--themeColoeOne) !important;
+    !i;
+    !;
+}
 
-/* BANNER SLIDER END */
-.slick-active .banner_slider_img .img,
-.slick-active .banner_slider_text h5,
-.slick-active .banner_slider_text h1,
-.slick-active .banner_slider_text p,
-.slick-active .banner_slider_text a {
-    animation: 1s ease 0s 1 normal none running fadeUp;
-    -webkit-animation: 1s ease 0s 1 normal none running fadeUp;
+.banner_slider .slick-dots li button:hover::after,
+.banner_slider .slick-active button::after {
+    width: 50px !important;
+    !i;
+    !;
 }
 
 .slick-active .banner_slider_img .img,
@@ -1309,6 +1352,4 @@ header .header_support h3 a:hover {
     }
 }
 
-.fadeInUp {
-    animation-name: fadeInUp;
-}
+/* BANNER SLIDER END */
