@@ -2,7 +2,6 @@ $(function () {
 
     "use strict";
 
-
     //======MENU FIX JS=======   
     var navoff = $('.main_menu').offset().top;
     $(window).scroll(function () {
@@ -82,9 +81,22 @@ $(function () {
         fade: true,
     });
 
+
     //=====CATEGORY SLIDER===== 
     $('.category_slider').slick({
         slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        dots: false,
+        arrows: true,
+        nextArrow: '<i class="far fa-arrow-right nextArrow"></i>',
+        prevArrow: '<i class="far fa-arrow-left prevArrow"></i>',
+    });
+
+    //=====FLASH SELL SLIDER===== 
+    $('.flash_sell_slider').slick({
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
