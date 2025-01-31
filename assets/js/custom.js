@@ -75,7 +75,7 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
         dots: true,
         arrows: false,
         fade: true,
@@ -87,7 +87,7 @@ $(function () {
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 2500,
         dots: false,
         arrows: true,
         nextArrow: '<i class="far fa-arrow-right nextArrow"></i>',
@@ -99,12 +99,24 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
         dots: false,
         arrows: true,
         nextArrow: '<i class="far fa-arrow-right nextArrow"></i>',
         prevArrow: '<i class="far fa-arrow-left prevArrow"></i>',
     });
+
+
+    //=====MARQUEE SLIDER===== 
+    $('.marquee_animi').marquee({
+        speed: 100,
+        gap: 90,
+        delayBeforeStart: 0,
+        direction: 'left',
+        duplicated: true,
+        pauseOnHover: true
+    });
+
 
 
 
