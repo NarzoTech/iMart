@@ -110,6 +110,7 @@ button {
     margin-bottom: 10px;
     display: inline-block;
     font-weight: 400;
+    text-transform: capitalize;
 }
 
 .section_heading p::after {
@@ -1841,9 +1842,7 @@ header .header_support h3 a:hover {
 
 
 /* BRAND START */
-.brand {}
-
-.brand .marquee_animi {
+/* .brand .marquee_animi {
     border: 2px solid var(--lightBg);
     overflow: hidden;
     background: var(--lightBg);
@@ -1855,24 +1854,90 @@ header .header_support h3 a:hover {
     flex-wrap: wrap;
     align-items: center;
     gap: 90px;
-    /* border: 2px solid var(--lightBg); */
 }
 
 .brand .marquee_animi ul li {
     width: 90px;
     height: 90px;
+} */
+/* BRAND END */
+
+
+/* LARGE BANNER START */
+.large_banner {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 
-.brand .marquee_animi ul li IMG {}
+.large_banner_img {
+    height: 475px;
+    margin-top: 70px;
+}
+
+.large_banner_text {}
+
+.large_banner_text h5 {
+    font-size: 24px;
+    font-family: var(--cursiveFont);
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--themeColoeTwo);
+}
+
+.large_banner_text h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.large_banner_text ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px 40px;
+    margin-bottom: 30px;
+}
+
+.large_banner_text ul li {}
+
+.large_banner_text ul li h4 {
+    text-transform: capitalize;
+    border-bottom: 1px solid var(--colorWhite);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.large_banner_text ul li p {
+    color: var(--colorBlack);
+    font-size: 15px;
+    font-weight: 400;
+    opacity: .6;
+}
+
+.large_banner_text_footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 20px;
+}
+
+.large_banner_text_footer h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* LARGE BANNER END */
 
 
+/* TRENDING PRODUCT START */
+.trending_product .pws_tabs_controll {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
-
-
-
-
-
-
-
-
-/* BRAND END */
+/* TRENDING PRODUCT END */

@@ -117,6 +117,11 @@ $(function () {
         pauseOnHover: true
     });
 
+    //======TRENDING PRODUCT FILTER========== 
+    $('.product_tabs').pwstabs({
+        effect: 'slidedown',
+        defaultTab: 1,
+    });
 
 
 
