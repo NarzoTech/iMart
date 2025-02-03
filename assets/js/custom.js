@@ -108,9 +108,9 @@ $(function () {
 
 
     //=====MARQUEE SLIDER===== 
-    $('.marquee_animi').marquee({
+    $('.brand_marquee').marquee({
         speed: 100,
-        gap: 90,
+        gap: 0,
         delayBeforeStart: 0,
         direction: 'left',
         duplicated: true,
