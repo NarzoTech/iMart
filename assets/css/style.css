@@ -527,17 +527,18 @@ header .header_support h3 a:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 12.5px 30px;
+    padding: 8px 20px;
     position: relative;
 }
 
 .menu_cat_item li.all_category a {
     border: none;
     background: var(--colorWhite) !important;
+    !i;
+    !;
     padding: 19px 30px;
     font-weight: 600;
     color: var(--colorBlack);
-    border-radius: 0px 0px 6px 6px;
 }
 
 .menu_cat_item li.all_category a i {
@@ -550,8 +551,8 @@ header .header_support h3 a:hover {
 
 .menu_cat_item li a span {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 10px;
@@ -559,6 +560,9 @@ header .header_support h3 a:hover {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    background: #eee;
+    background: var(--lightBg);
+    padding: 5px;
 }
 
 .menu_cat_item>li:hover>a {
@@ -578,7 +582,7 @@ header .header_support h3 a:hover {
     position: absolute;
     content: "\f105";
     top: 22px;
-    right: 30px;
+    right: 20px;
     color: var(--paraColor);
     opacity: .8;
     font-size: 14px;
@@ -606,7 +610,7 @@ header .header_support h3 a:hover {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
-    border-radius: 6px;
+    /* border-radius: 6px; */
 }
 
 .menu_cat_droapdown li a {
@@ -657,7 +661,7 @@ header .header_support h3 a:hover {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
-    border-radius: 6px;
+    /* border-radius: 6px; */
 }
 
 .menu_cat_droapdown li:hover .sub_category {
@@ -823,7 +827,7 @@ header .header_support h3 a:hover {
     transition: all linear .3s;
     opacity: 0;
     visibility: hidden;
-    border-radius: 0px 0px 6px 6px;
+    /* border-radius: 0px 0px 6px 6px; */
 }
 
 .menu_category_area.show_category .menu_cat_item {
