@@ -534,8 +534,6 @@ header .header_support h3 a:hover {
 .menu_cat_item li.all_category a {
     border: none;
     background: var(--colorWhite) !important;
-    !i;
-    !;
     padding: 19px 30px;
     font-weight: 600;
     color: var(--colorBlack);
