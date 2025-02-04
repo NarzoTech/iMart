@@ -1254,7 +1254,8 @@ header .header_support h3 a:hover {
     font-size: 26px;
     font-family: var(--cursiveFont);
     margin-bottom: 50px;
-    font-weight: 600;
+    font-weight: 500;
+    color: var(--colorBlack);
 }
 
 .banner_slider_text p span {
