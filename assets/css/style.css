@@ -2508,6 +2508,15 @@ footer {
     color: rgb(183 183 183);
     font-size: 15px;
     font-weight: 400;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.footer_logo_area span a:hover {
+    color: var(--themeColoeTwo);
 }
 
 .footer_link h3 {
