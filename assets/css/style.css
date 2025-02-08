@@ -52,6 +52,11 @@ img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 input,
@@ -553,19 +558,28 @@ header .header_support h3 a:hover {
     height: 35px;
     border-radius: 50%;
     overflow: hidden;
+    background: #eee;
+    background: var(--lightBg);
+    padding: 5px;
     margin-right: 10px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background: #eee;
-    background: var(--lightBg);
-    padding: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .menu_cat_item>li:hover>a {
     color: var(--themeColoeOne);
     background: var(--lightBg);
+}
+
+.menu_cat_item>li:hover>a span {
+    background: var(--colorWhite);
 }
 
 .menu_cat_item>li:hover a::after {
@@ -1123,7 +1137,6 @@ header .header_support h3 a:hover {
     border: 1px solid #eee;
     position: relative;
     overflow: hidden;
-    border-radius: 4px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -1440,6 +1453,12 @@ header .header_support h3 a:hover {
     padding: 30px 20px;
     display: block;
     margin: 0px 12px;
+    border: 1px solid transparent;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .category_item.color_1 {
@@ -1556,6 +1575,19 @@ header .header_support h3 a:hover {
     margin-top: 20px;
     width: 150px;
     height: 150px;
+}
+
+.category_item:hover {
+    background: var(--colorWhite) !important;
+    border-color: var(--themeColoeOne);
+}
+
+.category_item:hover .img img {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 .flash_sell .nextArrow,
@@ -1694,7 +1726,6 @@ header .header_support h3 a:hover {
     line-height: 35px;
     text-align: center;
     background: var(--colorBlack);
-    /* padding: 10px 10px 10px 10px; */
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -1799,7 +1830,6 @@ header .header_support h3 a:hover {
 .flash_sell .view_all_btn_area {
     padding-top: 30px;
 }
-
 
 .view_all_btn_area {
     display: flex;
