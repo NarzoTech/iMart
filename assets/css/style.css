@@ -84,7 +84,7 @@ button {
     --themeColoeOne: #0A69D8;
     --themeColoeTwo: #ffa500;
     --paraColor: #7d7b7b;
-    --colorBlack: #010F1C;
+    --colorBlack: #333333;
     --colorWhite: #ffffff;
     --colorYellow: #FFD43A;
     --colorRed: #DB4437;
@@ -190,18 +190,6 @@ button {
 .title:hover {
     color: var(--themeColoeOne);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*===========================
     HOME PAGE 01 START
@@ -932,13 +920,9 @@ header .header_support h3 a:hover {
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
     padding: 2px 25px;
-    border-bottom: 1px solid var(--colorWhite);
     position: relative;
 }
 
-.menu_droapdown>li:last-child a {
-    border: none;
-}
 
 .menu_droapdown>li>a>i {
     font-size: 10px;
@@ -983,11 +967,14 @@ header .header_support h3 a:hover {
     opacity: 1;
 }
 
-.menu_item li:hover .menu_droapdown {
+.menu_item li:hover .menu_droapdown,
+.menu_item li .menu_droapdown li:hover .child_menu_droapdown {
     top: 100%;
     opacity: 1;
     visibility: visible;
 }
+
+
 
 .menu_droapdown2 {
     width: 220px;
@@ -1071,11 +1058,11 @@ header .header_support h3 a:hover {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
 }
 
 .mini_cart .offcanvas-header .btn-close:hover {
@@ -1407,6 +1394,7 @@ header .header_support h3 a:hover {
     width: 50px !important;
 }
 
+.slick-active .banner_slider_2_text h3,
 .slick-active .banner_slider_img .img,
 .slick-active .banner_slider_text h5,
 .slick-active .banner_slider_text h1 {
@@ -1414,11 +1402,13 @@ header .header_support h3 a:hover {
     -webkit-animation: 1.5s ease 0s 1 normal none running fadeUp;
 }
 
+.slick-active .banner_slider_2_text h1,
 .slick-active .banner_slider_text p {
     animation: 2s ease 0s 1 normal none running fadeUp;
     -webkit-animation: 2s ease 0s 1 normal none running fadeUp;
 }
 
+.slick-active .banner_slider_2_text a,
 .slick-active .banner_slider_text a {
     animation: 2.5s ease 0s 1 normal none running fadeUp;
     -webkit-animation: 2.5s ease 0s 1 normal none running fadeUp;
@@ -2075,8 +2065,9 @@ header .header_support h3 a:hover {
 }
 
 .special_product_banner .text h3 {
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 .special_product_banner .text p {
@@ -2629,3 +2620,214 @@ footer {
 }
 
 /* FOOTER END */
+/*===========================
+    HOME PAGE 01 END
+===========================*/
+
+
+/*===========================
+    HOME PAGE 02 START
+===========================*/
+.home_2 .common_btn {
+    background: var(--themeColoeTwo);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.topbar_2 {
+    background: var(--themeColoeTwo);
+}
+
+.main_menu_2 {
+    height: 80px;
+    background: var(--lightBg);
+    border: none;
+}
+
+.main_menu_2 .menu_category_area {
+    width: 130px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.main_menu_2 .menu_item {
+    line-height: 80px;
+    margin: 0 auto;
+}
+
+.main_menu_2 .menu_icon {
+    line-height: 80px;
+    margin-left: 0;
+}
+
+.main_menu_2 .menu_icon li a.user {
+    border-left: 1px solid #ddd;
+    border-radius: 0;
+    padding-left: 20px;
+    width: auto;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
+    line-height: 80px;
+    gap: 10px;
+    margin-right: 0;
+}
+
+.main_menu_2 .menu_icon li a.user b {
+    width: 40px;
+    height: 40px;
+    line-height: 24px;
+    background: var(--colorWhite);
+    border-radius: 50%;
+    padding: 6px;
+    border: 1px solid #ddd;
+}
+
+.main_menu_2 .menu_icon li a.user h5 {
+    font-size: 18px;
+}
+
+/* banner 2 start */
+.banner_slider_2 {
+    height: 480px;
+    margin: 25px 12px 0px 12px;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.banner_slider_2_text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 50px;
+    max-width: 75%;
+}
+
+.banner_slider_2_text h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: var(--cursiveFont);
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--themeColoeTwo);
+    text-transform: capitalize;
+}
+
+.banner_slider_2_text h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+}
+
+.banner_slider_2_text p {
+    font-size: 16px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    color: var(--colorBlack);
+    opacity: .7;
+}
+
+.banner_2_add {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 32px;
+    overflow: hidden;
+    height: 480px;
+    margin-top: 25px;
+    position: relative;
+    border-radius: 14px;
+}
+
+.banner_2_add .text {
+    width: 70%;
+}
+
+.banner_2_add .text h4 {
+    color: var(--themeColoeTwo);
+    font-family: var(--cursiveFont);
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.banner_2_add .text h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.banner_2 .slick-dots {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+}
+
+.banner_2 .slick-dots li button {
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    background: var(--themeColoeTwo);
+    margin: 0 3px;
+    outline: 0;
+    border: none;
+    opacity: .3;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+    opacity: 1;
+}
+
+/* banner 2 end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===========================
+    HOME PAGE 02 END
+===========================*/
