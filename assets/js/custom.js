@@ -109,7 +109,7 @@ $(function () {
 
     //=====MARQUEE SLIDER===== 
     $('.brand_marquee').marquee({
-        speed: 100,
+        speed: 70,
         gap: 0,
         delayBeforeStart: 0,
         direction: 'left',
@@ -133,6 +133,31 @@ $(function () {
         arrows: false,
         fade: true,
     });
+
+    //=====FLASH SELL 2 SLIDER===== 
+    $('.flash_sell_2_slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        dots: false,
+        arrows: true,
+        nextArrow: '<i class="far fa-arrow-right nextArrow"></i>',
+        prevArrow: '<i class="far fa-arrow-left prevArrow"></i>',
+    });
+
+    //=====CATEGORY SLIDER===== 
+    $('.category_2_slider').slick({
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        dots: false,
+        arrows: true,
+        nextArrow: '<i class="far fa-arrow-right nextArrow"></i>',
+        prevArrow: '<i class="far fa-arrow-left prevArrow"></i>',
+    });
+
 
 
 });
