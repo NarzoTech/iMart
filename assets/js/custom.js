@@ -159,5 +159,18 @@ $(function () {
     });
 
 
+    //=====FAVOURITE PRODUCT 2 SLIDER===== 
+    $('.favourite_product_2_slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        dots: false,
+        arrows: true,
+        nextArrow: '<i class="far fa-arrow-right nextArrow"></i>',
+        prevArrow: '<i class="far fa-arrow-left prevArrow"></i>',
+    });
+
+
 
 });
