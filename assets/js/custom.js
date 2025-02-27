@@ -252,4 +252,60 @@ $(function () {
         ]
     });
 
+
+    //=====BEAUTI BANNER SLIDER===== 
+    $('.beauty_banner_slider_large').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        dots: false,
+        fade: true,
+        asNavFor: '.beauty_banner_slider_small'
+    });
+
+    $('.beauty_banner_slider_small').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.beauty_banner_slider_large',
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: false,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0px',
+        focusOnSelect: true,
+        vertical: true,
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                }
+            }
+        ]
+    });
+
+
+
 });
