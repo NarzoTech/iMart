@@ -342,6 +342,22 @@ button {
     }
 }
 
+.section_heading_beauty h5 {
+    font-family: var(--cursiveFont);
+    font-weight: 700;
+    color: var(--collorOlive);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.section_heading_beauty h3 {
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--colorBlack);
+    position: relative;
+    text-transform: capitalize;
+}
+
 /*===========================
     HOME PAGE 01 START
 ===========================*/
@@ -2809,9 +2825,7 @@ footer {
     HOME FASHION 02 START
 ===========================*/
 .default_home .container,
-.home_beauty .topbar .container,
-.home_beauty .main_menu .container,
-.home_beauty .beauty_banner .container {
+.home_beauty .container {
     max-width: 1600px;
 }
 
@@ -4974,8 +4988,6 @@ footer {
 /*===========================
     HOME BEAUTY START
 ===========================*/
-.home_beauty {}
-
 .home_beauty .nextArrow,
 .home_beauty .prevArrow {
     border-radius: 15px 0px 15px 0px;
@@ -4985,20 +4997,17 @@ footer {
     -o-border-radius: 15px 0px 15px 0px;
 }
 
+.home_beauty .nextArrow,
 .home_beauty .nextArrow:hover,
 .home_beauty .prevArrow:hover {
     background: var(--collorOlive);
     border-color: var(--collorOlive);
+    color: var(--colorWhite);
 }
 
 .home_beauty .common_btn {
-    background: none;
-    border: 1px solid var(--collorOlive);
-    color: var(--collorOlive);
-}
-
-.home_beauty .common_btn::after {
     background: var(--collorOlive);
+    color: var(--colorWhite);
 }
 
 .home_beauty .common_btn:hover {
@@ -5173,6 +5182,8 @@ footer {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    background: none !important;
+    border: 1px solid var(--colorWhite);
 }
 
 .beauty_banner_text a::after {
@@ -5254,16 +5265,15 @@ footer {
 
 
 /* beauty category start */
-.beauty_category {}
-
 .beauty_category_item {
     margin: 0 12px;
+    display: block;
 }
 
 .beauty_category_item .img {
     border-radius: 50%;
-    width: 185px;
-    height: 185px;
+    width: 180px;
+    height: 180px;
     overflow: hidden;
     padding: 5px;
     border: 3px solid var(--lightBg2);
@@ -5326,13 +5336,192 @@ footer {
     left: 0;
 }
 
-.beauty_category .category_slider {
+.beauty_category .beauty_category_slider {
     padding: 0px 60px;
 }
 
 /* beauty category end */
 
 
+/* beauty featured products start */
+.beauty_featured_products_banner {
+    position: relative;
+    overflow: hidden;
+    height: 610px;
+    border-radius: 100px 0px 0px 0px;
+}
+
+.beauty_featured_products_banner .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+}
+
+.beauty_featured_products_banner .text h6 {
+    font-family: var(--cursiveFont);
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.beauty_featured_products_banner .text h2 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.beauty_product_item {
+    margin-top: 25px;
+}
+
+.beauty_product_item .img {
+    background: #F8F8F8;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    height: 355px;
+}
+
+.beauty_product_item .img .discount_list {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.beauty_product_item .img .discount_list li {
+    background: var(--colorRed);
+    padding: 3px 12px;
+    color: var(--colorWhite);
+    font-size: 14px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.beauty_product_item .img .discount_list li.new {
+    background: var(--collorOlive);
+}
+
+.beauty_product_item .img .btn_list {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.beauty_product_item .img .btn_list li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 41px;
+    text-align: center;
+    background: var(--colorWhite);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    border-radius: 50%;
+    color: var(--colorBlack);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-size: 16px;
+}
+
+.beauty_product_item .img .btn_list li a:hover {
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+}
+
+.beauty_product_item:hover .img .btn_list {
+    opacity: 1;
+    top: 20px;
+}
+
+.beauty_product_item .img .common_btn {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    opacity: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    z-index: 99;
+}
+
+.beauty_product_item:hover .img .common_btn {
+    bottom: 20px;
+    opacity: 1;
+}
+
+.beauty_product_item .text {
+    padding-top: 25px;
+}
+
+.beauty_product_item .text .rating {
+    color: var(--ratingColor);
+    font-size: 13px;
+    text-align: center;
+}
+
+.beauty_product_item .text .rating span {
+    font-size: 14px;
+}
+
+.beauty_product_item .text .title {
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.beauty_product_item .text .price {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.beauty_product_item .text .price del {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--paraColor);
+}
+
+.beauty_featured_products .beauty_product_item {
+    margin: 0px 12px;
+}
+
+.beauty_featured_products .beauty_product_item .img {
+    height: 395px;
+}
+
+.beauty_featured_products .nextArrow,
+.beauty_featured_products .prevArrow {
+    position: absolute;
+    top: -80px;
+    right: 0;
+}
+
+.beauty_featured_products .prevArrow {
+    right: 50px;
+}
+
+/* beauty featured products end */
 
 /*===========================
     HOME BEAUTY END
