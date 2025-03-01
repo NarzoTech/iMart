@@ -2809,7 +2809,9 @@ footer {
     HOME FASHION 02 START
 ===========================*/
 .default_home .container,
-.home_beauty .container {
+.home_beauty .topbar .container,
+.home_beauty .main_menu .container,
+.home_beauty .beauty_banner .container {
     max-width: 1600px;
 }
 
@@ -4974,6 +4976,21 @@ footer {
 ===========================*/
 .home_beauty {}
 
+.home_beauty .nextArrow,
+.home_beauty .prevArrow {
+    border-radius: 15px 0px 15px 0px;
+    -webkit-border-radius: 15px 0px 15px 0px;
+    -moz-border-radius: 15px 0px 15px 0px;
+    -ms-border-radius: 15px 0px 15px 0px;
+    -o-border-radius: 15px 0px 15px 0px;
+}
+
+.home_beauty .nextArrow:hover,
+.home_beauty .prevArrow:hover {
+    background: var(--collorOlive);
+    border-color: var(--collorOlive);
+}
+
 .home_beauty .common_btn {
     background: none;
     border: 1px solid var(--collorOlive);
@@ -4988,13 +5005,14 @@ footer {
     color: var(--colorWhite);
 }
 
-
+/* beauty topbar start */
 .home_beauty .topbar {
     background: var(--colorBlack);
 }
 
-.home_beauty .main_menu .main_menu_area {}
+/* beauty topbar end */
 
+/* beauty banner start */
 .home_beauty .main_menu .grocery_logo_area {
     display: flex;
     flex-wrap: wrap;
@@ -5055,14 +5073,10 @@ footer {
     color: var(--colorWhite);
 }
 
+/* beauty banner end */
 
 
-
-
-
-
-
-
+/* beauty banner start */
 .beauty_banner {
     margin-top: -60px;
     background: #AB9774;
@@ -5235,6 +5249,90 @@ footer {
 .beauty_banner_slider_small .slick-current .beauty_banner_slider_small_item {
     background: var(--colorWhite);
 }
+
+/* beauty banner end */
+
+
+/* beauty category start */
+.beauty_category {}
+
+.beauty_category_item {
+    margin: 0 12px;
+}
+
+.beauty_category_item .img {
+    border-radius: 50%;
+    width: 185px;
+    height: 185px;
+    overflow: hidden;
+    padding: 5px;
+    border: 3px solid var(--lightBg2);
+    margin: 0 auto;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.beauty_category_item .img img {
+    border-radius: 50%;
+}
+
+.beauty_category_item h4 {
+    text-transform: capitalize;
+    margin-top: 15px;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.beauty_category_item h4 span {
+    color: var(--collorOlive);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.beauty_category_item .img:hover {
+    border-color: var(--colorWhite);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.beauty_category_item .img:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.beauty_category .nextArrow,
+.beauty_category .prevArrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.beauty_category .prevArrow {
+    right: auto;
+    left: 0;
+}
+
+.beauty_category .category_slider {
+    padding: 0px 60px;
+}
+
+/* beauty category end */
+
+
 
 /*===========================
     HOME BEAUTY END
