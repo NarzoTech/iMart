@@ -5578,8 +5578,6 @@ footer {
 
 
 /* beauty add area start */
-.beauty_add_area {}
-
 .beauty_add_large {
     position: relative;
     margin-top: 25px;
@@ -5692,13 +5690,251 @@ footer {
 /* beauty trending products end */
 
 
-/* instagram photo start */
-.instagran_photo {
-    margin-bottom: -6px;
+/* beauty blog start */
+/* .beauty_blog_item {
+    margin-top: 25px;
+    border: 1px solid #eee;
+}
+
+.beauty_blog_item .img {
+    display: block;
+    height: 415px;
+}
+
+.beauty_blog_item .text {
+    padding: 25px;
+}
+
+.beauty_blog_item .text ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.beauty_blog_item .text ul li {
+    color: var(--paraColor);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.beauty_blog_item .text ul li span {
+    display: inline-block;
+    width: 19px;
+    position: relative;
+    top: -1px;
+    margin-right: 3px;
+}
+
+.beauty_blog_item .text .read_btn {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--colorBlack);
+    transition: alllinear .3s;
+    -webkit-transition: alllinear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    margin-top: 20px;
+}
+
+.beauty_blog_item .text i {
+    font-weight: 500;
+    margin-left: 7px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+*/
+/* beauty blog end */
+
+
+/* beauty countdown start */
+.beauty_countdown {}
+
+.beauty_countdown_banner,
+.beauty_countdown_area {
+    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+    height: 650px;
+}
+
+.beauty_countdown_banner .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    background: #00000091;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 77%) 60%);
+}
+
+.beauty_countdown_banner .text h4 {
+    font-family: var(--cursiveFont);
+    letter-spacing: 1px;
+    /* font-weight: 600; */
+    color: var(--colorWhite);
+    /* text-transform: uppercase; */
+}
+
+.beauty_countdown_banner .text h2 {
+    font-size: 38px;
+    margin: 10px 0px 30px 0px;
+    text-transform: capitalize;
+    color: var(--colorWhite);
+    text-transform: uppercase;
+}
+
+.beauty_countdown_banner .text a {}
+
+.beauty_countdown_area {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.beauty_countdown_area .text {
+    padding: 50px;
+    max-width: 60%;
+}
+
+.beauty_countdown_area .text h5 {
+    font-family: var(--cursiveFont);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.beauty_countdown_area .text h2 {
+    font-size: 48px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.beauty_countdown_area .text p {
+    color: var(--colorBlack);
+    max-width: 70%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.beauty_countdown_area .text a {}
+
+.beauty_countdown_area .simply-countdown-one {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.beauty_countdown_area .simply-section {}
+
+.beauty_countdown_area .simply-amount {
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--collorOlive);
+    position: relative;
+    /* z-index: 1; */
+    display: block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-family: var(--cursiveFont);
+    background: var(--colorWhite);
+    /* border-radius: 30px 0px 30px 0px; */
+    /* border: 1px solid var(--colorWhite); */
+}
+
+.beauty_countdown_area .simply-amount::after {
+    /* position: absolute; */
+    /* content: ""; */
+    /* background: url(../images/beauty_countdown_shapes.png); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    /* top: 0; */
+    /* left: 0; */
+    /* z-index: -1; */
+    /* width: 100px; */
+    /* height: 100px; */
+    /* opacity: .5; */
+}
+
+.beauty_countdown_area .simply-word {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* beauty countdown end */
+
+
+/* beauty brand start */
+.beauty_brand {}
+
+.beauty_brand_slider {
+    border-right: 1px solid #eee;
+}
+
+.beauty_brand ul li {
+    border: 1px solid #eee;
+    margin: 0;
+    border-right: 0;
+    margin-bottom: -7px;
+}
+
+.beauty_brand ul li img {
+    opacity: .6;
+}
+
+
+.beauty_brand ul li:hover img {
+    opacity: 1;
+}
+
+.beauty_brand .nextArrow,
+.beauty_brand .prevArrow {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.beauty_brand .nextArrow {
+    left: auto;
+    right: -20px;
+}
+
+/* beauty brand end */
+
+
+/* beauty instagram photo start */
+.beauty_instagran_photo {
+    padding: 0px 17px;
 }
 
 .beauty_instagran_photo_item {
-    height: 230px;
+    height: 260px;
     overflow: hidden;
     position: relative;
     margin: 0px 5px;
@@ -5757,8 +5993,68 @@ footer {
     -o-transform: scale(1);
 }
 
-/* instagram photo end */
+/* beauty instagram photo end */
 
+
+/* footer 2 start */
+.beauty_footer .footer_link h3 {
+    color: var(--colorBlack);
+}
+
+.beauty_footer .footer_link ul li a,
+.beauty_footer .footer_logo_area p,
+.beauty_footer .footer_2_logo_area p,
+.beauty_footer .footer_logo_area span,
+.beauty_footer .footer_logo_area span a,
+.beauty_footer .footer_2_logo_area ul li span,
+.beauty_footer .footer_copyright p,
+.beauty_footer .footer_copyright .payment li:first-child {
+    color: var(--colorBlack);
+}
+
+.beauty_footer .footer_link ul li a:hover,
+.beauty_footer .footer_logo_area span a:hover {
+    color: var(--collorOlive);
+}
+
+.beauty_footer .footer_logo_area span b img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(277deg) brightness(96%) contrast(94%);
+    -webkit-filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(277deg) brightness(96%) contrast(94%);
+}
+
+.beauty_footer .footer_2_logo_area ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.beauty_footer .footer_2_logo_area ul li a {
+    color: var(--colorWhite);
+    background: var(--collorOlive);
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 50%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.beauty_footer .footer_2_logo_area ul li a:hover {
+    color: var(--collorOlive);
+    background: var(--colorWhite);
+}
+
+.beauty_footer .footer_copyright {
+    border-color: #5d5d5d24;
+}
+
+/* footer 2 end */
 
 /*===========================
     HOME BEAUTY END

@@ -389,12 +389,12 @@ $(function () {
     });
 
 
-    //======instagram slider======
+    //======BEAUTY INSTAGRAM SLIDER======
     $('.beauty_instagram_slider').slick({
         slidesToShow: 8,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
         dots: false,
         arrows: false,
 
@@ -427,5 +427,44 @@ $(function () {
     });
 
 
+    //=====BEAUTY BRAND SLIDER=====
+    $('.beauty_brand_slider').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        dots: false,
+        arrows: true,
+        nextArrow: '<i class="far fa-angle-right nextArrow"></i>',
+        prevArrow: '<i class="far fa-angle-left prevArrow"></i>',
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                }
+            }
+        ]
+    });
 
 });
