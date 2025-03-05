@@ -172,7 +172,6 @@ $(function () {
     });
 
 
-
     //=====GROCERY BEST SELL SLIDER====== 
     $('.grocery_best_sell_slider').slick({
         slidesToShow: 3,
