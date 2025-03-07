@@ -510,7 +510,36 @@ $(function () {
     //=========STICKY SIDEBAR========= 
     $("#sticky_sidebar").stickit({
         top: 70,
-    })
+    });
+
+
+    //=========RANGE SLIDER========= 
+    $('.basic').alRangeSlider();
+    const options = {
+        range: { min: 0, max: 1000, step: 1 },
+        initialSelectedValues: { from: 100, to: 500 },
+        grid: { minTicksStep: 1, marksStep: 5 },
+        theme: "dark",
+    };
+
+    $('.range_slider').alRangeSlider(options);
+    const options2 = {
+        orientation: "vertical"
+    };
+
+
+    //=========PRODUCT DILTER========= 
+    $(".shop_filter_btn").on("click", function () {
+        $(".shop_filter_btn").toggleClass("show");
+    });
+    $(".shop_filter_btn").on("click", function () {
+        $(".shop_filter_area").toggleClass("show");
+    });
+
+
+
+
+
 
 
 });
