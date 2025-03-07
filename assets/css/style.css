@@ -7510,11 +7510,7 @@ footer {
     SHOP PAGE START
 =============================*/
 .shop_page .product_item_2 .product_img {
-    height: 245px;
-}
-
-.shop_filter_area {
-    /* margin-top: 25px; */
+    height: 275px;
 }
 
 .shop_filter_area h3 {
