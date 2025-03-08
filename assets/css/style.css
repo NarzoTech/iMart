@@ -8224,10 +8224,164 @@ footer {
     color: var(--themeColorTwo);
 }
 
-
 .shop_details .slick-current .details_slider_nav_item {
     border-color: var(--themeColorTwo)
 }
+
+
+.shop_details_sidebar {}
+
+.shop_details_sidebar_info {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.shop_details_sidebar_info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.shop_details_sidebar_info ul li {
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+.shop_details_sidebar_info ul li span,
+.shop_details_sidebar_info ul li svg {
+    display: inline-block;
+    width: 27px;
+    height: 22px;
+    margin-top: -1px;
+}
+
+.shop_details_sidebar_info h5 {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+.shop_details_sidebar_store {
+    background: var(--lightBg);
+    /* background: var(--lightBg2); */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.shop_details_sidebar_store .sold_by {
+    display: block;
+    color: var(--colorBlack);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.shop_details_sidebar_store .store_name {
+    text-transform: capitalize;
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.shop_details_sidebar_store ul {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    gap: 10px;
+    padding: 15px 0px;
+}
+
+.shop_details_sidebar_store ul li {
+    /* border-top: 1px solid #ddd; */
+    padding-left: 13px;
+    /* margin-top: 7px; */
+    /* border-radius: 8px; */
+}
+
+.shop_details_sidebar_store ul li p {
+    color: var(--colorBlack);
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}
+
+.shop_details_sidebar_store ul li p::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    /* background: var(--colorBlack); */
+    background: var(--paraColor);
+    top: 6px;
+    left: -13px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.shop_details_sidebar_store ul li span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.shop_details_sidebar_store .go_store {
+    width: 100%;
+    text-align: center;
+    color: var(--themeColorTwo);
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 15px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.shop_details_sidebar_store .go_store:hover {
+    color: var(--colorBlack);
+}
+
+.shop_details_sidebar_store .chat {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100px;
+    color: var(--themeColoeOne);
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: end;
+    gap: 5px;
+}
+
+.shop_details_sidebar_store .chat:hover {
+    color: var(--themeColorTwo);
+}
+
+.shop_details_sidebar_store .chat svg {
+    display: block;
+    width: 17px;
+}
+
+
+
+
+
 
 /*=============================
     SHOP DETAILS END

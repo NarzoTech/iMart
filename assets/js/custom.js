@@ -551,7 +551,6 @@ $(function () {
         asNavFor: '.details_slider_thumb',
         autoplay: false,
         autoplaySpeed: 3000,
-        infinite: true,
         dots: false,
         arrows: false,
         centerMode: true,
