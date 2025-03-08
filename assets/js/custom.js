@@ -472,7 +472,7 @@ $(function () {
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
         dots: false,
         arrows: true,
         nextArrow: '<i class="far fa-angle-right nextArrow"></i>',
@@ -507,13 +507,13 @@ $(function () {
     });
 
 
-    //=========STICKY SIDEBAR========= 
+    //======STICKY SIDEBAR====== 
     $("#sticky_sidebar").stickit({
         top: 70,
     });
 
 
-    //=========RANGE SLIDER========= 
+    //=====RANGE SLIDER===== 
     $('.basic').alRangeSlider();
     const options = {
         range: { min: 0, max: 1000, step: 1 },
@@ -528,7 +528,7 @@ $(function () {
     };
 
 
-    //=========PRODUCT DILTER========= 
+    //======PRODUCT FILTER====== 
     $(".shop_filter_btn").on("click", function () {
         $(".shop_filter_btn").toggleClass("show");
     });
@@ -537,8 +537,35 @@ $(function () {
     });
 
 
+    //======PRODUCT DETAILS SLIDER====== 
+    $('.details_slider_thumb').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        vertical: true,
+        asNavFor: '.details_slider_nav',
+    });
+    $('.details_slider_nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.details_slider_thumb',
+        autoplay: false,
+        autoplaySpeed: 3000,
+        infinite: true,
+        dots: false,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0',
+        focusOnSelect: true,
+        vertical: true,
+    });
 
 
+    //======ELEVATE ZOOM=======
+    // $(".zoom").elevateZoom({
+    //     zoomType: 'inner',
+    //     cursor: 'crosshair'
+    // });
 
 
 
