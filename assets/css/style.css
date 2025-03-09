@@ -8228,9 +8228,6 @@ footer {
     border-color: var(--themeColorTwo)
 }
 
-
-.shop_details_sidebar {}
-
 .shop_details_sidebar_info {
     border: 1px solid #ddd;
     padding: 15px;
@@ -8363,7 +8360,7 @@ footer {
     align-items: center;
     width: 100px;
     color: var(--themeColoeOne);
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     justify-content: end;
     gap: 5px;
@@ -8377,6 +8374,429 @@ footer {
     display: block;
     width: 17px;
 }
+
+.shop_details_des_area {
+    border: 1px solid #ddd;
+    padding: 50px;
+    border-radius: 16px;
+    margin-right: 50px;
+}
+
+.shop_details_des_area .nav-pills {
+    gap: 10px 15px;
+}
+
+.shop_details_des_area .nav-pills button {
+    background: none !important;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paraColor);
+    border: 1px solid #ddd;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.shop_details_des_area .nav-pills button:hover,
+.shop_details_des_area .nav-pills button.active {
+    color: var(--themeColorTwo);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.shop_details_description h1,
+.shop_details_description h2,
+.shop_details_description h3,
+.shop_details_description h4,
+.shop_details_description h5,
+.shop_details_description h6 {
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.shop_details_description h1 {
+    font-size: 36px;
+}
+
+.shop_details_description h2 {
+    font-size: 32px;
+}
+
+.shop_details_description h3 {
+    font-size: 28px;
+}
+
+.shop_details_description h4 {
+    font-size: 24px;
+}
+
+.shop_details_description h5 {
+    font-size: 20px;
+}
+
+.shop_details_description h6 {
+    font-size: 16px;
+}
+
+.shop_details_description p {
+    margin-top: 14px;
+}
+
+.shop_details_description ul,
+.shop_details_description ol {
+    margin-top: 15px;
+}
+
+.shop_details_description ul li,
+.shop_details_description ol li {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paraColor);
+    padding-left: 17px;
+    line-height: 32px;
+}
+
+.shop_details_description ul li::after,
+.shop_details_description ol li::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: var(--paraColor);
+    top: 12px;
+    left: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.shop_details_additional_info {
+    margin-top: 27px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.shop_details_additional_info table {
+    width: 100%;
+    --bs-table-striped-bg: var(--lightBg2);
+    margin-bottom: 0;
+}
+
+.shop_details_additional_info table tr {
+    border-color: transparent;
+}
+
+.shop_details_additional_info table tr th,
+.shop_details_additional_info table tr td {
+    padding: 12px 20px;
+}
+
+.shop_details_additional_info table tr th {
+    border-right: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--colorBlack);
+}
+
+.shop_details_additional_info table tr td {
+    color: var(--paraColor);
+}
+
+
+.shop_details_vendor {
+    margin-top: 25px;
+}
+
+.shop_details_vendor_logo_area {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px 20px;
+}
+
+.shop_details_vendor_logo_area .img {
+    width: 160px;
+    background: var(--lightBg2);
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.shop_details_vendor_logo_area h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.shop_details_vendor_logo_area h3 span {
+    color: var(--ratingColor);
+    font-size: 13px;
+    margin-top: 5px;
+    letter-spacing: -1px;
+    display: block;
+}
+
+.shop_details_vendor_logo_area h3 span b {
+    font-size: 14px;
+    margin-left: 5px;
+    text-transform: capitalize;
+    letter-spacing: initial;
+    font-weight: 400;
+    color: var(--paraColor);
+}
+
+
+.shop_details_vendor_address {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.shop_details_vendor_address li {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--paraColor);
+    position: relative;
+    padding-left: 30px;
+}
+
+.shop_details_vendor_address li svg {
+    display: block;
+    width: 18px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--themeColorTwo);
+}
+
+.shop_details_vendor_address li span {
+    font-weight: 500;
+    color: var(--colorBlack);
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+
+.shop_details_vendor_rating {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.shop_details_vendor_rating li {
+    font-weight: 600;
+    font-size: 22px;
+    border-right: 1px solid #ddd;
+    padding-right: 30px;
+    margin-right: 30px;
+}
+
+.shop_details_vendor_rating li span {
+    display: block;
+    color: var(--themeColorTwo);
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.shop_details_vendor_description {
+    margin-top: 45px;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+
+.shop_details_review {
+    margin-top: 20px;
+}
+
+.shop_details_review h3 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: revert;
+}
+
+
+.single_review {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.single_review .img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--colorWhite);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.single_review .text {
+    width: 90%;
+    padding-left: 25px;
+}
+
+.single_review .text h5 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single_review .text h5 span {
+    font-size: 14px;
+    letter-spacing: -1px;
+    color: var(--ratingColor);
+}
+
+.single_review .text .date {
+    font-size: 14px;
+    color: var(--colorBlack);
+    margin-top: 5px;
+    margin-bottom: 13px;
+}
+
+.single_review .text .description {}
+
+
+
+
+.single_review_input_area {
+    margin-top: 70px;
+}
+
+.single_review_input_area form {}
+
+.single_input {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 25px;
+}
+
+.single_input label {
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    background: var(--colorWhite);
+    font-size: 14px;
+    line-height: 15px;
+    padding: 0px 5px;
+}
+
+.single_input input,
+.single_input textarea {
+    border: none;
+    font-size: 14px;
+    padding: 15px 20px;
+}
+
+.single_review_input_area form button {
+    margin-top: 30px;
+}
+
+.select_rating {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.select_rating span {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.select_rating i {
+    font-size: 16px;
+    color: var(--paraColor);
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.select_rating i:hover,
+.select_rating i.active {
+    color: #F6B900;
+}
+
+
+
+.details_review_graph {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 48px;
+}
+
+.details_review_graph h5 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.details_review_graph h2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.details_review_graph h2 b {
+    font-weight: 600;
+    font-size: 38px;
+}
+
+.details_review_graph h2 .star {
+    font-size: 14px;
+    color: var(--ratingColor);
+    letter-spacing: -1px;
+    margin-left: 15px;
+}
+
+.details_review_graph h2 .total {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.graph_list_item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-top: 7px;
+}
+
+.graph_list_item p {
+    display: inline-block;
+    font-family: var(--headingFont);
+}
+
+
+
 
 
 

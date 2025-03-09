@@ -549,7 +549,7 @@ $(function () {
         slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '.details_slider_thumb',
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         dots: false,
         arrows: false,
@@ -560,12 +560,25 @@ $(function () {
     });
 
 
-    //======ELEVATE ZOOM=======
-    // $(".zoom").elevateZoom({
-    //     zoomType: 'inner',
-    //     cursor: 'crosshair'
-    // });
+    //=====RATING JS=====
+    const stars = document.querySelectorAll(".select_rating i");
+
+    stars.forEach((star, index1) => {
+        star.addEventListener("click", () => {
+            stars.forEach((star, index2) => {
+                index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
+            });
+        });
+    });
 
 
+    //=====BARFILLER JS=====
+    $(document).ready(function () {
+        $('#bar1').barfiller();
+        $('#bar2').barfiller();
+        $('#bar3').barfiller();
+        $('#bar4').barfiller();
+        $('#bar5').barfiller();
+    });
 
 });
