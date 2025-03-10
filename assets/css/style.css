@@ -972,6 +972,10 @@ header .header_support h3 a:hover {
     margin-left: auto;
 }
 
+.menu_icon li {
+    position: relative;
+}
+
 .menu_icon li a {
     width: 25px;
     height: 25px;
@@ -1269,8 +1273,6 @@ header .header_support h3 a:hover {
     visibility: visible;
 }
 
-
-
 .menu_droapdown2 {
     width: 220px;
     position: absolute;
@@ -1508,6 +1510,71 @@ header .header_support h3 a:hover {
 
 .minicart_btn_area a {
     width: 100%;
+}
+
+.menu_icon li .user_dropdown {
+    position: absolute;
+    top: 115%;
+    left: 20px;
+    width: 200px;
+    background: var(--colorWhite);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 8px;
+    line-height: 0;
+    padding: 10px 25px;
+    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out .2s;
+    -moz-transition: ease-in-out .2s;
+    -ms-transition: ease-in-out .2s;
+    -o-transition: ease-in-out .2s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu_icon li .user_dropdown::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--themeColorTwo);
+    top: -10px;
+    left: 33px;
+}
+
+.menu_icon li .user_dropdown li {
+    margin: 15px 0px;
+}
+
+.menu_icon li .user_dropdown li a {
+    text-transform: capitalize;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 0;
+}
+
+.menu_icon li .user_dropdown li a svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.menu_icon li .user_dropdown li a:hover {
+    color: var(--themeColorTwo) !important;
+}
+
+.menu_icon li:hover>.user_dropdown {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
 }
 
 /* MENU END */
@@ -3616,7 +3683,8 @@ footer {
     margin-left: 100px;
 }
 
-.flash_sell_2 .product_item {
+.flash_sell_2 .product_item,
+.related_products .product_item {
     margin: 20px 12px;
 }
 
@@ -3940,13 +4008,16 @@ footer {
 }
 
 .favourite_product_2 .nextArrow,
-.favourite_product_2 .prevArrow {
+.favourite_product_2 .prevArrow,
+.related_products .nextArrow,
+.related_products .prevArrow {
     position: absolute;
     top: -80px;
     right: 60px;
 }
 
-.favourite_product_2 .nextArrow {
+.favourite_product_2 .nextArrow,
+.related_products .nextArrow {
     right: 10px;
 }
 
@@ -5520,6 +5591,14 @@ footer {
 
 .home_beauty .mini_cart .cart_img:hover {
     border-color: var(--colorOlive);
+}
+
+.home_beauty .menu_icon li .user_dropdown::after {
+    border-bottom: 10px solid var(--colorWhite);
+}
+
+.home_beauty .menu_icon li .user_dropdown li a:hover {
+    color: var(--colorOlive) !important;
 }
 
 /* beauty menu end */
@@ -8795,11 +8874,10 @@ footer {
     font-family: var(--headingFont);
 }
 
-
-
-
-
-
+.related_products .nextArrow,
+.related_products .prevArrow {
+    top: -60px;
+}
 
 
 
