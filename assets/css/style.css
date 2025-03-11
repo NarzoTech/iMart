@@ -2096,6 +2096,7 @@ header .header_support h3 a:hover {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    z-index: 999;
 }
 
 .product_item:hover .product_img .btn_list {
@@ -2227,6 +2228,7 @@ header .header_support h3 a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9;
 }
 
 .product_item .out_of_stock p {
