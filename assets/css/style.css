@@ -568,6 +568,11 @@ button {
     right: 17px;
 }
 
+.topbar .nice-select .option {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
 /* TOPBAR  END */
 
 
@@ -2941,6 +2946,7 @@ footer {
     display: block;
     font-weight: 400;
     margin-top: 15px;
+    text-transform: capitalize;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -3317,6 +3323,11 @@ footer {
 
 .header_2 .header_support h3 {
     color: var(--paraColor);
+}
+
+.header_2 .nice-select .option {
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
 .default_home .header_support h3:hover a span {
@@ -6835,126 +6846,6 @@ footer {
 
 /* about video area end */
 
-/* team start */
-.single_team {
-    margin-top: 25px;
-    background: #FFF9F6;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
-    padding: 15px;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    background: var(--colorWhite);
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
-}
-
-.single_team_img {
-    position: relative;
-    height: 270px;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
-    overflow: hidden;
-}
-
-.single_team_img ul {
-    background: rgba(255, 255, 255, 0.70);
-    position: absolute;
-    width: 90%;
-    height: 90%;
-    left: 5%;
-    top: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    transform: scale(.9);
-    opacity: 0;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
-    -webkit-transform: scale(.9);
-    -moz-transform: scale(.9);
-    -ms-transform: scale(.9);
-    -o-transform: scale(.9);
-    border-radius: 12px;
-}
-
-.single_team_img ul li a {
-    width: 35px;
-    height: 35px;
-    line-height: 37px;
-    color: var(--colorWhite);
-    text-align: center;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
-    border-radius: 50%;
-    font-size: 14px;
-}
-
-.single_team_img ul li .facebook {
-    background: #0165E1;
-}
-
-.single_team_img ul li .twitter {
-    background: #1DA1F2;
-}
-
-.single_team_img ul li .instagram {
-    background: rgb(228, 64, 95);
-}
-
-.single_team_img ul li .youtube {
-    background: #CD201F;
-}
-
-.single_team_text {
-    padding: 25px 15px 5px 15px;
-}
-
-.single_team_text a {
-    text-align: center;
-}
-
-.single_team_text a:hover {
-    color: var(--colorBlack);
-}
-
-.single_team_text p {
-    text-align: center;
-    font-size: 16px;
-}
-
-.single_team:hover {
-    box-shadow: 0px 14px 70px 0px rgba(7, 28, 31, 0.14);
-    border-color: transparent;
-}
-
-.single_team:hover ul {
-    opacity: 1;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-}
-
-/* team end */
-
 
 /* counter start */
 .counter_area {
@@ -7615,10 +7506,6 @@ footer {
 /*=============================
     SHOP PAGE START
 =============================*/
-.shop_page .product_item_2 .product_img {
-    height: 270px;
-}
-
 .shop_filter_area h3 {
     font-size: 18px;
     font-weight: 500;
@@ -8877,8 +8764,6 @@ footer {
 /*=============================
     VENDOR PAGE START
 =============================*/
-.vendor_page {}
-
 .single_vendor {
     border: 1px solid #ddd;
     padding: 15px;
@@ -8896,29 +8781,29 @@ footer {
 }
 
 .single_vendor .img {
-    border-radius: 12px 12px 12px 100px;
+    border-radius: 12px;
     overflow: hidden;
-    -webkit-border-radius: 12px 12px 12px 100px;
+    /* -webkit-border-radius: 12px 12px 12px 100px; */
     -moz-border-radius: 12px 12px 12px 100px;
     -ms-border-radius: 12px 12px 12px 100px;
     -o-border-radius: 12px 12px 12px 100px;
+    border: 1px solid #eee;
 }
 
 .single_vendor .text {
-    padding: 40px 15px 5px 15px;
+    padding: 45px 20px 10px 20px;
     position: relative;
 }
 
 .single_vendor .text .vendor_logo {
-    width: 100px;
-    height: 100px;
-    line-height: 70px;
-    padding: 10px;
+    width: 125px;
+    height: 60px;
+    padding: 10px 15px;
     position: absolute;
-    top: -75px;
-    left: 0;
+    top: -30px;
+    left: 21px;
     background: var(--lightBg2);
-    border-radius: 50%;
+    border-radius: 10px;
     border: 4px solid var(--colorWhite);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -8975,12 +8860,134 @@ footer {
     color: var(--themeColorTwo);
 }
 
-
-
-
-
+/*=============================
+    VENDOR PAGE END
+=============================*/
 
 
 /*=============================
-    VENDOR PAGE END
+    VENDOR DETAILS START
+=============================*/
+.vendor_details_banner {
+    background: var(--lightBg2);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.vendor_details_img {
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.vendor_details_logo {
+    width: 120px;
+    padding: 10px;
+    background: var(--colorWhite);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.vendor_details_info .since {
+    display: block;
+    font-size: 15px;
+}
+
+.vendor_details_info h4 {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.vendor_details_info .rating {
+    color: var(--ratingColor);
+    letter-spacing: -1px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.vendor_details_info .rating span {
+    font-size: 14px;
+    letter-spacing: initial;
+    text-transform: capitalize;
+    margin-left: 5px;
+}
+
+.vendor_details_contact .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.vendor_details_contact .address li p,
+.vendor_details_contact .address li a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: var(--paraColor);
+    font-size: 16px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.vendor_details_contact .address li p svg,
+.vendor_details_contact .address li a svg {
+    display: block;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.vendor_details_contact .address li a:hover {
+    color: var(--themeColorTwo);
+}
+
+.vendor_details_contact .social_icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-top: 20px;
+}
+
+.vendor_details_contact .social_icon li span {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.vendor_details_contact .social_icon li a {
+    color: var(--colorBlack);
+    font-size: 16px;
+}
+
+.vendor_details_contact .social_icon li a:hover {
+    color: var(--themeColorTwo);
+}
+
+.vendor_details_message {
+    padding-right: 50px;
+}
+
+.vendor_details_message h4 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.vendor_details_message form input,
+.vendor_details_message form textarea {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-color: #eee;
+}
+
+.vendor_details_message form button {
+    margin-top: 10px;
+}
+
+/*=============================
+    VENDOR DETAILS END
 =============================*/
