@@ -8381,10 +8381,7 @@ footer {
 }
 
 .shop_details_sidebar_store ul li {
-    /* border-top: 1px solid #ddd; */
     padding-left: 13px;
-    /* margin-top: 7px; */
-    /* border-radius: 8px; */
 }
 
 .shop_details_sidebar_store ul li p {
@@ -8752,16 +8749,9 @@ footer {
     margin-bottom: 13px;
 }
 
-.single_review .text .description {}
-
-
-
-
 .single_review_input_area {
     margin-top: 70px;
 }
-
-.single_review_input_area form {}
 
 .single_input {
     position: relative;
@@ -8879,8 +8869,118 @@ footer {
     top: -60px;
 }
 
+/*=============================
+    SHOP DETAILS END
+=============================*/
 
 
 /*=============================
-    SHOP DETAILS END
+    VENDOR PAGE START
+=============================*/
+.vendor_page {}
+
+.single_vendor {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.single_vendor .img {
+    border-radius: 12px 12px 12px 100px;
+    overflow: hidden;
+    -webkit-border-radius: 12px 12px 12px 100px;
+    -moz-border-radius: 12px 12px 12px 100px;
+    -ms-border-radius: 12px 12px 12px 100px;
+    -o-border-radius: 12px 12px 12px 100px;
+}
+
+.single_vendor .text {
+    padding: 40px 15px 5px 15px;
+    position: relative;
+}
+
+.single_vendor .text .vendor_logo {
+    width: 100px;
+    height: 100px;
+    line-height: 70px;
+    padding: 10px;
+    position: absolute;
+    top: -75px;
+    left: 0;
+    background: var(--lightBg2);
+    border-radius: 50%;
+    border: 4px solid var(--colorWhite);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.single_vendor .text .vendor_logo img {
+    width: auto !important;
+    height: auto !important;
+}
+
+.single_vendor .text .title {
+    font-size: 22px;
+}
+
+.single_vendor .text .rating {
+    color: var(--ratingColor);
+    letter-spacing: -1px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.single_vendor .text .rating span {
+    letter-spacing: initial;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.single_vendor .text .info {
+    position: relative;
+    font-size: 16px;
+    padding-left: 30px;
+    color: var(--paraColor);
+    display: block;
+    margin-top: 12px;
+}
+
+.single_vendor .text .info svg {
+    position: absolute;
+    width: 20px;
+    top: 0;
+    left: 0;
+}
+
+.single_vendor .text .common_btn {
+    margin-top: 27px;
+}
+
+.single_vendor:hover {
+    border-color: #fff !important;
+    box-shadow: var(--boxShadow);
+}
+
+.single_vendor .text a.info:hover {
+    color: var(--themeColorTwo);
+}
+
+
+
+
+
+
+
+/*=============================
+    VENDOR PAGE END
 =============================*/
