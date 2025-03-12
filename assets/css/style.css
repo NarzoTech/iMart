@@ -9184,7 +9184,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 5px 10px;
-    margin: 15px 50px 0px 50px;
+    margin: 15px 0px 0px 52px;
     color: var(--themeColorTwo);
     background: #ffa5000a;
 }
@@ -9197,6 +9197,7 @@ footer {
 
 .cart_page .table {
     margin: 0;
+    width: 100%;
 }
 
 .cart_page .table thead {
@@ -9227,7 +9228,7 @@ footer {
 
 .cart_page .table tr th,
 .cart_page .table tr td {
-    padding: 15px 10px;
+    padding: 15px 0;
     vertical-align: middle;
 }
 
@@ -9243,7 +9244,7 @@ footer {
 
 .cart_page_img {
     width: 150px;
-    padding-left: 0 !important;
+    /* padding-left: 0 !important; */
 }
 
 .cart_page_img .img {
@@ -9458,8 +9459,70 @@ footer {
     margin-bottom: 1px;
 }
 
+.cart_table_area .cart_page_checkbox {
+    width: 5% !important;
+    min-width: 53px;
+}
+
+.cart_table_area .cart_page_img {
+    width: 15% !important;
+    min-width: 150px;
+}
+
+.cart_table_area .cart_page_details {
+    width: 30% !important;
+    min-width: 270px;
+}
+
+.cart_table_area .cart_page_price,
+.cart_table_area .cart_page_total {
+    width: 10% !important;
+    min-width: 100px;
+}
+
+.cart_table_area .cart_page_quantity {
+    width: 15% !important;
+    min-width: 160px;
+}
+
+
+.cart_table_area .cart_page_action {
+    width: 15%;
+    min-width: 120px;
+}
+
 /*=============================
     CART VIEW END
+=============================*/
+
+
+/*=============================
+    WISHLIST START
+=============================*/
+.wishlist_page .cart_vendor_name {
+    margin: 15px 0px 0px 20px;
+}
+
+.wishlist_page .cart_table_area .cart_page_img {
+    padding-left: 20px !important;
+}
+
+.wishlist_page .cart_table_area .cart_page_action {
+    width: 15%;
+    min-width: 200px;
+    padding-right: 20px !important;
+}
+
+.wishlist_page .cart_page_action a {
+    color: var(--colorWhite) !important;
+}
+
+.wishlist_page .cart_page_action .remove {
+    background: var(--colorRed);
+}
+
+/*=============================
+    WISHLIST END
 =============================*/
 
 
@@ -9681,4 +9744,314 @@ footer {
 
 /*=============================
     CHECKOUT END
+=============================*/
+
+
+/*=============================
+    PAYMENT SUCCESS END
+=============================*/
+.payment_success_text .img {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.payment_success_text h3 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--colorGreen);
+    margin-top: 50px;
+    text-transform: capitalize;
+}
+
+.payment_success_text p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+
+.payment_success_text p b {
+    color: var(--themeColoeOne);
+}
+
+.payment_success_text .go_btn {
+    background: var(--colorBlack);
+}
+
+.payment_success_text .go_btn::after {
+    background: var(--themeColorTwo);
+}
+
+.payment_cancel h3 {
+    color: var(--colorRed);
+}
+
+/*=============================
+    PAYMENT SUCCESS END
+=============================*/
+
+
+/*=============================
+    COMPARE START
+=============================*/
+.compare_list_area {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.compare_list_area table {
+    margin: 0;
+}
+
+.compare_list_area table tr td:first-child {
+    min-width: 150px;
+}
+
+.compare_list_area table tr td:last-child {
+    border-right: none;
+}
+
+.compare_list_area table tr:last-child {
+    border-color: transparent;
+}
+
+.compare_list_area table tr td {
+    border-right: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+.compare_list_area table tr td img {
+    width: 170px !important;
+    margin: 10px auto 20px auto;
+}
+
+.compare_list_area table tr td p b {
+    color: var(--colorBlack);
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.compare_list_area table tr td .rating {
+    color: var(--ratingColor);
+    font-size: 15px;
+    letter-spacing: -1px;
+}
+
+.compare_list_area table tr td a.common_btn {
+    margin-right: 10px;
+}
+
+.compare_list_area table tr td .remove {
+    background: var(--colorRed);
+    margin: 0 !important;
+}
+
+/*=============================
+    COMPARE END
+=============================*/
+
+
+/*=============================
+    TRACK ORDER START
+=============================*/
+.track_order {}
+
+.tack_order_form {}
+
+.tack_order_form {
+    background: var(--lightBg2);
+    padding: 60px;
+    border-radius: 12px;
+}
+
+.tack_order_form h4 {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.tack_order_form p {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 8px;
+    margin-bottom: 45px;
+}
+
+.tack_order_form button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.tack_order_form label {
+    z-index: 1;
+}
+
+.tack_order_form label::after {
+    position: absolute;
+    content: "";
+    background: var(--lightBg2);
+    width: 125px;
+    height: 9px;
+    top: -2px;
+    left: 0;
+    z-index: -1;
+}
+
+
+.track_order_map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--lightBg2);
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.track_order_map li {
+    position: relative;
+    text-transform: capitalize;
+}
+
+.track_order_map li::after {
+    position: absolute;
+    content: "";
+}
+
+.tracking_product_area {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tracking_product_info {
+    background: var(--colorOlive);
+    border-radius: 12px;
+    padding: 70px;
+    height: 100%;
+}
+
+.tracking_product_info .icon {
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    text-align: center;
+    border: 2px solid #ffffff36;
+    /* margin: 0 auto; */
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.tracking_product_info .icon svg {
+    width: 60px;
+    color: var(--colorWhite);
+}
+
+.tracking_product_info h3 {
+    /* text-align: center; */
+    font-size: 34px;
+    font-weight: 500;
+    color: var(--colorWhite);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.tracking_product_info p {
+    /* text-align: center; */
+    color: var(--colorWhite);
+    max-width: 70%;
+    /* margin: 0 auto; */
+}
+
+.tracking_product_info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 35px 0px;
+}
+
+.tracking_product_info ul li {
+    width: 48%;
+}
+
+.tracking_product_info ul li h6 {
+    color: var(--colorWhite);
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.tracking_product_info ul li h5 {
+    color: var(--colorWhite);
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+
+
+.tracking_product_list {
+    padding: 40px 40px 40px 20px;
+}
+
+.tracking_product_list h3 {
+    text-transform: capitalize;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.tracking_product_list .table {
+    margin: 0;
+}
+
+.tracking_product_list .table tr {
+    border-color: #eee;
+}
+
+.tracking_product_list .table tr th {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--colorBlack) !important;
+    !i;
+    !;
+}
+
+.tracking_product_list .table tr th,
+.tracking_product_list .table tr td {
+    padding: 15px 0px;
+    color: var(--paraColor);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================
+    TRACK ORDER END
 =============================*/
