@@ -9902,26 +9902,81 @@ footer {
     z-index: -1;
 }
 
-
 .track_order_map {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: var(--lightBg2);
-    padding: 30px;
     border-radius: 8px;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
+    gap: 15px 50px;
 }
 
 .track_order_map li {
     position: relative;
     text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    border: 1px dashed #ddd;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 20%;
+    background: var(--colorWhite);
 }
 
-.track_order_map li::after {
+.track_order_map li::before {
     position: absolute;
     content: "";
+    background: url(../images/traking_arrow_1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 40px;
+    top: 21px;
+    right: -78px;
+    z-index: -1;
+}
+
+.track_order_map li:last-child:before {
+    display: none;
+}
+
+.track_order_map li.active {
+    border-color: var(--themeColorTwo);
+}
+
+.track_order_map li.active::after {
+    position: absolute;
+    content: "\f00c";
+    font-family: "font awesome 5 free";
+    font-weight: 600;
+    font-size: 14px;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: var(--themeColorTwo);
+    color: var(--colorWhite);
+    border-radius: 50%;
+}
+
+.track_order_map li .icon {
+    width: 60px;
+    height: 60px;
+    background: var(--lightBg2);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.track_order_map li h4 {
+    font-size: 16px;
+    font-weight: 600;
+    width: 110px;
 }
 
 .tracking_product_area {
@@ -9942,8 +9997,7 @@ footer {
     height: 130px;
     line-height: 130px;
     text-align: center;
-    border: 2px solid #ffffff36;
-    /* margin: 0 auto; */
+    background: #ffffff36;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -9952,24 +10006,21 @@ footer {
 }
 
 .tracking_product_info .icon svg {
-    width: 60px;
+    width: 55px;
     color: var(--colorWhite);
 }
 
 .tracking_product_info h3 {
-    /* text-align: center; */
     font-size: 34px;
     font-weight: 500;
     color: var(--colorWhite);
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 10px;
 }
 
 .tracking_product_info p {
-    /* text-align: center; */
     color: var(--colorWhite);
     max-width: 70%;
-    /* margin: 0 auto; */
 }
 
 .tracking_product_info ul {
@@ -9999,9 +10050,6 @@ footer {
     text-transform: capitalize;
 }
 
-
-
-
 .tracking_product_list {
     padding: 40px 40px 40px 20px;
 }
@@ -10009,7 +10057,7 @@ footer {
 .tracking_product_list h3 {
     text-transform: capitalize;
     font-size: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .tracking_product_list .table {
@@ -10023,34 +10071,28 @@ footer {
 .tracking_product_list .table tr th {
     text-transform: capitalize;
     font-weight: 500;
-    font-size: 16px;
     color: var(--colorBlack) !important;
-    !i;
-    !;
+    font-family: var(--headingFont);
 }
 
 .tracking_product_list .table tr th,
 .tracking_product_list .table tr td {
     padding: 15px 0px;
+    font-size: 15px;
     color: var(--paraColor);
 }
 
+.tracking_product_list .table tr th:last-child,
+.tracking_product_list .table tr td:last-child {
+    text-align: right;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.tracking_product_list .table tr td span {
+    color: var(--colorBlack);
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 15px;
+}
 
 /*=============================
     TRACK ORDER END

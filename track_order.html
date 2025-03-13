@@ -778,10 +778,30 @@
             <div class="row justify-content-center">
                 <div class="col-xl-10">
                     <ul class="track_order_map">
-                        <li>Order pending</li>
-                        <li>order Processing</li>
-                        <li>on the way</li>
-                        <li>ready for delivery</li>
+                        <li class="active">
+                            <div class="icon">
+                                <img src="assets/images/track_icon_1.png" alt="Track" class="img-fluid">
+                            </div>
+                            <h4>Order Confirmed</h4>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="assets/images/track_icon_2.png" alt="Track" class="img-fluid">
+                            </div>
+                            <h4>order Processing</h4>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="assets/images/track_icon_3.png" alt="Track" class="img-fluid">
+                            </div>
+                            <h4>on the way</h4>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="assets/images/track_icon_4.png" alt="Track" class="img-fluid">
+                            </div>
+                            <h4>ready for delivery</h4>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-xl-10">
@@ -795,6 +815,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
                                         </svg>
+
                                     </div>
                                     <h3>Your Order Confirmed</h3>
                                     <p>We will send you a shipping confirmation email as soon as your order ships</p>
@@ -826,55 +847,60 @@
                                             <thead>
                                                 <tr>
                                                     <th>product</th>
-                                                    <th>price</th>
-                                                    <th>qnty</th>
                                                     <th>total</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Kid's dresses for summer</td>
-                                                    <td>$29.00</td>
-                                                    <td>02</td>
+                                                    <td>
+                                                        Kid's dresses for summer
+                                                        <span>× 02</span>
+                                                    </td>
                                                     <td>$58.00</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Full Sleeve Hoodie Jacket</td>
-                                                    <td>$45.00</td>
-                                                    <td>01</td>
+                                                    <td>
+                                                        Full Sleeve Hoodie Jacket
+                                                        <span>× 01</span>
+                                                    </td>
                                                     <td>$45.00</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Women's Western Party Dress</td>
-                                                    <td>$35.00</td>
-                                                    <td>03</td>
+                                                    <td>
+                                                        Women's Western Party Dress
+                                                        <span>× 01</span>
+                                                    </td>
                                                     <td>$105.00</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Denim Jeans Pants For Men</td>
+                                                    <td>
+                                                        Denim Jeans Pants For Men
+                                                        <span>× 03</span>
+                                                    </td>
                                                     <td>$72.00</td>
-                                                    <td>01</td>
-                                                    <td>$72.00</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Kid's dresses for summer</td>
-                                                    <td>$29.00</td>
-                                                    <td>02</td>
-                                                    <td>$58.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Full Sleeve Hoodie Jacket</td>
-                                                    <td>$45.00</td>
-                                                    <td>01</td>
-                                                    <td>$45.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Full Sleeve Hoodie Jacket</td>
-                                                    <td>$45.00</td>
-                                                    <td>01</td>
+                                                    <td>
+                                                        Full Sleeve Hoodie Jacket
+                                                        <span>× 2</span>
+                                                    </td>
                                                     <td>$45.00</td>
                                                 </tr>
                                             </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th>Subtotal</th>
+                                                    <th>$325.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Shipping</td>
+                                                    <td>$50.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Total</th>
+                                                    <th>$855.00</th>
+                                                </tr>
+                                            </tfoot>
                                         </table>
                                     </div>
                                 </div>
