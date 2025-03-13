@@ -3,17 +3,30 @@ $(function () {
     "use strict";
 
     //======MENU FIX JS=======   
-    var navoff = $('.main_menu').offset().top;
-    $(window).scroll(function () {
-        var scrolling = $(this).scrollTop();
-
-        if (scrolling > navoff) {
+    if ($(window).scrollTop() > 1) {
+        if ($('.main_menu').offset() != undefined) {
             $('.main_menu').addClass('menu_fix');
-        } else {
+        }
+    } else {
+        if ($('.main_menu').offset() != undefined) {
             $('.main_menu').removeClass('menu_fix');
         }
-    });
+    };
 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1) {
+            if ($('.main_menu').offset() != undefined) {
+                if (!$('.main_menu').hasClass("menu_fix")) {
+                    $('.main_menu').addClass("menu_fix");
+                }
+            }
+        }
+        else {
+            if ($('.main_menu').offset() != undefined) {
+                $('.main_menu').removeClass("menu_fix");
+            }
+        }
+    });
 
     //======HEADER FIX JS=======   
     $(window).scroll(function () {
