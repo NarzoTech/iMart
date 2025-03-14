@@ -525,7 +525,6 @@ $(function () {
         top: 70,
     });
 
-
     //=====RANGE SLIDER===== 
     $('.basic').alRangeSlider();
     const options = {
