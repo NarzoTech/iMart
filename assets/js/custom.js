@@ -3,15 +3,15 @@ $(function () {
     "use strict";
 
     //======MENU FIX JS=======   
-    if ($(window).scrollTop() > 1) {
-        if ($('.main_menu').offset() != undefined) {
-            $('.main_menu').addClass('menu_fix');
-        }
-    } else {
-        if ($('.main_menu').offset() != undefined) {
-            $('.main_menu').removeClass('menu_fix');
-        }
-    };
+    // if ($(window).scrollTop() > 1) {
+    //     if ($('.main_menu').offset() != undefined) {
+    //         $('.main_menu').addClass('menu_fix');
+    //     }
+    // } else {
+    //     if ($('.main_menu').offset() != undefined) {
+    //         $('.main_menu').removeClass('menu_fix');
+    //     }
+    // };
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 1) {
@@ -29,14 +29,14 @@ $(function () {
     });
 
     //======HEADER FIX JS=======   
-    $(window).scroll(function () {
-        var scrolling = $(this).scrollTop();
-        if (scrolling > navoff) {
-            $('header').addClass('header_fix');
-        } else {
-            $('header').removeClass('header_fix');
-        }
-    });
+    // $(window).scroll(function () {
+    //     var scrolling = $(this).scrollTop();
+    //     if (scrolling > navoff) {
+    //         $('header').addClass('header_fix');
+    //     } else {
+    //         $('header').removeClass('header_fix');
+    //     }
+    // });
 
 
     //=====CATEGORY MENU======  

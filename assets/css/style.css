@@ -114,7 +114,7 @@ button {
     color: var(--colorWhite);
     text-transform: capitalize;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -10804,38 +10804,27 @@ footer {
 /*===========================
     DASHBOARD START
 ===========================*/
-.dashboard_banner {}
-
-/* dashboard banner start */
-.dashboard_banner .page_banner_overlay {
-    padding: 130px 0px 132px 0px;
-    background: rgb(7 28 31 / 76%);
-}
-
-/* dashboard banner end */
-
-
 /* dashboard sidebar start */
 .dashboard_sidebar {
-    background: var(--colorWhite);
     overflow: hidden;
-    height: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    margin-top: -170px;
 }
 
 .dashboard_sidebar_user {
-    padding: 50px;
+    padding: 40px 40px 30px 40px;
     text-align: center;
-    background: #F7F9FB;
-    margin-bottom: 60px;
+    background: var(--colorWhite);
 }
 
 .dashboard_sidebar_user .img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 2px solid var(--colorWhite);
+    border: 3px solid var(--colorWhite);
     margin: 0 auto;
-    box-shadow: var(--boxShadow);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position: relative;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -10858,7 +10847,7 @@ footer {
     line-height: 30px;
     font-size: 12px;
     border-radius: 30px;
-    border: 1px solid rgba(88, 92, 84, 0.50);
+    border: 1px solid #ddd;
     background: var(--colorWhite);
     transition: all linear .3s;
     position: absolute;
@@ -10877,69 +10866,78 @@ footer {
 }
 
 .dashboard_sidebar_user .img label:hover {
-    background: var(--colorPrimary);
-    border-color: var(--colorPrimary);
+    background: var(--themeColorTwo);
+    border-color: var(--themeColorTwo);
     color: var(--colorWhite);
 }
 
 .dashboard_sidebar_user h3 {
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 22px;
     margin-bottom: 5px;
-    text-align: center;
     font-weight: 600;
+    text-transform: capitalize;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.dashboard_sidebar_menu ul {
+    padding-bottom: 10px;
+}
+
+.dashboard_sidebar_menu ul li p {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 25px;
+    font-family: var(--headingFont);
+    text-transform: uppercase;
+    background: var(--lightBg2);
+    color: var(--themeColorTwo);
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .dashboard_sidebar_menu ul li a {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 15px;
+    font-weight: 400;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
-    border: 1px solid #eee;
-    padding: 12px 25px;
+    padding: 10px 25px;
     color: var(--paraColor);
-    font-family: var(--headingFont);
     position: relative;
-}
-
-.dashboard_sidebar_menu ul li a::after {
-    position: absolute;
-    content: "\f054";
-    font-family: "font awesome 5 free";
-    font-weight: 600;
-    font-size: 12px;
-    color: var(--paraColor);
-    top: 50%;
-    right: 25px;
-    transition: all linear .3s;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
+    text-transform: capitalize;
 }
 
 .dashboard_sidebar_menu ul li:last-child a {
     margin-bottom: 0;
 }
 
-.dashboard_sidebar_menu ul li a i {
+.dashboard_sidebar_menu ul li a span {
+    display: block;
+    width: 20px;
     margin-right: 10px;
+    margin-top: -6px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .dashboard_sidebar_menu ul li a:hover,
-.dashboard_sidebar_menu ul li a.active {
-    color: var(--colorPrimary);
-    border-color: var(--colorPrimary);
+.dashboard_sidebar_menu ul li a.active,
+.dashboard_sidebar_menu ul li a:hover span,
+.dashboard_sidebar_menu ul li a.active span {
+    color: var(--themeColorTwo);
 }
 
 .dashboard_sidebar_menu ul li a:hover::after,
@@ -10950,6 +10948,88 @@ footer {
 /* dashboard sidebar end */
 
 
+.dashboard_content {
+    background: var(--colorWhite);
+    padding: 35px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.dashboard_content .dashboard_title {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.dashboard_content .dashboard_title .cancel_edit {
+    background: var(--colorRed);
+}
+
+/* dashboard overview start */
+.dashboard_overview_item {
+    background: #0aa84812;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.dashboard_overview_item .icon {
+    width: 75px;
+    height: 75px;
+    line-height: 73px;
+    text-align: center;
+    border-radius: 8px;
+    margin-right: 30px;
+    background: var(--colorGreen);
+    color: var(--colorWhite);
+    font-size: 30px;
+    margin-left: -40px;
+}
+
+.dashboard_overview_item .icon svg {
+    width: 40px;
+}
+
+.dashboard_overview_item h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.dashboard_overview_item h3 span {
+    display: block;
+    margin-top: 5px;
+    /* color: var(--colorBlack); */
+    text-transform: capitalize;
+}
+
+.dashboard_overview_item.blue {
+    background: #66aaee1f;
+}
+
+.dashboard_overview_item.blue .icon {
+    background: #6ae;
+}
+
+.dashboard_overview_item.orange {
+    background: #ffa5001c;
+}
+
+.dashboard_overview_item.orange .icon {
+    background: var(--themeColorTwo);
+}
 
 
 
@@ -10958,14 +11038,322 @@ footer {
 
 
 
+/* dashboard overview end */
+
+
+/* dashboard order start */
+.dashboard_order_table {
+    margin-top: 25px;
+    overflow: hidden;
+    border: 1px solid #01040E14;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.dashboard_order_table table {
+    width: 100%;
+}
+
+.dashboard_order_table table tr {
+    border-top: 1px solid #01040E14;
+}
+
+.dashboard_order_table table thead tr {
+
+    border: none;
+}
+
+.dashboard_order_table table tr th {
+    text-transform: capitalize;
+    font-family: var(--headingFont);
+    background: var(--lightBg2);
+}
+
+.dashboard_order_table table tr td {
+    color: var(--paraColor);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.dashboard_order_table table tr th,
+.dashboard_order_table table tr td {
+    min-width: 100px;
+    padding: 20px 25px;
+}
+
+.dashboard_order_table table tr td span {
+    display: block;
+    /* color: var(--colorBlack); */
+    /* font-family: var(--headingFont); */
+    font-size: 16px;
+    /* font-weight: 500; */
+    /* padding: 10px 0; */
+    /* width: 135px; */
+    /* margin: 0 auto; */
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    /* text-align: center; */
+}
+
+.dashboard_order_table table tr td .complete {
+    /* background: #05a8450a; */
+    color: var(--colorGreen);
+}
+
+.dashboard_order_table table tr td .active {
+    /* background: #0a69d808; */
+    color: var(--themeColoeOne);
+}
+
+.dashboard_order_table table tr td .cancel {
+    /* background: #ff000008; */
+    color: red;
+}
+
+.dashboard_order_table table tr td a {
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.dashboard_order_table table tr td a svg {
+    width: 20px;
+}
+
+.dashboard_order_table table tr td a:hover {
+    color: var(--colorPrimary);
+}
+
+/* dashboard order end */
+
+
+/* order invoice start */
+.dashboard_order_invoice {
+    border: 1px solid #eee;
+    margin-top: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dashboard_invoice_logo_area {
+    /* background: rgba(3, 26, 38, 0.04); */
+    background: var(--lightBg2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.dashboard_invoice_logo_area .invoice_logo {
+    width: 154px;
+}
+
+.dashboard_invoice_logo_area .text h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* color: var(--colorWhite); */
+}
+
+.dashboard_invoice_logo_area .text p {
+    text-transform: capitalize;
+    /* color: var(--colorWhite); */
+}
+
+.dashboard_invoice_header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #01040E14;
+    padding: 30px;
+}
+
+.dashboard_invoice_header .text {
+    width: 45%;
+}
+
+.dashboard_invoice_header .text p {
+    margin-top: 5px;
+}
+
+.dashboard_invoice_header .text h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.dashboard_invoice_header .text ul li {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--paraColor);
+    margin-top: 5px;
+}
+
+.dashboard_invoice_header .text ul li span {
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    display: inline-block;
+    width: 80px;
+    /* font-weight: 600; */
+}
+
+.invoice_table {
+    border-radius: 0;
+    border: none;
+    margin: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.invoice_table table thead tr {
+    background: var(--lightBg2);
+}
+
+.invoice_table table thead tr th {
+    background: var(--lightBg2);
+    color: var(--colorBlack);
+    font-weight: 500;
+    font-family: var(--headingFont);
+}
+
+.invoice_table table tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+.invoice_table table tr th,
+.invoice_table table tr td {
+    padding: 15px 25px;
+    min-width: 110px;
+    border-right: 1px solid #eee;
+    color: var(--paraColor);
+}
+
+.dashboard_invoice_footer {
+    padding: 30px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.dashboard_invoice_footer h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.dashboard_invoice_footer a {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.dashboard_invoice_footer a i {
+    margin-right: 5px;
+}
+
+.invoice_table table tr td b {
+    color: var(--colorBlack);
+    font-weight: 400;
+}
+
+.dashboard_order_invoice_area a i {
+    margin-right: 5px;
+}
+
+/* order invoice end */
+
+
+/* personal info start */
+.dashboard_profile_info_list,
+.dashboard_profile_info_edit,
+.dashboard_change_password {
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 25px;
+}
+
+.dashboard_profile_info_list h2,
+.dashboard_profile_info_edit h2 {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.dashboard_profile_info_list h2 a:hover,
+.dashboard_profile_info_edit h2 a:hover {
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+}
+
+.dashboard_profile_info_list ul li {
+    color: var(--paraColor);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.dashboard_profile_info_list ul li:last-child {
+    margin: 0;
+}
+
+.dashboard_profile_info_list ul li span {
+    color: var(--colorBlack);
+    display: inline-block;
+    width: 90px;
+}
+
+/* personal info end */
+
+.dashboard_profile_info_edit .single_input {
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.dashboard_addredd_list .checkout_address_area {
+    margin-bottom: 0;
+}
+
+.dashboard_wishlist .product_img {
+    height: 320px;
+}
+
+.dashboard_reviews .single_review .text {
+    width: 93%;
+}
+
+.dashboard_download table tr td .img {
+    width: 85px;
+    height: 85px;
+    background: var(--lightBg2);
+    border-radius: 6px;
+}
+
+/* dashboard return request start */
 
 
 
-
-
-
-
-
+/* dashboard return request end */
 
 /*===========================
     DASHBOARD END
