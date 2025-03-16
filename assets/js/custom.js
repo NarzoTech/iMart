@@ -66,7 +66,7 @@ $(function () {
     $('.banner_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         dots: true,
         arrows: false,
@@ -74,10 +74,15 @@ $(function () {
 
         responsive: [
             {
+                breakpoint: 992,
+                settings: {
+                    dots: false
+                }
+            },
+            {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 2,
-                    arrows: false
+                    dots: false
                 }
             },
             {
@@ -105,19 +110,19 @@ $(function () {
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 5,
                 }
             },
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 4,
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     arrows: false
                 }
             },
@@ -145,13 +150,13 @@ $(function () {
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                 }
             },
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 3,
                 }
             },
             {

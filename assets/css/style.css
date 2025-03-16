@@ -2615,8 +2615,8 @@ header .header_support h3 a:hover {
 .special_product_text span {
     color: var(--ratingColor);
     display: block;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     font-size: 14px;
 }
 
@@ -2747,7 +2747,7 @@ header .header_support h3 a:hover {
 
 .multi_product_item .text .rating {
     color: var(--ratingColor);
-    margin: 10px 0px 10px 0px;
+    margin: 3px 0px 4px 0px;
 }
 
 .multi_product_item .text .rating span {
@@ -2923,7 +2923,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 15px;
 }
 
 .footer_info_item .icon {
