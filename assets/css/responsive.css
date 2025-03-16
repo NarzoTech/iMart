@@ -19,4 +19,171 @@
 @media (min-width: 576px) and (max-width: 767.99px) {}
 
 
-@media (max-width: 575.99px) {}
+@media (max-width: 575.99px) {
+
+
+    /*===========================
+        HOME PAGE 01 START
+    ===========================*/
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        height: 70px;
+        line-height: 70px;
+    }
+
+    .banner_area {
+        top: 0;
+        height: auto;
+        padding-top: 170px;
+    }
+
+    .banner_slider_text {
+        padding: 0px 15px;
+    }
+
+    .banner_slider_text h1 {
+        font-size: 34px;
+    }
+
+    .banner_slider_img {
+        justify-content: center;
+    }
+
+    .banner_slider_img .img {
+        height: 350px;
+        position: relative;
+        bottom: -50px;
+    }
+
+    .banner_slider_img::after {
+        right: 0;
+    }
+
+    .category_item .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .section_heading h3,
+    .section_heading h3 span {
+        font-size: 24px;
+    }
+
+    .view_all_btn_area {
+        display: none;
+    }
+
+    .nextArrow,
+    .prevArrow {
+        background: none !important;
+        border: none !important;
+        color: var(--colorBlack) !important;
+    }
+
+    .flash_sell .nextArrow,
+    .flash_sell .prevArrow,
+    .category .nextArrow,
+    .category .prevArrow {
+        right: 0px;
+    }
+
+    .flash_sell .prevArrow,
+    .category .prevArrow {
+        left: 0;
+    }
+
+    .product_item .product_img {
+        height: auto;
+    }
+
+    .product_item .product_img .discount_list li {
+        padding: 1px 7px;
+        font-size: 12px;
+    }
+
+    .product_item .product_img .discount_list {
+        top: 10px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .category_item {
+        padding: 15px 10px;
+    }
+
+    .product_item .rating span {
+        display: none;
+    }
+
+    .product_item .product_text {
+        padding: 10px 15px 15px 15px;
+    }
+
+    .product_item .product_img .btn_list li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .product_item .price {
+
+        font-size: 14px;
+    }
+
+    .product_item .rating {
+        margin: 5px 0px 9px 0px;
+        font-size: 12px;
+    }
+
+    .product_item .cart_btn {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .product_item .color li {
+        width: 15px;
+        height: 15px;
+    }
+
+    .product_item .product_img .btn_list {
+        right: 10px;
+    }
+
+    .product_item:hover .product_img .btn_list {
+        top: 10px;
+    }
+
+    .product_item .color {
+        max-width: 95px;
+    }
+
+    .flash_sell .simply-countdown {
+        margin-top: 10px;
+    }
+
+    .large_banner_text h3 {
+        font-size: 30px;
+    }
+
+    .large_banner_text {
+        margin-top: 35px;
+    }
+
+
+    /*===========================
+        HOME PAGE 01 END
+    ===========================*/
+
+
+
+
+
+}

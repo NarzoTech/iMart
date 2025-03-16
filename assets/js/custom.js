@@ -3,16 +3,6 @@ $(function () {
     "use strict";
 
     //======MENU FIX JS=======   
-    // if ($(window).scrollTop() > 1) {
-    //     if ($('.main_menu').offset() != undefined) {
-    //         $('.main_menu').addClass('menu_fix');
-    //     }
-    // } else {
-    //     if ($('.main_menu').offset() != undefined) {
-    //         $('.main_menu').removeClass('menu_fix');
-    //     }
-    // };
-
     $(window).scroll(function () {
         if ($(this).scrollTop() > 1) {
             if ($('.main_menu').offset() != undefined) {
@@ -27,17 +17,6 @@ $(function () {
             }
         }
     });
-
-    //======HEADER FIX JS=======   
-    // $(window).scroll(function () {
-    //     var scrolling = $(this).scrollTop();
-    //     if (scrolling > navoff) {
-    //         $('header').addClass('header_fix');
-    //     } else {
-    //         $('header').removeClass('header_fix');
-    //     }
-    // });
-
 
     //=====CATEGORY MENU======  
     $('.menu_category_bar').on('click', function () {
@@ -92,6 +71,22 @@ $(function () {
         dots: true,
         arrows: false,
         fade: true,
+
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    dots: false
+                }
+            }
+        ]
     });
 
 
@@ -105,18 +100,74 @@ $(function () {
         arrows: true,
         nextArrow: '<i class="far fa-arrow-right nextArrow"></i>',
         prevArrow: '<i class="far fa-arrow-left prevArrow"></i>',
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
     });
 
     //=====FLASH SELL SLIDER===== 
     $('.flash_sell_slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         dots: false,
         arrows: true,
         nextArrow: '<i class="far fa-arrow-right nextArrow"></i>',
         prevArrow: '<i class="far fa-arrow-left prevArrow"></i>',
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
     });
 
 
@@ -592,5 +643,32 @@ $(function () {
         $('#bar4').barfiller();
         $('#bar5').barfiller();
     });
+
+
+    //=====MOBILE MENU TOGGLER=====
+    const mobile_menu = document.querySelectorAll(".mobile_dropdown");
+    mobile_menu.forEach((dropdown) => {
+        const innerMenu = dropdown.querySelector(".inner_menu");
+        dropdown.addEventListener("click", () => {
+            if (innerMenu.style.maxHeight) {
+                innerMenu.style.maxHeight = null;
+                dropdown.classList.remove("active");
+            } else {
+                mobile_menu.forEach((item) => {
+                    const menu = item.querySelector(".inner_menu");
+                    if (menu !== innerMenu) {
+                        menu.style.maxHeight = null;
+                        item.classList.remove("active");
+                    }
+                });
+                innerMenu.style.maxHeight = innerMenu.scrollHeight + "px";
+                dropdown.classList.add("active");
+            }
+        });
+    });
+
+    //=====REVIEW IMAGE UPLOAD=====
+    $('.gallery').miv({ image: '.cam', video: '.vid' });
+
 
 });

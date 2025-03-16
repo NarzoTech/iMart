@@ -392,6 +392,7 @@ button {
     font-weight: 500;
     margin-bottom: 5px;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .page_banner_text ul {
@@ -1622,7 +1623,7 @@ header .header_support h3 a:hover {
     background-size: cover !important;
     position: relative;
     height: 785px;
-    top: -60px;
+    margin-top: -60px;
     padding-top: 60px;
 }
 
@@ -1960,6 +1961,10 @@ header .header_support h3 a:hover {
     text-transform: capitalize;
     font-size: 16px;
     text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .category_item p {
@@ -2202,6 +2207,7 @@ header .header_support h3 a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+    max-width: 200px;
 }
 
 .product_item .color li {
@@ -8831,8 +8837,26 @@ footer {
     margin-bottom: 13px;
 }
 
-.single_review_input_area {
-    margin-top: 70px;
+.single_review .text ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.single_review .text ul li {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.single_review_input_area h3 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
 .single_input {
@@ -8865,7 +8889,7 @@ footer {
 }
 
 .single_review_input_area form button {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .select_rating {
@@ -10083,12 +10107,21 @@ footer {
 }
 
 .compare_list_area table tr td a.common_btn {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .compare_list_area table tr td .remove {
     background: var(--colorRed);
     margin: 0 !important;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    line-height: 46px;
+}
+
+.compare_list_area table tr td .remove i {
+    margin: 0;
+    transform: none;
 }
 
 /*=============================
@@ -11182,8 +11215,8 @@ footer {
     border: 1px solid #ddd;
     background: var(--colorWhite);
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 5px;
+    right: 5px;
     color: var(--colorBlack);
     cursor: pointer;
     transition: all linear .3s;
@@ -11514,20 +11547,38 @@ footer {
 }
 
 .dashboard_order_table table tr td a {
-    color: var(--colorBlack);
+    color: var(--paraColor);
     text-transform: capitalize;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 5px;
-}
-
-.dashboard_order_table table tr td a svg {
-    width: 20px;
+    margin: 3px 0px;
 }
 
 .dashboard_order_table table tr td a:hover {
-    color: var(--colorPrimary);
+    color: var(--colorBlack);
+}
+
+.dashboard_order_table table tr td a.cancel_order:hover {
+    color: var(--colorRed);
+}
+
+.dashboard_order_table table tr td a.review_order:hover {
+    color: var(--themeColorTwo);
+}
+
+.dashboard_order_table table tr td a svg,
+.dashboard_order_table table tr td a i {
+    width: 20px;
+}
+
+.dashboard_order_table table tr td a.review_order svg {
+    margin-top: -2px;
+}
+
+.dashboard_invoice_footer .order_cancel_btn {
+    background: var(--colorRed) !important;
 }
 
 /* dashboard order end */
@@ -11647,6 +11698,17 @@ footer {
 .dashboard_invoice_footer h4 {
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+.dashboard_invoice_footer p {
+    margin-top: 5px;
+}
+
+.dashboard_invoice_footer p b {
+    display: inline-block;
+    font-weight: 400;
+    color: var(--colorBlack);
+    width: 70px;
 }
 
 .dashboard_invoice_footer a {
@@ -11899,6 +11961,82 @@ footer {
 }
 
 /* dashboard return request details end */
+
+
+/* dashboard order review start */
+.order_review_area .dashboard_invoice_logo_area {
+    background: var(--colorWhite);
+}
+
+.dashboard_invoice_logo_area .text a {
+    display: block;
+    padding: 7px 10px;
+    background: var(--themeColorTwo);
+    color: var(--colorWhite);
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.dashboard_invoice_logo_area .text a:hover {
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+}
+
+.invoice_table table tr td button {
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    padding: 0;
+    background: none !important;
+    border: none !important;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.invoice_table table tr td button svg {
+    width: 20px;
+    margin-right: 3px;
+    margin-top: -2px;
+    color: var(--themeColorTwo);
+}
+
+.invoice_table table tr td button:hover {
+    color: var(--themeColorTwo);
+}
+
+.rating_modal .modal-content {
+    border-radius: 12px;
+    position: relative;
+}
+
+.rating_modal .btn-close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--colorRed);
+    color: var(--colorWhite);
+    opacity: 1;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding: 0;
+    border: 1px solid var(--colorWhite);
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: none !important;
+}
+
+.rating_modal .modal-body {
+    padding: 30px;
+}
+
+/* dashboard order review end */
+
 /*===========================
     DASHBOARD END
 ===========================*/
