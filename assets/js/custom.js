@@ -74,18 +74,6 @@ $(function () {
 
         responsive: [
             {
-                breakpoint: 992,
-                settings: {
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    dots: false
-                }
-            },
-            {
                 breakpoint: 576,
                 settings: {
                     dots: false
