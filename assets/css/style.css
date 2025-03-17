@@ -5875,6 +5875,7 @@ footer {
     height: 800px;
     position: relative;
     z-index: 2;
+    opacity: 1 !important;
 }
 
 .beauty_banner_slider_small_area {
@@ -12032,7 +12033,7 @@ footer {
 }
 
 .invoice_table table tr td button {
-    color: var(--colorBlack);
+    color: var(--colorBlack) !important;
     text-transform: capitalize;
     padding: 0;
     background: none !important;
@@ -12049,7 +12050,7 @@ footer {
 }
 
 .invoice_table table tr td button:hover {
-    color: var(--themeColorTwo);
+    color: var(--themeColorTwo) !important;
 }
 
 .rating_modal .modal-content {
