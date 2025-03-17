@@ -3541,7 +3541,7 @@ footer {
     bottom: 40px;
     display: flex;
     justify-content: center;
-    z-index: 99;
+    z-index: 1;
 }
 
 .banner_2 .slick-dots li button {

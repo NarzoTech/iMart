@@ -1185,6 +1185,69 @@
     ===========================*/
 
 
+    /*===========================
+        HOME PAGE 02 START
+    ===========================*/
+    .default_home .mobile_menu_icon {
+        background: var(--themeColorTwo);
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+    }
+
+    .banner_2 {
+        margin-top: 72px;
+    }
+
+    .banner_slider_2 {
+        margin: 12px 12px 0px 12px;
+        height: 350px;
+    }
+
+    .banner_slider_2_text {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .banner_slider_2_text h1 {
+        font-size: 28px;
+    }
+
+    .banner_2 .slick-dots {
+        bottom: 20px;
+    }
+
+    .banner_2_add {
+        padding: 30px;
+        height: 350px;
+    }
+
+    .banner_2_add .text h2 {
+        font-size: 20px;
+    }
+
+    .features_item .icon {
+        width: 70px;
+        height: 70px;
+        left: -35px;
+    }
+
+    .features_item {
+        margin-left: 35px;
+    }
+
+    .features_item .text {
+        padding: 10px 10px 10px 35px;
+    }
+
+
+    /*===========================
+        HOME PAGE 02 END
+    ===========================*/
+
+
 
 
 
