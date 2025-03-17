@@ -214,21 +214,16 @@ button {
 .section_heading_2 h3 span::after {
     position: absolute;
     content: "";
-    width: 110px;
+    width: 100px;
     height: 75px;
     background: url(../images/heading_shapes.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: -7px;
     z-index: -1;
     opacity: 1;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
 }
 
 .nextArrow,
@@ -3778,6 +3773,7 @@ footer {
     padding-top: 0px;
     display: inline-flex;
     margin-left: 100px;
+    margin-top: 5px;
 }
 
 .flash_sell_2 .product_item,
@@ -3889,8 +3885,7 @@ footer {
 }
 
 .special_product_2 .section_heading_2 h3 span::after {
-    width: 135px;
-    height: 78px;
+    width: 125px;
 }
 
 .special_product_2 .special_product_banner .text {
@@ -3930,7 +3925,6 @@ footer {
 
 .trending_product_2 .section_heading_2 h3 span::after {
     width: 150px;
-    height: 75px;
 }
 
 /* trending product 2 end */
@@ -4044,7 +4038,9 @@ footer {
 
 .best_selling_product_2 .section_heading_2 h3 span::after,
 .new_arrival_2 .section_heading_2 h3 span::after {
-    width: 92px;
+    width: 90px;
+    height: 75px;
+    left: -10px;
 }
 
 .best_selling_product_item:hover img,
@@ -4168,7 +4164,7 @@ footer {
 }
 
 .brand_2 .section_heading_2 h3 span::after {
-    width: 120px;
+    width: 125px;
 }
 
 /* brand 2 end */
