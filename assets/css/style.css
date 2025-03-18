@@ -4369,6 +4369,15 @@ footer {
     max-width: 100% !important;
 }
 
+.default_home .mobile_menu_icon {
+    background: var(--themeColorTwo);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
 /*===========================
     HOME FASHION 02 END
 ===========================*/
@@ -5295,6 +5304,11 @@ footer {
 .download_text ul li a i {
     margin-right: 10px;
     font-size: 20px;
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
 }
 
 .download_text ul li:first-child a {
@@ -5582,6 +5596,15 @@ footer {
 .home_grocery .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
     background-color: var(--colorGreen);
     color: white;
+}
+
+.home_grocery .mobile_menu_icon {
+    background: var(--colorGreen);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 
 /*===========================

@@ -87,7 +87,7 @@ $(function () {
     $('.category_slider').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2500,
         dots: false,
         arrows: true,
@@ -382,8 +382,8 @@ $(function () {
             {
                 breakpoint: 576,
                 settings: {
-                    slidesToShow: 1,
-                    arrows: false
+                    slidesToShow: 2,
+                    // arrows: false
                 }
             }
         ]

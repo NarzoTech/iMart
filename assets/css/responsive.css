@@ -108,7 +108,7 @@
 
 
     /*===========================
-        HOME PAGE 02 START
+        HOME FASHION 02 START
     ===========================*/
 
     .default_home .container,
@@ -209,7 +209,7 @@
     }
 
     /*===========================
-        HOME PAGE 02 END
+        HOME FASHION 02 END
     ===========================*/
 
 
@@ -342,7 +342,7 @@
 
 
     /*===========================
-        HOME PAGE 02 START
+        HOME FASHION 02 START
     ===========================*/
     .default_home .container,
     .home_beauty .container {
@@ -451,7 +451,7 @@
     }
 
     /*===========================
-        HOME PAGE 02 END
+       HOME FASHION 02 END
     ===========================*/
 
 
@@ -669,7 +669,7 @@
 
 
     /*===========================
-        HOME PAGE 02 START
+        HOME FASHION 02 START
     ===========================*/
     .header_2 form {
         width: 100%;
@@ -794,7 +794,7 @@
     }
 
     /*===========================
-        HOME PAGE 02 END
+        HOME FASHION 02 END
     ===========================*/
 
 
@@ -1030,17 +1030,8 @@
 
 
     /*===========================
-        HOME PAGE 02 START
+        HOME FASHION 02 START
     ===========================*/
-    .default_home .mobile_menu_icon {
-        background: var(--themeColorTwo);
-        border-radius: 6px;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        -ms-border-radius: 6px;
-        -o-border-radius: 6px;
-    }
-
     .banner_2 {
         margin-top: 72px;
     }
@@ -1239,7 +1230,7 @@
     }
 
     /*===========================
-        HOME PAGE 02 END
+        HOME FASHION 02 END
     ===========================*/
 
 
@@ -1515,17 +1506,8 @@
 
 
     /*===========================
-        HOME PAGE 02 START
+        HOME FASHION 02 START
     ===========================*/
-    .default_home .mobile_menu_icon {
-        background: var(--themeColorTwo);
-        border-radius: 6px;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        -ms-border-radius: 6px;
-        -o-border-radius: 6px;
-    }
-
     .banner_2 {
         margin-top: 72px;
     }
@@ -1777,7 +1759,7 @@
     }
 
     /*===========================
-        HOME PAGE 02 END
+        HOME FASHION 02 END
     ===========================*/
 
 }
@@ -2030,7 +2012,7 @@
     }
 
     .special_product_text {
-        width: 51%;
+        width: 60%;
     }
 
     .blog_img {
@@ -2043,17 +2025,8 @@
 
 
     /*===========================
-        HOME PAGE 02 START
+        HOME FASHION 02 START
     ===========================*/
-    .default_home .mobile_menu_icon {
-        background: var(--themeColorTwo);
-        border-radius: 6px;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        -ms-border-radius: 6px;
-        -o-border-radius: 6px;
-    }
-
     .banner_2 {
         margin-top: 72px;
     }
@@ -2244,7 +2217,150 @@
     }
 
     /*===========================
-        HOME PAGE 02 END
+        HOME FASHION 02 END
+    ===========================*/
+
+
+    /*===========================
+        HOME GROCERY START
+    ===========================*/
+    .grocery_banner {
+        height: auto;
+        padding: 170px 0px 100px 0px;
+    }
+
+    .grocery_banner .grocery_banner_text h1 {
+        font-size: 32px;
+    }
+
+    .home_grocery .slider_padding {
+        padding: 0;
+    }
+
+    .home_grocery .prevArrow.slick-arrow {
+        left: 0;
+    }
+
+    .home_grocery .slick-arrow.nextArrow {
+        right: 0;
+    }
+
+    .home_grocery .category_item {
+        padding: 30px 10px;
+    }
+
+    .home_grocery .add_banner_item_text {
+        padding: 30px;
+        width: 83%;
+    }
+
+    .home_grocery .add_banner_item_text h2 {
+        font-size: 30px;
+    }
+
+    .home_grocery .pws_tabs_container ul.pws_tabs_controll {
+        gap: 10px 25px;
+    }
+
+    .home_grocery .pws_tabs_container ul.pws_tabs_controll li a::after {
+        right: -15px;
+    }
+
+    .grocery_product_img {
+        height: auto;
+    }
+
+    .grocery_product_text p {
+        font-size: 14px;
+    }
+
+    .grocery_product_text {
+        padding: 0px 10px 15px 10px;
+    }
+
+    .grocery_countdown_text {
+        padding-right: 0;
+    }
+
+    .grocery_countdown_text .simply-countdown .simply-amount {
+
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 26px;
+    }
+
+    .grocery_best_sell .slick-arrow.nextArrow,
+    .grocery_best_sell .prevArrow.slick-arrow {
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
+
+    .grocery_brand .brand_marquee ul {
+        gap: 20px !important;
+    }
+
+    .home_grocery .special_product_banner {
+        height: auto;
+    }
+
+    .farming_text p {
+        max-width: 100%;
+    }
+
+    .farming::after {
+        width: 60px;
+        height: 60px;
+        top: 20px;
+    }
+
+    .farming_text {
+        margin-bottom: 25px;
+    }
+
+    .farming_img {
+        height: auto;
+    }
+
+    .download_img {
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .download_text ul li a {
+        padding: 10px 20px;
+    }
+
+    .download_text {
+        margin-bottom: -10px;
+    }
+
+    .testimonial_item {
+        padding: 25px;
+    }
+
+    .blog_grocery .blog_img {
+        height: auto;
+    }
+
+    .footer_grocery .footer_info {
+        padding: 15px 15px 25px 15px;
+    }
+
+    .footer_grocery .footer_info_item .icon {
+        width: 55px;
+        height: 55px;
+        margin-right: 10px;
+        padding: 5px;
+    }
+
+
+    /*===========================
+        HOME GROCERY END
     ===========================*/
 
 
