@@ -3908,6 +3908,7 @@ footer {
 
 .trending_product_2 ul.pws_tabs_controll {
     gap: 5px;
+    top: -53px;
 }
 
 .trending_product_2 ul.pws_tabs_controll li a.pws_tab_active {
@@ -4362,6 +4363,10 @@ footer {
 
 .default_home .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
     background-color: var(--themeColorTwo);
+}
+
+.default_home .product_item .color {
+    max-width: 100% !important;
 }
 
 /*===========================
