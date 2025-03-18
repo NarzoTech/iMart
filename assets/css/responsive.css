@@ -213,11 +213,22 @@
     ===========================*/
 
 
+    /*===========================
+        HOME GROCERY START
+    ===========================*/
+    .home_grocery .special_product_text {
+        width: 60%;
+    }
+
+    .farming_img {
+        height: 255px;
+    }
 
 
 
-
-
+    /*===========================
+        HOME GROCERY END
+    ===========================*/
 
 
 
@@ -455,6 +466,55 @@
     ===========================*/
 
 
+    /*===========================
+        HOME GROCERY START
+    ===========================*/
+    .add_banner_item_text {
+        width: 70%;
+    }
+
+    .grocery_product_img {
+        height: 260px;
+    }
+
+    .grocery_best_sell .special_product_banner {
+        height: 412px;
+    }
+
+    .grocery_brand .brand_marquee ul {
+        gap: 60px !important;
+        margin-right: 60px !important;
+    }
+
+    .home_grocery .special_product_text {
+        width: 65%;
+    }
+
+    .farming_text p {
+        max-width: 100%;
+    }
+
+    .download_img {
+        height: 425px;
+    }
+
+    .blog_grocery .blog_img {
+        height: 225px;
+    }
+
+    .footer_grocery .footer_info_item .icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .farming_img {
+        height: 220px;
+    }
+
+    /*===========================
+        HOME GROCERY END
+    ===========================*/
 
 
 
@@ -798,6 +858,109 @@
     ===========================*/
 
 
+    /*===========================
+        HOME GROCERY START
+    ===========================*/
+    .grocery_banner .grocery_banner_text h1 {
+        font-size: 50px;
+    }
+
+    .home_grocery .slider_padding {
+        padding: 0px 50px;
+    }
+
+    .home_grocery .slick-arrow.nextArrow,
+    .home_grocery .prevArrow.slick-arrow {
+        right: -40px;
+    }
+
+    .home_grocery .prevArrow.slick-arrow {
+        left: -40px;
+    }
+
+    .home_grocery .category_item {
+        padding: 30px 15px;
+    }
+
+    .add_banner_item_text {
+        width: 75%;
+    }
+
+    .add_banner_item_text h2 {
+        font-size: 34px;
+    }
+
+    .grocery_product_img {
+        height: 290px;
+    }
+
+    .grocery_countdown_text {
+        padding-right: 0;
+    }
+
+    .grocery_best_sell .slick-arrow.nextArrow,
+    .grocery_best_sell .prevArrow.slick-arrow {
+        right: 12px !important;
+    }
+
+    .grocery_best_sell .prevArrow.slick-arrow {
+        left: auto !important;
+        right: 70px !important;
+    }
+
+    .grocery_brand .brand_marquee ul {
+        gap: 50px !important;
+        margin-right: 50px !important;
+    }
+
+    .farming_text p {
+        max-width: 100%;
+    }
+
+    .farming_img {
+        height: 180px;
+    }
+
+    .download_img {
+        height: 355px;
+    }
+
+    .blog_grocery .blog_img {
+        height: 190px;
+    }
+
+    .footer_grocery .footer_info_item .icon {
+        width: 55px;
+        height: 55px;
+        margin-right: 10px;
+    }
+
+    .grocery_best_sell .special_product_banner {
+        height: 445px;
+    }
+
+    .footer_grocery .footer_info {
+        padding: 25px;
+    }
+
+    .footer_grocery .footer_info_item .text h3 {
+        font-size: 16px;
+    }
+
+    .home_grocery .special_product_text {
+        width: 57%;
+    }
+
+    /*===========================
+        HOME GROCERY END
+    ===========================*/
+
+
+
+
+
+
+
 
 }
 
@@ -994,7 +1157,7 @@
     }
 
     .special_product_text {
-        width: 54%;
+        width: 58%;
     }
 
     .blog_img {
@@ -1231,6 +1394,108 @@
 
     /*===========================
         HOME FASHION 02 END
+    ===========================*/
+
+
+    /*===========================
+        HOME GROCERY START
+    ===========================*/
+    .grocery_banner .grocery_banner_text h1 {
+        font-size: 46px;
+    }
+
+    .grocery_banner {
+        padding-top: 65px;
+    }
+
+    .home_grocery .slider_padding {
+        padding: 0;
+    }
+
+    .home_grocery .category_item {
+        padding: 30px 10px;
+    }
+
+    .home_grocery .add_banner_item_text {
+        width: 60%;
+    }
+
+    .section_heading h3,
+    .section_heading h3 span {
+        font-size: 32px;
+    }
+
+    .home_grocery .pws_tabs_container ul.pws_tabs_controll {
+        gap: 10px 30px;
+    }
+
+    .home_grocery .pws_tabs_container ul.pws_tabs_controll li a::after {
+        right: -18px;
+    }
+
+    .grocery_product_img {
+        height: 215px;
+    }
+
+    .grocery_product_text p {
+        font-size: 16px;
+    }
+
+    .grocery_countdown_text {
+        padding-right: 0;
+    }
+
+    .home_grocery .special_product_banner .text {
+        padding: 50px 25px;
+    }
+
+    .grocery_best_sell .special_product_banner .text h3 {
+        font-size: 22px;
+    }
+
+    .grocery_best_sell .special_product_banner {
+        height: 365px;
+    }
+
+    .grocery_brand .brand_marquee ul {
+        gap: 50px !important;
+        margin-right: 50px !important;
+    }
+
+    .farming::after {
+        width: 80px;
+        height: 83px;
+        top: 20px;
+    }
+
+    .farming_img {
+        height: 240px;
+    }
+
+    .farming_text {
+        padding-bottom: 12px;
+    }
+
+    .download_img {
+        height: 260px;
+    }
+
+    .blog_grocery .blog_img {
+        height: 215px;
+    }
+
+    .footer_grocery .footer_info {
+        padding: 30px 30px 40px 30px;
+    }
+
+    .footer_grocery .footer_info_item .icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    /*===========================
+        HOME GROCERY END
     ===========================*/
 
 
@@ -1471,7 +1736,7 @@
     }
 
     .special_product_text {
-        width: 65%;
+        width: 72%;
     }
 
     .blog_img {
@@ -1761,6 +2026,128 @@
     /*===========================
         HOME FASHION 02 END
     ===========================*/
+
+
+    /*===========================
+        HOME GROCERY START
+    ===========================*/
+    .grocery_banner {
+        height: auto;
+        padding: 170px 0px 100px 0px;
+    }
+
+    .grocery_banner .grocery_banner_text h1 {
+        font-size: 42px;
+    }
+
+    .home_grocery .slider_padding {
+        padding: 0;
+    }
+
+    .home_grocery .category_item {
+        padding: 25px 10px;
+    }
+
+    .home_grocery .add_banner_item_text {
+        width: 70%;
+    }
+
+    .home_grocery .add_banner_item_text h2 {
+        font-size: 32px;
+    }
+
+    .home_grocery .pws_tabs_container ul.pws_tabs_controll {
+        position: initial;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .grocery_product_img {
+        height: 245px;
+    }
+
+    .grocery_countdown_text {
+        padding-right: 0;
+    }
+
+    .grocery_brand .brand_marquee ul {
+        gap: 15px !important;
+        margin-right: 15px;
+    }
+
+    .grocery_brand .brand_marquee ul li {
+        width: 100px;
+        height: 100px;
+    }
+
+    .farming::after {
+        width: 70px;
+        height: 73px;
+        top: 25px;
+    }
+
+    .farming_img {
+        height: 175px;
+    }
+
+    .farming_text {
+        padding-bottom: 12px;
+    }
+
+    .download_img {
+        height: 485px;
+        margin-bottom: 25px;
+    }
+
+    .blog_grocery .blog_img {
+        height: 330px;
+    }
+
+    .footer_grocery .footer_info {
+        padding: 20px 20px 30px 20px;
+    }
+
+    .footer_grocery .footer_info_item .icon {
+        width: 55px;
+        height: 55px;
+        margin-right: 10px;
+    }
+
+    .footer_grocery .footer_copyright {
+        margin-top: 95px !important;
+    }
+
+    .home_grocery .slick-arrow.nextArrow {
+        right: -10px;
+    }
+
+    .home_grocery .prevArrow.slick-arrow {
+        left: -10px;
+    }
+
+    .grocery_best_sell .slick-arrow.nextArrow,
+    .grocery_best_sell .prevArrow.slick-arrow {
+        top: 50%;
+        transform: translatey(-50%);
+        -webkit-transform: translatey(-50%);
+        -moz-transform: translatey(-50%);
+        -ms-transform: translatey(-50%);
+        -o-transform: translatey(-50%);
+    }
+
+    .grocery_product_text p {
+        font-size: 16px;
+    }
+
+    /*===========================
+        HOME GROCERY END
+    ===========================*/
+
+
+
+
+
+
 
 }
 
@@ -2319,7 +2706,7 @@
     }
 
     .farming_text {
-        margin-bottom: 25px;
+        padding-bottom: 12px;
     }
 
     .farming_img {
@@ -2357,7 +2744,6 @@
         margin-right: 10px;
         padding: 5px;
     }
-
 
     /*===========================
         HOME GROCERY END
