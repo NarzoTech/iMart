@@ -3228,11 +3228,11 @@ footer {
     -o-transition: all linear .3s;
 }
 
-.main_menu_2 .menu_icon li:hover a.user b {
+.default_home .menu_icon li:hover a.user b {
     border-color: var(--themeColorTwo);
 }
 
-.main_menu_2 .menu_icon li:hover a.user h5 {
+.default_home .menu_icon li:hover a.user h5 {
     color: var(--themeColorTwo);
 }
 
@@ -4788,7 +4788,7 @@ footer {
 .grocery_product_text p {
     text-align: center;
     font-family: var(--headingFont);
-    font-weight: 700;
+    font-weight: 600;
     color: var(--colorGreen);
     margin-top: 5px;
     margin-bottom: 20px;
@@ -5016,7 +5016,7 @@ footer {
 
 .grocery_best_sell .prevArrow.slick-arrow {
     left: auto;
-    right: 70px;
+    right: 60px;
 }
 
 /* grocery best sell end */
@@ -5086,6 +5086,10 @@ footer {
 .home_grocery .special_product_banner .text .black_btn {
     background: var(--colorWhite);
     color: var(--colorGreen);
+}
+
+.home_grocery .special_product_banner .text .black_btn:hover {
+    color: var(--colorWhite);
 }
 
 .home_grocery .special_product_banner {
@@ -5764,7 +5768,7 @@ footer {
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    height: 890px;
+    height: 880px;
 }
 
 .beauty_banner_slider_item div {
@@ -5776,7 +5780,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding-top: 35px;
+    padding-top: 55px;
 }
 
 .beauty_banner_text h4 {
@@ -5876,10 +5880,10 @@ footer {
     position: absolute;
     content: "";
     width: 700px;
-    height: 640px;
+    height: 700px;
     background: #b4a182;
     bottom: 0;
-    left: -55px;
+    left: -25px;
     z-index: -1;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -5892,11 +5896,10 @@ footer {
     background: none;
     border: 1px solid #dddddd96;
     bottom: -40px;
-    left: -60px;
 }
 
 .beauty_banner_img .img {
-    height: 800px;
+    height: 780px;
     position: relative;
     z-index: 2;
     opacity: 1 !important;
@@ -5978,7 +5981,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 10px 5px;
 }
 
 .beauty_category_item h4 span {
@@ -6004,7 +6007,7 @@ footer {
 .beauty_category .prevArrow {
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 10px;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -6014,7 +6017,7 @@ footer {
 
 .beauty_category .prevArrow {
     right: auto;
-    left: 0;
+    left: 10px;
 }
 
 .beauty_category .beauty_category_slider {
@@ -6153,6 +6156,8 @@ footer {
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
     z-index: 99;
+    min-width: 130px;
+    text-align: center;
 }
 
 .beauty_product_item:hover .img .common_btn {
@@ -6206,11 +6211,11 @@ footer {
 .beauty_featured_products .prevArrow {
     position: absolute;
     top: -80px;
-    right: 0;
+    right: 10px;
 }
 
 .beauty_featured_products .prevArrow {
-    right: 50px;
+    right: 65px;
 }
 
 .beauty_product_item:hover .img img {
@@ -6235,8 +6240,8 @@ footer {
 }
 
 .beauty_features_item .icon {
-    width: 79px;
-    height: 78px;
+    width: 80px;
+    height: 80px;
     padding: 5px;
     margin: 0 auto;
     background: #ffffff;
@@ -6612,6 +6617,12 @@ footer {
 
 
 /* beauty footer start */
+.beauty_footer {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
 .beauty_footer .footer_link h3 {
     color: var(--colorBlack);
 }
@@ -6674,6 +6685,16 @@ footer {
 }
 
 /* beauty footer end */
+
+.home_beauty .mobile_menu_icon {
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+}
+
+.home_beauty .view_all_btn_area {
+    max-height: 55px;
+}
+
 /*===========================
     HOME BEAUTY END
 ===========================*/

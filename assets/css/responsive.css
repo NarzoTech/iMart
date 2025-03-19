@@ -66,6 +66,47 @@
         width: 100%;
     }
 
+    .beauty_featured_products .beauty_product_item .img {
+        height: 365px;
+    }
+
+    .beauty_featured_products_banner {
+        height: 580px;
+    }
+
+    .beauty_product_item .img {
+        height: 325px;
+    }
+
+    .beauty_add_large .text {
+        max-width: 80%;
+    }
+
+    .beauty_add_large,
+    .beauty_add_video {
+        height: 400px;
+    }
+
+    .beauty_add_large .text h2 {
+        font-size: 32px;
+    }
+
+    .beauty_countdown_banner,
+    .beauty_countdown_area {
+        height: 600px;
+    }
+
+    .beauty_instagran_photo_item {
+        height: 220px;
+    }
+
+
+
+
+
+
+
+
 
 
 
@@ -224,13 +265,88 @@
         height: 255px;
     }
 
-
-
     /*===========================
         HOME GROCERY END
     ===========================*/
 
 
+    /*===========================
+        HOME BEAUTY START
+    ===========================*/
+    .menu_icon li .user_dropdown {
+        left: 0;
+    }
+
+    .menu_icon li .user_dropdown::after {
+        left: 53px;
+    }
+
+    .beauty_banner_text h1 {
+        font-size: 62px;
+    }
+
+    .beauty_banner_img .img {
+        height: 720px;
+    }
+
+    .beauty_banner_img::before,
+    .beauty_banner_img::after {
+        width: 615px;
+        height: 615px;
+        bottom: 25px;
+    }
+
+    .beauty_banner_img::after {
+        bottom: -10px;
+    }
+
+    .beauty_featured_products .beauty_product_item .img {
+        height: 320px;
+    }
+
+    .beauty_featured_products_banner {
+        height: 535px;
+    }
+
+    .beauty_product_item .img {
+        height: 360px;
+    }
+
+    .beauty_add_large .text {
+        padding: 40px;
+        max-width: 85%;
+    }
+
+    .beauty_add_large .text h2,
+    .beauty_add_video_text h2 {
+        font-size: 32px;
+    }
+
+    .beauty_add_large,
+    .beauty_add_video {
+        height: 375px;
+    }
+
+    .beauty_countdown_area .text {
+        max-width: 70%;
+    }
+
+    .beauty_countdown_banner .text h2 {
+        font-size: 32px;
+    }
+
+    .beauty_countdown_banner,
+    .beauty_countdown_area {
+        height: 560px;
+    }
+
+    .beauty_instagran_photo_item {
+        height: 220px;
+    }
+
+    /*===========================
+        HOME BEAUTY END
+    ===========================*/
 
 }
 
@@ -517,6 +633,110 @@
     ===========================*/
 
 
+    /*===========================
+        HOME BEAUTY START
+    ===========================*/
+    .menu_icon li .user_dropdown {
+        left: auto;
+        right: -20px;
+    }
+
+    .menu_icon li .user_dropdown::after {
+        left: auto;
+        right: 29px;
+    }
+
+    .beauty_banner_text h1 {
+        font-size: 54px;
+    }
+
+    .beauty_banner_img .img {
+        height: 610px;
+    }
+
+    .beauty_banner_img::before,
+    .beauty_banner_img::after {
+        width: 530px;
+        height: 530px;
+        bottom: 170px;
+    }
+
+    .beauty_featured_products .beauty_product_item .img {
+        height: 270px;
+    }
+
+    .beauty_featured_products_banner {
+        height: 480px;
+    }
+
+    .beauty_banner_img::after {
+        bottom: 130px;
+    }
+
+    .beauty_product_item .img {
+        height: 305px;
+    }
+
+    .beauty_add_large .text {
+        padding: 40px;
+        max-width: 90%;
+    }
+
+    .beauty_add_large .text h2 {
+        font-size: 28px;
+    }
+
+    .beauty_add_large,
+    .beauty_add_video {
+        height: 350px;
+    }
+
+    .beauty_add_video_text h2 {
+        font-size: 28px;
+    }
+
+    .beauty_countdown_area .text {
+        padding: 35px;
+        max-width: 70%;
+    }
+
+    .beauty_countdown_area .text h2 {
+        font-size: 38px;
+    }
+
+    .beauty_countdown_area .text p {
+        max-width: 100%;
+    }
+
+    .beauty_countdown_banner,
+    .beauty_countdown_area {
+        height: 530px;
+    }
+
+    .beauty_countdown_banner .text {
+        padding: 35px;
+    }
+
+    .beauty_countdown_banner .text h2 {
+        font-size: 28px;
+    }
+
+    .beauty_instagran_photo_item {
+        height: 220px;
+    }
+
+    /*===========================
+        HOME BEAUTY END
+    ===========================*/
+
+
+
+
+
+
+
+
+
 
 
 }
@@ -778,14 +998,6 @@
         height: 265px;
     }
 
-
-    .flash_sell .nextArrow,
-    .flash_sell .prevArrow,
-    .category .nextArrow,
-    .category .prevArrow {
-        /* right: 3px; */
-    }
-
     .default_home .container,
     .home_beauty .container {
         max-width: 960px;
@@ -905,7 +1117,7 @@
 
     .grocery_best_sell .prevArrow.slick-arrow {
         left: auto !important;
-        right: 70px !important;
+        right: 60px !important;
     }
 
     .grocery_brand .brand_marquee ul {
@@ -951,9 +1163,151 @@
         width: 57%;
     }
 
+    .farming::after {
+        width: 90px;
+        height: 93px;
+        top: 30px;
+    }
+
+    .download_text {
+        padding-right: 0;
+        margin-left: 30px;
+    }
+
     /*===========================
         HOME GROCERY END
     ===========================*/
+
+
+    /*===========================
+        HOME BEAUTY START
+    ===========================*/
+    .beauty_banner_text h1 {
+        font-size: 50px;
+    }
+
+    .beauty_banner_img .img {
+        height: 575px;
+    }
+
+    .beauty_banner_img::before,
+    .beauty_banner_img::after {
+        width: 500px;
+        height: 500px;
+        bottom: 135px;
+        left: -35px;
+    }
+
+    .beauty_banner_img::after {
+        bottom: 100px;
+    }
+
+    .beauty_banner_slider_item {
+        height: 820px;
+    }
+
+    .beauty_banner_text p {
+        max-width: 90%;
+    }
+
+    .beauty_featured_products .beauty_product_item .img {
+        height: 350px;
+    }
+
+    .beauty_featured_products_banner .text h2 {
+        font-size: 28px;
+    }
+
+    .beauty_featured_products_banner .text {
+        padding: 25px;
+    }
+
+    .beauty_featured_products_banner {
+        height: 565px;
+    }
+
+    .beauty_product_item .img {
+        height: 350px;
+    }
+
+    .beauty_add_large .text {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .beauty_add_large .text h2 {
+        font-size: 26px;
+    }
+
+    .beauty_add_large,
+    .beauty_add_video {
+        height: 350px;
+    }
+
+    .beauty_add_video_text h2 {
+        font-size: 26px;
+    }
+
+    .beauty_countdown_area .text {
+        padding: 35px;
+        max-width: 80%;
+    }
+
+    .beauty_countdown_area .text h2 {
+        font-size: 38px;
+    }
+
+    .beauty_countdown_area .text p {
+        max-width: 90%;
+    }
+
+    .beauty_countdown_banner .text {
+        padding: 35px;
+    }
+
+    .beauty_countdown_banner .text h2 {
+        font-size: 24px;
+    }
+
+    .beauty_countdown_banner,
+    .beauty_countdown_area {
+        height: 510px;
+    }
+
+    .beauty_instagran_photo_item {
+        height: 215px;
+    }
+
+    .beauty_footer .footer_2_logo_area ul li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .beauty_footer .footer_logo_area p {
+        margin-bottom: 20px;
+    }
+
+    .menu_icon li .user_dropdown {
+        left: auto;
+        right: -20px;
+    }
+
+    .menu_icon li .user_dropdown::after {
+        left: auto;
+        right: 25px;
+    }
+
+    /*===========================
+        HOME BEAUTY END
+    ===========================*/
+
+
+
+
+
+
 
 
 
@@ -1494,9 +1848,225 @@
         margin-right: 10px;
     }
 
+    .home_grocery .slick-arrow.nextArrow {
+        right: -10px;
+    }
+
+    .home_grocery .prevArrow.slick-arrow {
+        left: -10px;
+    }
+
+    .grocery_best_sell .slick-arrow.nextArrow {
+        right: 12px;
+    }
+
+    .grocery_best_sell .prevArrow.slick-arrow {
+        left: auto;
+    }
+
+    .download_text {
+        padding-right: 0;
+        margin-left: 30px;
+    }
+
     /*===========================
         HOME GROCERY END
     ===========================*/
+
+
+    /*===========================
+        HOME BEAUTY START
+    ===========================*/
+    .home_beauty .main_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        line-height: 60px;
+    }
+
+    .home_beauty .main_menu .grocery_logo_area {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .beauty_banner_text {
+        padding: 0px 12px;
+        margin-bottom: 25px;
+        margin-top: 215px;
+    }
+
+    .beauty_banner_text h4 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .beauty_banner_text ul {
+        gap: 20px;
+    }
+
+    .beauty_banner_img .img {
+        height: 515px;
+        width: 420px;
+    }
+
+    .beauty_banner_img::before,
+    .beauty_banner_img::after {
+        width: 500px;
+        height: 500px;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+    .beauty_banner_img::after {
+        bottom: -48px;
+    }
+
+    .beauty_banner_slider_item {
+        height: auto;
+    }
+
+    .beauty_featured_products_banner {
+        height: 590px;
+        margin-bottom: 25px;
+    }
+
+    .section_heading_beauty h5 {
+        font-size: 18px;
+    }
+
+    .section_heading_beauty h3 {
+        font-size: 32px;
+    }
+
+    .beauty_featured_products .beauty_product_item .img {
+        height: 255px;
+    }
+
+    .beauty_product_item .img {
+        height: 255px;
+    }
+
+    .beauty_category .beauty_category_slider {
+        padding: 0;
+    }
+
+    .beauty_category_item .img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .beauty_add_large .text {
+        max-width: 60%;
+    }
+
+    .beauty_add_large {
+        height: 400px;
+    }
+
+    .beauty_add_video {
+        height: 400px;
+    }
+
+    .beauty_trending_product .pws_tabs_container ul.pws_tabs_controll li a {
+        padding: 4px 13px;
+        font-size: 13px;
+    }
+
+    .beauty_features_item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 20px;
+        padding: 25px 0px 0px 0px;
+        border: none;
+    }
+
+    .beauty_features_item .icon {
+        width: 65px;
+        height: 65px;
+        margin: 0;
+    }
+
+    .beauty_features_item .text h3 {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .beauty_features_item .text p {
+        text-align: left;
+    }
+
+    .beauty_features {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+    .beauty_countdown_banner {
+        height: 500px;
+    }
+
+    .beauty_countdown_area {
+        height: 500px;
+    }
+
+    .beauty_countdown_banner .text h2 {
+        font-size: 24px;
+    }
+
+    .beauty_countdown_area .text h2 {
+        font-size: 32px;
+    }
+
+    .beauty_countdown_area .text {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .beauty_countdown_area .text p {
+        max-width: 100%;
+    }
+
+    .beauty_instagran_photo_item {
+        height: 210px;
+    }
+
+    .beauty_footer .footer_copyright {
+        margin-top: 85px !important;
+    }
+
+    .home_beauty .view_all_btn_area {
+        max-height: 50px;
+    }
+
+    .beauty_countdown_banner .text {
+        padding: 50px 25px;
+    }
+
+    .beauty_footer .footer_copyright .payment {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .beauty_footer .footer_logo_area span {
+        margin-bottom: 10px;
+    }
+
+    /*===========================
+        HOME BEAUTY END
+    ===========================*/
+
+
+
+
+
+
+
+
 
 
 }
@@ -1554,13 +2124,6 @@
         max-height: 60px;
     }
 
-    /* .nextArrow,
-    .prevArrow {
-        background: none !important;
-        border: none !important;
-        color: var(--colorBlack) !important;
-    } */
-
     .flash_sell .nextArrow,
     .flash_sell .prevArrow,
     .category .nextArrow,
@@ -1591,10 +2154,6 @@
 
     .category_item {
         padding: 15px 10px;
-    }
-
-    .product_item .rating span {
-        /* display: none; */
     }
 
     .product_item .product_text {
@@ -1673,10 +2232,6 @@
 
     .bundle_product .product_item .product_img {
         height: 245px;
-    }
-
-    .special_product_banner .text h3 {
-        /* font-size: 26px; */
     }
 
     .brand .brand_marquee ul li {
@@ -1791,35 +2346,12 @@
         font-size: 32px;
     }
 
-    .banner_2 .slick-dots {
-        /* bottom: 20px; */
-    }
-
-    /* .banner_2_add {
-        padding: 30px;
-        height: 350px;
-    } */
-
     .banner_2_add .text {
         width: 80%;
     }
 
     .banner_2_add .text h2 {
         font-size: 32px;
-    }
-
-    .features_item .icon {
-        /* width: 70px; */
-        /* height: 70px; */
-        /* left: -35px; */
-    }
-
-    .features_item {
-        /* margin-left: 35px; */
-    }
-
-    .features_item .text {
-        /* padding: 10px 10px 10px 35px; */
     }
 
     .flash_sell_2 .simply-amount {
@@ -1849,10 +2381,6 @@
 
     .special_product_2 .special_product_banner {
         height: 650px;
-    }
-
-    .special_product_2 .special_product_banner .text {
-        /* padding: 35px; */
     }
 
     .special_product_img {
@@ -1921,7 +2449,6 @@
 
     .brand_2 ul li {
         width: 31%;
-        /* max-height: 90px; */
     }
 
     .brand_2 ul li a {
@@ -2118,11 +2645,11 @@
     }
 
     .home_grocery .slick-arrow.nextArrow {
-        right: -10px;
+        right: -8px;
     }
 
     .home_grocery .prevArrow.slick-arrow {
-        left: -10px;
+        left: -8px;
     }
 
     .grocery_best_sell .slick-arrow.nextArrow,
@@ -2142,6 +2669,211 @@
     /*===========================
         HOME GROCERY END
     ===========================*/
+
+
+    /*===========================
+        HOME BEAUTY START
+    ===========================*/
+    .home_beauty .main_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        line-height: 60px;
+    }
+
+    .home_beauty .main_menu .grocery_logo_area {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .beauty_banner_text {
+        padding: 0px 12px;
+        margin-bottom: 50px;
+        margin-top: 215px;
+    }
+
+    .beauty_banner_text h1 {
+        font-size: 52px;
+    }
+
+    .beauty_banner_text h4 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .beauty_banner_text p {
+        max-width: 100%;
+    }
+
+    .beauty_banner_text ul {
+        gap: 20px;
+    }
+
+    .beauty_banner_img .img {
+        height: 430px;
+        width: 350px;
+    }
+
+    .beauty_banner_img::before,
+    .beauty_banner_img::after {
+        width: 400px;
+        height: 400px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+    .beauty_banner_img::after {
+        bottom: -25px;
+    }
+
+    .beauty_banner_slider_item {
+        height: auto;
+    }
+
+    .beauty_featured_products_banner {
+        height: 590px;
+        margin-bottom: 25px;
+    }
+
+    .section_heading_beauty h5 {
+        font-size: 18px;
+    }
+
+    .section_heading_beauty h3 {
+        font-size: 24px;
+    }
+
+    .beauty_featured_products .beauty_product_item .img {
+        height: 290px;
+    }
+
+    .beauty_product_item .img {
+        height: 290px;
+    }
+
+    .beauty_category .beauty_category_slider {
+        padding: 0;
+    }
+
+    .beauty_category_item .img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .beauty_add_large .text {
+        max-width: 75%;
+    }
+
+    .beauty_add_large .text h2 {
+        font-size: 32px;
+    }
+
+    .beauty_add_large {
+        height: 360px;
+    }
+
+    .beauty_add_video {
+        height: 360px;
+    }
+
+    .beauty_trending_product .pws_tabs_container ul.pws_tabs_controll li a {
+        padding: 0 2px;
+        border: none;
+        color: var(--colorBlack);
+    }
+
+    .beauty_trending_product .pws_tabs_container ul.pws_tabs_controll li a.pws_tab_active {
+        color: var(--colorOlive);
+        background: none;
+    }
+
+    .beauty_product_item .img .discount_list li {
+        padding: 2px 7px;
+        font-size: 12px;
+    }
+
+    .beauty_features_item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 20px;
+        padding: 25px 0px 0px 0px;
+        border: none;
+    }
+
+    .beauty_features_item .icon {
+        width: 65px;
+        height: 65px;
+        margin: 0;
+    }
+
+    .beauty_features_item .text h3 {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .beauty_features_item .text p {
+        text-align: left;
+    }
+
+    .beauty_features {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+    .beauty_countdown_banner {
+        height: 650px;
+    }
+
+    .beauty_countdown_area {
+        height: 530px;
+    }
+
+    .beauty_countdown_banner .text h2,
+    .beauty_countdown_area .text h2 {
+        font-size: 38px;
+    }
+
+    .beauty_countdown_area .text {
+        padding: 50px 25px;
+        max-width: 100%;
+    }
+
+    .beauty_countdown_area .text p {
+        max-width: 100%;
+    }
+
+    .beauty_instagran_photo_item {
+        height: 210px;
+    }
+
+    .beauty_footer .footer_copyright {
+        margin-top: 75px !important;
+    }
+
+    .home_beauty .view_all_btn_area {
+        max-height: 45px;
+    }
+
+    /*===========================
+        HOME BEAUTY END
+    ===========================*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2264,7 +2996,6 @@
     }
 
     .product_item .price {
-
         font-size: 14px;
     }
 
@@ -2748,6 +3479,238 @@
     /*===========================
         HOME GROCERY END
     ===========================*/
+
+
+    /*===========================
+        HOME BEAUTY START
+    ===========================*/
+    .home_beauty .main_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        line-height: 60px;
+    }
+
+    .home_beauty .main_menu .grocery_logo_area {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .beauty_banner_text {
+        padding: 0px 12px;
+        margin-bottom: 50px;
+        margin-top: 215px;
+    }
+
+    .beauty_banner_text h1 {
+        font-size: 36px;
+    }
+
+    .beauty_banner_text h4 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .beauty_banner_text p {
+        max-width: 100%;
+    }
+
+    .beauty_banner_text ul li {
+        border-right: 0;
+        width: 100%;
+    }
+
+    .beauty_banner_text ul li b {
+        width: auto;
+    }
+
+    .beauty_banner_text ul {
+        gap: 20px;
+    }
+
+    .beauty_banner_img .img {
+        height: auto;
+        width: 305px;
+    }
+
+    .beauty_banner_img::before,
+    .beauty_banner_img::after {
+        width: 350px;
+        height: 350px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+    .beauty_banner_img::after {
+        bottom: -25px;
+    }
+
+    .beauty_banner_slider_item {
+        height: auto;
+    }
+
+    .beauty_featured_products_banner {
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .section_heading_beauty h5 {
+        font-size: 18px;
+    }
+
+    .section_heading_beauty h3 {
+        font-size: 24px;
+    }
+
+    .beauty_featured_products .beauty_product_item .img {
+        height: auto;
+    }
+
+    .beauty_product_item .img {
+        height: auto;
+    }
+
+    .beauty_product_item .text .rating span {
+        display: none;
+    }
+
+    .beauty_category .beauty_category_slider {
+        padding: 0;
+    }
+
+    .beauty_category_item .img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .beauty_product_item .text .price {
+        font-size: 16px;
+    }
+
+    .beauty_add_large .text {
+        padding: 30px;
+        max-width: 80%;
+    }
+
+    .beauty_add_large .text h2 {
+        font-size: 26px;
+    }
+
+    .beauty_add_large {
+        height: 300px;
+    }
+
+    .beauty_add_large .text h4 {
+        font-size: 18px;
+    }
+
+    .beauty_add_video {
+        height: 360px;
+    }
+
+    .beauty_trending_product .pws_tabs_container ul.pws_tabs_controll li a {
+        padding: 5px 5px;
+        border: none;
+    }
+
+    .beauty_trending_product .pws_tabs_container ul.pws_tabs_controll li a.pws_tab_active {
+        color: var(--colorOlive);
+        background: none;
+    }
+
+    .beauty_product_item .img .discount_list li {
+        padding: 2px 7px;
+        font-size: 12px;
+    }
+
+    .beauty_features_item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 20px;
+        padding: 25px 0px 0px 0px;
+        border: none;
+    }
+
+    .beauty_features_item .icon {
+        width: 65px;
+        height: 65px;
+        margin: 0;
+    }
+
+    .beauty_features_item .text h3 {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .beauty_features_item .text p {
+        text-align: left;
+    }
+
+    .beauty_features {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+    .beauty_countdown_banner .text {
+        padding: 50px 25px;
+    }
+
+    .beauty_countdown_banner,
+    .beauty_countdown_area {
+        height: auto;
+    }
+
+    .beauty_countdown_banner .text h2,
+    .beauty_countdown_area .text h2 {
+        font-size: 26px;
+    }
+
+    .beauty_countdown_area .text {
+        padding: 50px 25px;
+        max-width: 100%;
+    }
+
+    .beauty_countdown_area .text p {
+        max-width: 100%;
+    }
+
+    .beauty_countdown_area .simply-amount {
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        font-size: 26px;
+    }
+
+    .beauty_instagran_photo_item {
+        height: 200px;
+    }
+
+    .beauty_footer .footer_copyright {
+        margin-top: 75px !important;
+    }
+
+    .beauty_add_video_text h2 {
+        font-size: 26px;
+    }
+
+    /*===========================
+        HOME BEAUTY END
+    ===========================*/
+
+
+
+
+
+
+
+
+
 
 
 

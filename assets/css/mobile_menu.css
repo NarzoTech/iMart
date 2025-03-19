@@ -14,10 +14,6 @@
   -o-transition: all linear .3s;
 }
 
-.mobile_menu_icon i {
-  color: white;
-}
-
 .mobile_menu_icon:hover {
   background: var(--colorBlack);
 }
