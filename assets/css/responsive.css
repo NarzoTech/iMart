@@ -2,7 +2,6 @@
     .col-xl-1-5 {
         width: 20%;
     }
-
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
@@ -100,8 +99,17 @@
         height: 220px;
     }
 
+    .popular_blog_text {
+        width: 66%;
+    }
 
+    .blog_seidebar_add .text {
+        padding: 25px 25px;
+    }
 
+    .blog_seidebar_add {
+        height: 400px;
+    }
 
 
 
@@ -347,6 +355,41 @@
     /*===========================
         HOME BEAUTY END
     ===========================*/
+
+
+    /*===========================
+        BLOG PAGE START
+    ===========================*/
+    .popular_blog_text {
+        width: 64%;
+        margin-left: 10px;
+    }
+
+    .blog_details_tag li a {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+
+    .blog_seidebar_add .text {
+        padding: 25px 25px;
+    }
+
+    .blog_seidebar_add {
+        height: 390px;
+    }
+
+    /*===========================
+        BLOG PAGE END
+    ===========================*/
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -728,6 +771,91 @@
     /*===========================
         HOME BEAUTY END
     ===========================*/
+
+
+    /*===========================
+        ABOUT US PAGE START
+    ===========================*/
+    .about_us_img {
+        padding-right: 30px;
+    }
+
+    .about_us_img .img {
+        height: 560px;
+    }
+
+    .about_us_img p {
+        position: initial;
+        margin-top: 25px;
+    }
+
+    .about_us_img h3 {
+        top: 75%;
+        right: 0;
+    }
+
+    .about_choose_img {
+        width: 420px;
+        height: 100%;
+    }
+
+    .about_choose_text_box {
+        padding: 20px 20px 20px 40px;
+    }
+
+    /*===========================
+        ABOUT US PAGE END
+    ===========================*/
+
+
+    /*===========================
+        BLOG PAGE START
+    ===========================*/
+    .popular_blog_text {
+        width: 57%;
+        margin-left: 10px;
+    }
+
+    .popular_blog_text p {
+        font-size: 14px;
+    }
+
+    .blog_seidebar_add .text h4 {
+        font-size: 20px;
+    }
+
+    .blog_seidebar_add {
+        height: 385px;
+    }
+
+    .page_banner_text h1 {
+        font-size: 46px;
+    }
+
+    .blog_seidebar_add .text {
+        padding: 25px 20px;
+    }
+
+    .blog_left_sidebar .blog_img,
+    .blog_right_sidebar .blog_img {
+        height: 200px;
+    }
+
+    .blog_2 .blog_text {
+        padding: 25px 5px 5px 5px;
+    }
+
+    .blog_text .top li {
+        font-size: 14px;
+    }
+
+    /*===========================
+        BLOG PAGE END
+    ===========================*/
+
+
+
+
 
 
 
@@ -1304,11 +1432,75 @@
     ===========================*/
 
 
+    /*===========================
+        ABOUT US PAGE START
+    ===========================*/
+    .about_us_img p {
+        position: initial;
+    }
+
+    .about_us_img .img {
+        height: 500px;
+        margin-bottom: 25px;
+    }
+
+    .about_us_img h3 {
+        top: 70%;
+        right: 0;
+        width: 150px;
+        height: 150px;
+        font-size: 42px;
+    }
+
+    .about_choose_text_box {
+        padding: 20px 20px 20px 40px;
+    }
+
+    .about_choose_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about_video_area {
+        height: 400px;
+    }
+
+    .about_us_text .description {
+        max-width: 100%;
+    }
+
+    /*===========================
+        ABOUT US PAGE END
+    ===========================*/
 
 
+    /*===========================
+        BLOG PAGE START
+    ===========================*/
+    .popular_blog_text {
+        width: 60%;
+    }
 
+    .blog_details_tag li a {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
 
+    .blog_seidebar_add .text h4 {
+        font-size: 20px;
+    }
 
+    .blog_seidebar_add {
+        height: 385px;
+    }
+
+    .page_banner_text h1 {
+        font-size: 46px;
+    }
+
+    /*===========================
+        BLOG PAGE END
+    ===========================*/
 
 
 
@@ -2061,9 +2253,87 @@
     ===========================*/
 
 
+    /*===========================
+        ABOUT US PAGE START
+    ===========================*/
+    .page_banner_overlay {
+        padding: 120px 0px 52px 0px;
+    }
+
+    .page_banner_text h1 {
+        font-size: 42px;
+    }
+
+    .about_us_img .img {
+        height: 630px;
+        margin-bottom: 25px;
+    }
+
+    .about_us_img h3 span {
+        font-size: 14px;
+    }
+
+    .about_us_text h2 {
+        font-size: 24px;
+    }
+
+    .about_choose_img {
+        width: 100%;
+        height: 575px;
+        margin-top: 25px;
+    }
+
+    .counter_area {
+        padding: 0;
+    }
+
+    .about_video_area {
+        height: 300px;
+    }
+
+    .counter_area ul li {
+        width: 50%;
+        border-right: 1px solid #ddd;
+        padding: 25px 0px;
+    }
+
+    .counter_area ul li:nth-child(1),
+    .counter_area ul li:nth-child(2) {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .counter_area ul li:nth-child(2) {
+        border-right: 0;
+    }
+
+    .about_choose_text .section_heading_2 h3 span::after {
+        width: 85px;
+        height: 65px;
+    }
+
+    /*===========================
+        ABOUT US PAGE END
+    ===========================*/
 
 
+    /*===========================
+        BLOG PAGE START
+    ===========================*/
+    .blog_seidebar_add {
+        height: 530px;
+    }
 
+    .popular_blog_text {
+        width: 73%;
+    }
+
+    .blog_details_right {
+        margin-top: 50px;
+    }
+
+    /*===========================
+        BLOG PAGE END
+    ===========================*/
 
 
 
@@ -2865,17 +3135,96 @@
     ===========================*/
 
 
+    /*===========================
+        ABOUT US PAGE START
+    ===========================*/
+    .page_banner_overlay {
+        padding: 120px 0px 52px 0px;
+    }
+
+    .page_banner_text h1 {
+        font-size: 34px;
+    }
+
+    .about_us_img .img {
+        height: 560px;
+    }
+
+    .about_us_img p {
+        position: initial;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .about_us_img h3 {
+        right: 0;
+        top: 80%;
+    }
+
+    .about_us_img h3 span {
+        font-size: 14px;
+    }
+
+    .about_us_text h2 {
+        font-size: 24px;
+    }
+
+    .about_choose_img {
+        width: 100%;
+        height: 425px;
+        margin-top: 25px;
+    }
+
+    .counter_area {
+        padding: 0;
+    }
+
+    .about_video_area {
+        height: 250px;
+    }
+
+    .counter_area ul li {
+        width: 50%;
+        border-right: 1px solid #ddd;
+        padding: 25px 0px;
+    }
+
+    .counter_area ul li:nth-child(1),
+    .counter_area ul li:nth-child(2) {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .counter_area ul li:nth-child(2) {
+        border-right: 0;
+    }
+
+    .about_choose_text .section_heading_2 h3 span::after {
+        width: 65px;
+    }
+
+    /*===========================
+        ABOUT US PAGE END
+    ===========================*/
 
 
+    /*===========================
+        BLOG PAGE START
+    ===========================*/
+    .blog_seidebar_add {
+        height: 600px;
+    }
 
+    .popular_blog_text {
+        width: 75%;
+    }
 
+    .blog_details_right {
+        margin-top: 50px;
+    }
 
-
-
-
-
-
-
+    /*===========================
+        BLOG PAGE END
+    ===========================*/
 
 
 
@@ -3704,10 +4053,102 @@
     ===========================*/
 
 
+    /*===========================
+        ABOUT US PAGE START
+    ===========================*/
+    .page_banner_overlay {
+        padding: 120px 0px 52px 0px;
+    }
+
+    .page_banner_text h1 {
+        font-size: 28px;
+    }
+
+    .page_banner_text ul li a {
+        font-size: 14px;
+    }
+
+    .about_us_img .img {
+        height: auto;
+    }
+
+    .about_us_img p {
+        position: initial;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .about_us_img h3 {
+        right: 0;
+        width: 130px;
+        height: 130px;
+        font-size: 36px;
+    }
+
+    .about_us_img h3 span {
+        font-size: 14px;
+    }
+
+    .about_us_text h2 {
+        font-size: 24px;
+    }
+
+    .about_choose_img {
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+
+    .counter_area {
+        padding: 0;
+    }
+
+    .about_video_area {
+        height: 250px;
+    }
+
+    .counter_area ul li {
+        width: 50%;
+        border-right: 1px solid #ddd;
+        padding: 25px 0px;
+    }
+
+    .counter_area ul li:nth-child(1),
+    .counter_area ul li:nth-child(2) {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .counter_area ul li:nth-child(2) {
+        border-right: 0;
+    }
+
+    .about_choose_text .section_heading_2 h3 span::after {
+        width: 65px;
+    }
+
+    /*===========================
+        ABOUT US PAGE END
+    ===========================*/
 
 
+    /*===========================
+        BLOG PAGE START
+    ===========================*/
+    .popular_blog_text {
+        width: 65%;
+    }
 
+    .blog_seidebar_add {
+        height: auto;
+    }
 
+    .blog_details_right {
+        margin-top: 50px;
+    }
+
+    /*===========================
+        BLOG PAGE END
+    ===========================*/
 
 
 
