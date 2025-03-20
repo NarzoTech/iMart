@@ -111,11 +111,17 @@
         height: 400px;
     }
 
+    .blog_details_img_1 {
+        height: 515px;
+    }
 
+    .blog_details_center_img {
+        height: 375px;
+    }
 
-
-
-
+    .blog_comment_text {
+        width: 92%;
+    }
 
 
 
@@ -383,11 +389,48 @@
     ===========================*/
 
 
+    /*===========================
+        BLOG DETAILS START
+    ===========================*/
+    .blog_details_img_1 {
+        height: 450px;
+    }
+
+    .blog_details_center_img {
+        height: 325px;
+    }
+
+    .blog_comment_text {
+        width: 91%;
+    }
+
+    /*===========================
+        BLOG DETAILS END
+    ===========================*/
 
 
+    /*===========================
+        CART PAGE START
+    ===========================*/
+    .cart_page_summary ul li .text {
+        width: 75%;
+    }
 
+    .cart_table_area .cart_page_details {
+        min-width: 250px;
+    }
 
+    /*===========================
+        CART PAGE END
+    ===========================*/
 
+    .contact_img {
+        margin-right: 25px;
+    }
+
+    .faq_img {
+        height: 475px;
+    }
 
 
 
@@ -854,9 +897,61 @@
     ===========================*/
 
 
+    /*===========================
+        BLOG DETAILS START
+    ===========================*/
+    .blog_details_img_1 {
+        height: 390px;
+    }
+
+    .blog_details_review p {
+        font-size: 18px;
+    }
+
+    .blog_details_center_img {
+        height: 280px;
+    }
+
+    .blog_comment_text {
+        width: 89%;
+    }
+
+    /*===========================
+        BLOG DETAILS END
+    ===========================*/
 
 
+    /*===========================
+        CART PAGE START
+    ===========================*/
+    .cart_page_summary ul li .text {
+        width: 70%;
+    }
 
+    .cart_table_area .cart_page_details {
+        min-width: 250px;
+    }
+
+    /*===========================
+        CART PAGE END
+    ===========================*/
+
+    .compare_list_area table tr td {
+        min-width: 230px;
+    }
+
+    .contact_img {
+        margin-right: 0;
+    }
+
+    .faq_img {
+        height: 545px;
+        padding: 0 !important;
+    }
+
+    .faq_page .faq_title {
+        font-size: 30px;
+    }
 
 
 
@@ -1501,6 +1596,115 @@
     /*===========================
         BLOG PAGE END
     ===========================*/
+
+
+    /*===========================
+        BLOG DETAILS START
+    ===========================*/
+    .blog_details_img_1 {
+        height: 290px;
+    }
+
+    .blog_details_left h1,
+    .blog_details_left h2,
+    .blog_details_left h3,
+    .blog_details_left h4,
+    .blog_details_left h5,
+    .blog_details_left h6 {
+        font-size: 32px !important;
+    }
+
+    .blog_details_review p {
+        font-size: 18px;
+    }
+
+    .blog_details_center_img {
+        height: 205px;
+    }
+
+    .blog_shear_area_left {
+        margin-bottom: 25px;
+    }
+
+    .blog_comment_text {
+        width: 85%;
+    }
+
+    .blog_details_comment_input {
+        padding: 35px;
+    }
+
+    /*===========================
+        BLOG DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        CART PAGE START
+    ===========================*/
+    .cart_vendor_name {
+        margin: 15px 0px 0px 0px;
+    }
+
+    .cart_page_summary {
+        padding: 25px;
+    }
+
+    .cart_page_summary ul li .text {
+        width: 65%;
+    }
+
+    .cart_summary_btn .common_btn {
+        width: 100%;
+    }
+
+    .cart_table_area .cart_page_details {
+        min-width: 250px;
+    }
+
+    /*===========================
+        CART PAGE END
+    ===========================*/
+
+    .checkout_payment {
+        padding: 25px;
+    }
+
+    .checkout_card ul li {
+        width: 70px;
+        height: 38px;
+    }
+
+    .compare_list_area table tr td {
+        min-width: 230px;
+    }
+
+    .contact_img {
+        margin-right: 0;
+        height: 563px;
+    }
+
+    .contact_form h2 {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .contact_map {
+        height: 400px;
+    }
+
+    .faq_img {
+        height: 455px;
+        padding: 0 !important;
+    }
+
+    .faq_page .faq_title {
+        font-size: 28px;
+    }
+
+
+
+
 
 
 
@@ -2334,6 +2538,116 @@
     /*===========================
         BLOG PAGE END
     ===========================*/
+
+
+    /*===========================
+        BLOG DETAILS START
+    ===========================*/
+    .blog_details_img_1 {
+        height: 325px;
+    }
+
+    .blog_details_left h1,
+    .blog_details_left h2,
+    .blog_details_left h3,
+    .blog_details_left h4,
+    .blog_details_left h5,
+    .blog_details_left h6 {
+        /* font-size: 36px !important; */
+    }
+
+    .blog_details_left ul li::after,
+    .blog_details_left ol li::after {
+        /* top: 6px; */
+    }
+
+    .blog_details_review {
+        /* padding: 50px; */
+    }
+
+    .blog_details_review p {
+        /* font-size: 18px; */
+    }
+
+    .blog_details_center_img {
+        height: 235px;
+    }
+
+    .blog_shear_area_left {
+        margin-bottom: 25px;
+    }
+
+    .blog_details_comment h2,
+    .blog_details_comment_input h2 {
+        font-size: 26px;
+    }
+
+    .blog_comment_text {
+        width: 87%;
+    }
+
+    /*===========================
+        BLOG DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        CART PAGE START
+    ===========================*/
+    .cart_vendor_name {
+        margin: 15px 0px 0px 0px;
+    }
+
+    .cart_page_summary {
+        margin-top: 25px;
+    }
+
+    .cart_page_summary ul li .text {
+        width: 81%;
+    }
+
+    .cart_table_area .cart_page_details {
+        min-width: 230px;
+    }
+
+    /*===========================
+        CART PAGE END
+    ===========================*/
+
+    .checkout_payment {
+        padding: 25px;
+    }
+
+    .compare_list_area table tr td {
+        min-width: 230px;
+    }
+
+    /*===========================
+        CONTACT US START
+    ===========================*/
+    .contact_info {
+        padding: 35px 35px 35px 75px;
+    }
+
+    .contact_img {
+        height: 640px;
+        margin-right: 0;
+    }
+
+    .contact_map {
+        height: 350px;
+    }
+
+    /*===========================
+        CONTACT US END
+    ===========================*/
+    .faq_img {
+        height: 575px;
+        padding: 0 !important;
+    }
+
+
+
 
 
 
@@ -3225,6 +3539,147 @@
     /*===========================
         BLOG PAGE END
     ===========================*/
+
+
+    /*===========================
+        BLOG DETAILS START
+    ===========================*/
+    .blog_details_img_1 {
+        height: 240px;
+    }
+
+    .blog_details_left h1,
+    .blog_details_left h2,
+    .blog_details_left h3,
+    .blog_details_left h4,
+    .blog_details_left h5,
+    .blog_details_left h6 {
+        font-size: 36px !important;
+    }
+
+    .blog_details_left ul li::after,
+    .blog_details_left ol li::after {
+        top: 6px;
+    }
+
+    .blog_details_review {
+        padding: 50px;
+    }
+
+    .blog_details_review p {
+        font-size: 18px;
+    }
+
+    .blog_details_center_img {
+        height: 170px;
+    }
+
+    .blog_shear_area_left {
+        margin-bottom: 25px;
+    }
+
+    .blog_details_comment h2,
+    .blog_details_comment_input h2 {
+        font-size: 26px;
+    }
+
+    .blog_comment_text {
+        width: 82%;
+    }
+
+    /*===========================
+        BLOG DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        CART PAGE START
+    ===========================*/
+    .cart_vendor_name {
+        margin: 15px 0px 0px 0px;
+    }
+
+    .cart_page_summary {
+        margin-top: 25px;
+    }
+
+    .cart_page_summary ul li .text {
+        width: 81%;
+    }
+
+    .cart_table_area .cart_page_details {
+        min-width: 230px;
+    }
+
+    /*===========================
+        CART PAGE END
+    ===========================*/
+
+    .checkout_payment {
+        padding: 25px;
+    }
+
+    .compare_list_area table tr td {
+        min-width: 230px;
+    }
+
+    /*===========================
+        CONTACT US START
+    ===========================*/
+    .contact_img {
+        margin-right: 0;
+        height: 510px;
+    }
+
+    .contact_form h2 {
+        margin-bottom: 10px;
+    }
+
+    .contact_map {
+        height: 350px;
+    }
+
+    /*===========================
+        CONTACT US END
+    ===========================*/
+
+
+    /*===========================
+        ERROR PAGE START
+    ===========================*/
+    .error_text h2 {
+        font-size: 140px;
+    }
+
+    .error_text h4 {
+        font-size: 36px;
+    }
+
+    .error_text p {
+        max-width: 100%;
+    }
+
+    /*===========================
+        ERROR PAGE END
+    ===========================*/
+
+    .faq_img {
+        height: 465px;
+    }
+
+    .faq_page .faq_title {
+        font-size: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4149,6 +4604,171 @@
     /*===========================
         BLOG PAGE END
     ===========================*/
+
+
+    /*===========================
+        BLOG DETAILS START
+    ===========================*/
+    .blog_details_img_1 {
+        height: auto;
+    }
+
+    .blog_details_left h1,
+    .blog_details_left h2,
+    .blog_details_left h3,
+    .blog_details_left h4,
+    .blog_details_left h5,
+    .blog_details_left h6 {
+        font-size: 32px !important;
+    }
+
+    .blog_details_left ul li::after,
+    .blog_details_left ol li::after {
+        top: 6px;
+    }
+
+    .blog_details_review {
+        padding: 30px;
+    }
+
+    .blog_details_review p {
+        font-size: 18px;
+    }
+
+    .blog_details_center_img {
+        height: auto;
+    }
+
+    .blog_shear_area_left h5,
+    .blog_shear_area_right h5 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .blog_shear_area_left {
+        margin-bottom: 25px;
+    }
+
+    .blog_details_comment h2,
+    .blog_details_comment_input h2 {
+        font-size: 26px;
+    }
+
+    .blog_comment_text {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .blog_details_comment_input {
+        padding: 30px;
+    }
+
+    /*===========================
+        BLOG DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        CART PAGE START
+    ===========================*/
+    .cart_vendor_name {
+        margin: 15px 0px 0px 0px;
+    }
+
+    .cart_page_summary {
+        padding: 25px;
+        margin-top: 25px;
+    }
+
+    .cart_page_summary ul li .text {
+        width: 72%;
+    }
+
+    .cart_summary_btn .common_btn {
+        width: auto;
+    }
+
+    .cart_table_area .cart_page_details {
+        min-width: 230px;
+    }
+
+    /*===========================
+        CART PAGE END
+    ===========================*/
+
+    .checkout_payment {
+        padding: 25px;
+    }
+
+    .compare_list_area table tr td {
+        min-width: 230px;
+    }
+
+
+    /*===========================
+        CONTACT US START
+    ===========================*/
+    .contact_info {
+        padding: 35px 35px 35px 70px;
+    }
+
+    .contact_img {
+        margin-right: 0;
+        height: auto;
+    }
+
+    .contact_form {
+
+        padding: 25px;
+    }
+
+    .contact_form h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .contact_map {
+        height: 300px;
+    }
+
+    /*===========================
+        CONTACT US END
+    ===========================*/
+
+
+    /*===========================
+        ERROR PAGE START
+    ===========================*/
+    .error_text h2 {
+        font-size: 140px;
+    }
+
+    .error_text h4 {
+        font-size: 36px;
+    }
+
+    .error_text p {
+        max-width: 100%;
+    }
+
+    /*===========================
+        ERROR PAGE END
+    ===========================*/
+
+    .faq_img {
+        height: auto;
+        padding: 0 !important;
+    }
+
+    .faq_page .faq_title {
+        font-size: 28px;
+    }
+
+
+
+
+
 
 
 

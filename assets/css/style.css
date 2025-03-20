@@ -7129,7 +7129,7 @@ footer {
 
 .blog_details_top {
     gap: 10px 30px;
-    margin-top: 20px !important;
+    margin-top: 35px !important;
     border-bottom: 1px solid #ddd;
     padding-bottom: 25px;
 }
@@ -7137,6 +7137,7 @@ footer {
 .blog_details_top li {
     color: var(--colorBlack) !important;
     padding: 0 !important;
+    margin: 0 !important;
 }
 
 .blog_details_top li span {
@@ -7365,7 +7366,7 @@ footer {
 }
 
 .blog_comment_text {
-    width: 90%;
+    width: 92%;
     margin-left: 25px;
 }
 
@@ -9870,6 +9871,7 @@ footer {
 
 .checkout_header p {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     border: 1px dashed #ddd;
     padding: 8px 15px;
