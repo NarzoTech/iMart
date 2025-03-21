@@ -725,7 +725,7 @@ $(function () {
         slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '.details_slider_thumb',
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         dots: false,
         arrows: false,
@@ -733,6 +733,29 @@ $(function () {
         centerPadding: '0',
         focusOnSelect: true,
         vertical: true,
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 5,
+                    vertical: false,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3,
+                    vertical: false,
+                }
+            }
+        ]
     });
 
 
@@ -745,16 +768,6 @@ $(function () {
                 index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
             });
         });
-    });
-
-
-    //=====BARFILLER JS=====
-    $(document).ready(function () {
-        $('#bar1').barfiller();
-        $('#bar2').barfiller();
-        $('#bar3').barfiller();
-        $('#bar4').barfiller();
-        $('#bar5').barfiller();
     });
 
 

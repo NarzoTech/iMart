@@ -2094,6 +2094,7 @@ header .header_support h3 a:hover {
     position: relative;
     border-bottom: 1px solid #eee;
     height: 305px;
+    overflow: hidden;
 }
 
 .product_item .product_img .discount_list {
@@ -7957,6 +7958,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     gap: 10px 30px;
+    height: 100%;
 }
 
 .product_page_top_button nav .nav-tabs {
@@ -8104,6 +8106,18 @@ footer {
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin-top: 12px;
+}
+
+.shop_page .product_item_2 .product_img {
+    height: 275px;
+}
+
+.shop_page .product_list_item .product_img {
+    height: 335px;
+}
+
+.product_list_item .product_text {
+    padding: 0 0 0 25px;
 }
 
 /*=============================
@@ -8479,6 +8493,8 @@ footer {
     align-items: center;
     gap: 10px;
     text-transform: capitalize;
+    position: relative;
+    padding-left: 35px;
 }
 
 .shop_details_sidebar_info ul li span,
@@ -8487,6 +8503,8 @@ footer {
     width: 27px;
     height: 22px;
     margin-top: -1px;
+    position: absolute;
+    left: 0;
 }
 
 .shop_details_sidebar_info h5 {
@@ -8740,6 +8758,7 @@ footer {
 .shop_details_additional_info table tr th,
 .shop_details_additional_info table tr td {
     padding: 12px 20px;
+    min-width: 230px;
 }
 
 .shop_details_additional_info table tr th {
@@ -8760,7 +8779,7 @@ footer {
 
 .shop_details_vendor_logo_area {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px 20px;
 }
@@ -8847,6 +8866,12 @@ footer {
     margin-right: 30px;
 }
 
+.shop_details_vendor_rating li:last-child {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 .shop_details_vendor_rating li span {
     display: block;
     color: var(--themeColorTwo);
@@ -8900,7 +8925,7 @@ footer {
 }
 
 .single_review .text {
-    width: 90%;
+    width: 93%;
     padding-left: 25px;
 }
 
@@ -9012,64 +9037,13 @@ footer {
     color: #F6B900;
 }
 
-.details_review_graph {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-top: 48px;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-}
-
-.details_review_graph h5 {
-    font-size: 24px;
-    font-weight: 600;
-    text-transform: capitalize;
-    margin-bottom: 15px;
-}
-
-.details_review_graph h2 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 19px;
-}
-
-.details_review_graph h2 b {
-    font-weight: 600;
-    font-size: 38px;
-}
-
-.details_review_graph h2 .star {
-    font-size: 14px;
-    color: var(--ratingColor);
-    letter-spacing: -1px;
-    margin-left: 15px;
-}
-
-.details_review_graph h2 .total {
-    font-size: 15px;
-    margin-left: 5px;
-}
-
-.graph_list_item {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 15px;
-    margin-top: 7px;
-}
-
-.graph_list_item p {
-    display: inline-block;
-    font-family: var(--headingFont);
-}
-
 .related_products .nextArrow,
 .related_products .prevArrow {
     top: -60px;
+}
+
+.related_products .section_heading_2 h3 span::after {
+    width: 135px;
 }
 
 /*=============================
@@ -9097,6 +9071,7 @@ footer {
 }
 
 .single_vendor .img {
+    height: 180px;
     overflow: hidden;
     border: 1px solid #eee;
     border-radius: 12px;
@@ -9134,7 +9109,7 @@ footer {
 }
 
 .single_vendor .text .title {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .single_vendor .text .rating {
@@ -9844,6 +9819,7 @@ footer {
     width: 15%;
     min-width: 200px;
     padding-right: 20px !important;
+    text-align: center;
 }
 
 .wishlist_page .cart_page_action a {
@@ -10105,7 +10081,7 @@ footer {
 =============================*/
 .payment_success_text .img {
     width: 500px;
-    height: auto;
+    height: 320px;
     margin: 0 auto;
 }
 
@@ -12128,6 +12104,11 @@ footer {
 }
 
 /* dashboard order review end */
+
+.dashboard_recent_order table tr th,
+.dashboard_recent_order table tr td {
+    padding: 15px;
+}
 
 /*===========================
     DASHBOARD END
