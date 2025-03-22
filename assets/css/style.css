@@ -8937,6 +8937,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 5px;
 }
 
 .single_review .text h5 span {
@@ -11536,8 +11537,12 @@ footer {
 }
 
 .dashboard_recent_review .single_review .text {
-    width: 100%;
+    width: 100% !important;
     padding: 0;
+}
+
+.dashboard_recent_review .single_review .text .title {
+    font-size: 16px;
 }
 
 .dashboard_recent_review .single_review .text p {
@@ -11770,6 +11775,7 @@ footer {
 
 .dashboard_invoice_footer p {
     margin-top: 5px;
+    width: 80%;
 }
 
 .dashboard_invoice_footer p b {
@@ -11896,7 +11902,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
     margin-bottom: 15px;
     border-bottom: 1px dashed #c7c5c5;
     padding-bottom: 10px;
@@ -12108,6 +12114,12 @@ footer {
 .dashboard_recent_order table tr th,
 .dashboard_recent_order table tr td {
     padding: 15px;
+}
+
+.dashboard_download table tr th,
+.dashboard_download table tr td {
+    padding: 15px;
+    min-width: initial !important;
 }
 
 /*===========================

@@ -170,6 +170,18 @@
         padding: 15px;
     }
 
+    .dashboard_wishlist .product_item_2 .product_img {
+        height: 250px !important;
+    }
+
+    .dashboard_reviews .single_review .text {
+        width: 92%;
+    }
+
+    .return_product_item .text {
+        width: 69%;
+    }
+
 
 
 
@@ -620,6 +632,29 @@
         min-width: 140px;
         padding: 15px;
     }
+
+    .dashboard_wishlist .product_item_2 .product_img {
+        height: 250px !important;
+    }
+
+    .dashboard_reviews .single_review .text {
+        width: 91%;
+    }
+
+    .return_product_item .text {
+        width: 64%;
+    }
+
+    .return_request_number a {
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
 
 
 
@@ -1309,11 +1344,36 @@
         padding: 15px;
     }
 
-    .single_review .text h5 span {
+    .dashboard_recent_review .single_review .text h5 span {
         display: block;
         width: 100%;
         margin-top: 5px;
     }
+
+    .dashboard_sidebar_user h3 {
+        font-size: 20px;
+    }
+
+    .dashboard_wishlist .product_item_2 .product_img {
+        height: 205px !important;
+    }
+
+    .dashboard_reviews .single_review .text {
+        width: 90%;
+    }
+
+    .return_product_item .text {
+        width: 56%;
+    }
+
+    .dashboard_return_request {
+        padding: 25px;
+    }
+
+    .return_request_number a {
+        font-size: 14px;
+    }
+
 
 
 
@@ -2243,29 +2303,60 @@
         font-size: 15px;
     }
 
+    .dashboard_sidebar_user h3 {
+        font-size: 18px;
+    }
 
+    .dashboard_sidebar_user p {
+        font-size: 14px;
+    }
 
+    .dashboard_recent_review {
+        margin-top: 25px;
+    }
 
+    .dashboard_reviews .single_review .text {
+        width: 88% !important;
+    }
 
+    .dashboard_return_request {
+        padding: 20px;
+    }
 
+    .return_product_item .img {
+        width: 90px;
+        height: 90px;
+    }
 
+    .return_product_item {
+        gap: 10px;
+    }
 
+    .return_product_item .text {
+        width: 61%;
+    }
 
+    .return_product_item .text .return_p_title {
+        font-size: 14px;
+    }
 
+    .return_request_number a {
+        font-size: 14px;
+    }
 
+    .dashboard_order_table table tr th,
+    .dashboard_order_table table tr td {
+        min-width: 140px;
+        padding: 15px 15px;
+    }
+
+    .dashboard_invoice_footer p {
+        width: 75%;
+    }
 
     /*===========================
         DASHBOARD END
     ===========================*/
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -3255,7 +3346,7 @@
     }
 
     .single_review .text {
-        width: 88%;
+        width: 88% !important;
     }
 
     .shop_details_sidebar_info {
@@ -3372,6 +3463,10 @@
         font-size: 18px;
     }
 
+    .header_2 {
+        z-index: 999;
+    }
+
     /*===========================
         DASHBOARD START
     ===========================*/
@@ -3398,25 +3493,38 @@
         margin-top: 25px;
     }
 
+    .dashboard_return_request {
+        padding: 20px;
+    }
 
+    .return_product_item .img {
+        width: 90px;
+        height: 90px;
+    }
 
+    .return_product_item {
+        gap: 10px;
+    }
 
+    .return_product_item .text {
+        width: 62%;
+    }
 
+    .return_product_item .text .return_p_title {
+        font-size: 14px;
+    }
 
+    .return_request_number a {
+        font-size: 14px;
+    }
 
-
+    .dashboard_invoice_footer p {
+        width: 75%;
+    }
 
     /*===========================
         DASHBOARD END
     ===========================*/
-
-
-
-
-
-
-
-
 }
 
 
@@ -4550,7 +4658,7 @@
     }
 
     .single_review .text {
-        width: 100%;
+        width: 100% !important;
         padding-left: 0;
         margin-top: 10px;
     }
@@ -4658,6 +4766,10 @@
         height: 250px;
     }
 
+    .header_2 {
+        z-index: 999;
+    }
+
     /*===========================
         DASHBOARD START
     ===========================*/
@@ -4684,29 +4796,36 @@
         margin-top: 25px;
     }
 
+    .return_product_item .text {
+        width: 66%;
+    }
 
+    .return_request_number a {
+        font-size: 14px;
+    }
 
+    .invoice_table table tr th,
+    .invoice_table table tr td {
+        padding: 15px;
+    }
 
+    .dashboard_invoice_header .text {
+        width: 100%;
+        margin: 15px 0px;
+    }
 
+    .dashboard_invoice_footer p {
+        width: 100%;
+    }
 
-
-
+    .dashboard_invoice_footer a {
+        position: initial;
+        margin-top: 20px;
+    }
 
     /*===========================
         DASHBOARD END
     ===========================*/
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -5946,7 +6065,7 @@
     }
 
     .single_review .text {
-        width: 100%;
+        width: 100% !important;
         padding-left: 0;
         margin-top: 10px;
     }
@@ -6059,6 +6178,10 @@
         padding: 45px 10px 0px 10px;
     }
 
+    .header_2 {
+        z-index: 999;
+    }
+
     /*===========================
         DASHBOARD START
     ===========================*/
@@ -6102,25 +6225,69 @@
         margin-top: 5px;
     }
 
+    .dashboard_return_request {
+        padding: 20px;
+    }
 
+    .return_product_item .img {
+        width: 90px;
+        height: 90px;
+    }
 
+    .return_product_item {
+        gap: 10px;
+    }
 
+    .return_product_item .text {
+        width: 61%;
+    }
 
+    .return_product_item .text .return_p_title {
+        font-size: 14px;
+    }
 
+    .return_request_number a {
+        font-size: 14px;
+    }
 
+    .dashboard_content .dashboard_title {
+        font-size: 20px;
+    }
 
+    .dashboard_invoice_logo_area .invoice_logo {
+        margin-bottom: 25px;
+    }
 
+    .invoice_table table tr th,
+    .invoice_table table tr td {
+        padding: 15px;
+    }
+
+    .rating_modal .modal-body {
+        padding: 20px;
+    }
+
+    .dashboard_invoice_header .text {
+        width: 100%;
+        margin: 15px 0px;
+    }
+
+    .dashboard_invoice_footer a {
+        position: initial;
+        margin-top: 20px;
+    }
+
+    .dashboard_invoice_footer {
+        padding: 20px;
+    }
+
+    .dashboard_invoice_footer p {
+        width: 100%;
+    }
 
     /*===========================
         DASHBOARD END
     ===========================*/
-
-
-
-
-
-
-
 
 
 
