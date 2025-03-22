@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>iMart - Grocery & Organic Food Store HTML Template</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.highlight.css" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/scrollbar.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Page Wrapper-->
+    <div class="page-wrapper">
+
+        <!--Sidebar-->
+        <aside id="sidebar">
+
+            <!--Toggle Button-->
+            <div class="button-container clearfix">
+                <div class="menu-toggle flaticon-menu10"></div>
+            </div>
+
+            <!--Menu Box-->
+            <div class="menu-box">
+                <!--Logo-->
+                <br>
+                <div class="logo text-right">
+                    <a href="#" target="_blank">
+                        <img src="images/logo.png" alt="ai-creator" class="img-fluid w-100">
+                    </a>
+                </div>
+
+                <!--Sticky Menu-->
+                <nav class="sticky-menu">
+                    <ul>
+                        <li class="current"><a href="#introduction">Introduction <span
+                                    class="fa fa-arrow-right"></span></a></li>
+                        <li><a href="#html-structure">HTML Structure <span class="fa fa-arrow-right"></span></a></li>
+                        <li><a href="#css-structure">CSS Files and Structure <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li><a href="#javascript">Javascript <span class="fa fa-arrow-right"></span></a></li>
+                        <li><a href="#tutorial">Tutorial<span class="fa fa-arrow-right"></span></a></li>
+                        <li><a href="#sources-credits">Sources and Credits <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li><a href="#support">Support <span class="fa fa-arrow-right"></span></a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <div class="copyright">Copyright &copy;
+                <a href="https://themeforest.net/user/narzotech/portfolio" target="_blank">NarzoTech</a>
+                2025
+            </div>
+        </aside>
+
+        <div id="content-section">
+
+            <!--Introduction Section-->
+            <section class="section introduction" id="introduction">
+
+                <br>
+                <div class="sec-content">
+                    <h2>iMart</h2>
+                    <h3>Multipurpose eCommerce HTML Template</h3>
+
+                    <div class="separator"></div>
+
+                    <strong>Created :</strong> 05/03/2025<br>
+                    <strong>By :</strong>NarzoTech <br>
+
+                    <br>
+                    <p>Thank you for purchasing <strong>iMart</strong> - Multipurpose eCommerce HTML Template.
+                        If
+                        you have any questions that are beyond the scope of this help file, please feel free to email or
+                        put a
+                        ticket at Support Center .<br>Thankyou so much!</p>
+                    <br />
+
+                    <h3 class="content-title">Template Features</h3>
+                    <br />
+                    <ul class="checkbox">
+                        <li>Clean & Simple Design</li>
+                        <li>Advance Bootstrap v5.x Framework </li>
+                        <li>HTML5 & CSS3 </li>
+                        <li>Fully Responsive Design </li>
+                        <li>All files are well commented </li>
+                        <li>All Code are W3C validate</li>
+                        <li>Crossbrowser Compatible with Firefox, Safari, Opera, Chrome </li>
+                        <li>Extensive Documentation</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--HTML Structure-->
+            <section class="section html-structure" id="html-structure">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>HTML Structure</h2>
+                </div>
+
+                <br>
+                <div class="sec-content">
+
+                    <h3>The html template uses Latest <strong>Bootstrap v5.x</strong> with valid HTML5 tags. This
+                        theme is a responisve layout with 4 column Support column. All of the information in content
+                        area is nested within a class and comes with predefined classes.</h3>
+
+                    <h3 class="content-title">Basic Grid HTML</h3>
+                    <p>For a simple two column layout, create a .container and add the appropriate number of .col-md*
+                        columns. </p>
+                    <p>Given this example, we have .col-md-4 and .col-md-8, making for 12 total columns and a complete
+                        row.</p>
+                    <br />
+                    <pre class="code" data-language="html">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">...</div>
+            <div class="col-md-8">...</div>
+        </div>
+    </div>
+
+</pre>
+                    <br />
+                    <h3 class="content-title">Nesting Columns</h3>
+                    <p>To nest your content with the default grid, add a new .container and set of .col-md* columns
+                        within an existing .col-md* column. Nested rows should include a set of columns that add up to
+                        the number of columns of its parent.</p>
+                    <br />
+                    <pre class="code" data-language="html">
+
+    <div class="container">
+        <div class="col-md-9">
+            Level 1 column
+            <div class="row">
+                <div class="col-md-8">Level 2</div>
+                <div class="col-md-4">Level 2</div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            Level 2 column
+        </div>
+    </div>
+
+</pre>
+                </div>
+
+            </section>
+
+
+            <!--SCSS Structure-->
+            <section class="section css-structure" id="css-structure">
+                <div class="sec-title">
+                    <span class="icon fa fa-at"></span>
+                    <h2>CSS Files and Structure</h2>
+                </div>
+
+                <br>
+                <div class="sec-content">
+                    <strong>
+                        <h3>CSS Structure</h3>
+                    </strong>
+                    <h3>Mainly four main CSS files are used in this theme. The first one
+                        <strong>bootstrap.min.css</strong>, second one is <strong>spacing.css</strong>, third one
+                        is <strong>style.css</strong> and the fourth one
+                        is <strong>responsive.css</strong> which for this template
+                    </h3>
+                    <p>If you would like to edit a specific section of the site, simply find the appropriate label in
+                        the CSS file, and then scroll down until you find the appropriate style that needs to be edited.
+                    </p>
+                    <br />
+                    <p>These are the css files that are loaded into templates in top of style.css file labled as
+                        <b>imported css</b>.
+                    </p>
+                    <br />
+                    <pre class="code" data-language="css">
+
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+     <!-- slick slider -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!-- venobox -->
+    <link rel="stylesheet" href="assets/css/venobox.min.css">
+
+    <!-- scroll button -->
+    <link rel="stylesheet" href="assets/css/scroll_button.css">
+
+    <!-- nici select -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
+    <!-- PWS Tabs  -->
+    <link rel="stylesheet" href="assets/css/jquery.pwstabs.css">
+
+    <!-- select 2 -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!-- custom spacing -->
+    <link rel="stylesheet" href="assets/css/custom_spacing.css">
+
+    <!-- multiple image upload -->
+    <link rel="stylesheet" href="assets/css/multiple-image-video.css">
+
+    <!-- mobile menu -->
+    <link rel="stylesheet" href="assets/css/mobile_menu.css">
+
+    <!-- ranger slider -->
+    <link rel="stylesheet" href="assets/css/range_slider.css">
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+                </pre>
+
+                    <br />
+                    <h3 class="content-title">Fonts</h3>
+
+                    <p>By default, the template loads this font from Google Web Font Services, you can change the font
+                        with the one that suits you best.</p>
+                    <br />
+                    <pre class="code" data-language="css">
+
+
+    <!-- Jost, Roboto & Oregano -->
+    @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oregano:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+                </pre>
+                </div>
+
+            </section>
+
+            <!--Javascript-->
+            <section class="section javascript" id="javascript">
+                <div class="sec-title">
+                    <span class="icon fa fa-code"></span>
+                    <h2>Jquery and javascript</h2>
+                </div>
+
+                <br>
+                <div class="sec-content">
+
+                    <h3>This theme imports three types of Javascript files.</h3>
+                    <ul>
+                        <li>jQuery</li>
+                        <li>Custom scripts <strong>(main.js)</strong></li>
+                        <li>Some plugins</li>
+                        <br>
+                        <li><strong>jQuery</strong> is a Javascript library that greatly reduces the amount of code that
+                            you must write.</li>
+                        <li>Most of the animation in this site is carried out from the customs scripts. There are a few
+                            functions worth looking over.</li>
+                    </ul>
+                    <br>
+                    <p>In addition to the custom scripts, I have implemented few "tried and true" plugins to create the
+                        effects. This plugin is packed, so you won't need to manually edit anything in the file. The
+                        only necessary thing to know is how to call the method</p>
+                    <br />
+                    <p>These are the JS files that are loaded into templates in end of the Body Section.</p>
+                    <br />
+                    <pre class="code" data-language="html">
+
+
+    <!--jquery library js-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <!--bootstrap js-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!--font-awesome js-->
+    <script src="assets/js/Font-Awesome.js"></script>
+
+    <!--counter js-->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.countup.min.js"></script>
+
+    <!--nice select js-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+
+    <!--select 2 js-->
+    <script src="assets/js/select2.min.js"></script>
+
+    <!--simply countdown js-->
+    <script src="assets/js/simplyCountdown.js"></script>
+
+    <!--slick slider js-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!--venobox js-->
+    <script src="assets/js/venobox.min.js"></script>
+
+    <!--wow js-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--marquee js-->
+    <script src="assets/js/jquery.marquee.min.js"></script>
+
+    <!--pws tabs js-->
+    <script src="assets/js/jquery.pwstabs.min.js"></script>
+
+    <!--scroll button js-->
+    <script src="assets/js/scroll_button.js"></script>
+
+    <!--youtube background js-->
+    <script src="assets/js/jquery.youtube-background.min.js"></script>
+    
+    <!--range slider js-->
+    <script src="assets/js/range_slider.js"></script>
+
+    <!--sticky sidebar js-->
+    <script src="assets/js/sticky_sidebar.js"></script>
+
+    <!--multiple image upload js-->
+    <script src="assets/js/multiple-image-video.js"></script>
+
+    <!--main/custom js-->
+    <script src="assets/js/custom.js"></script>
+
+                </pre>
+
+                </div>
+
+            </section>
+
+
+            <!--Sources and Credits-->
+            <section class="section tutorial" id="tutorial">
+                <div class="sec-title">
+                    <span class="icon fa fa-credit-card"></span>
+                    <h2>Tutorial</h2>
+                </div>
+
+                <br>
+                <!-- logo -->
+                <div class="sec-content">
+                    <h3 class="content-title">Logo</h3><!-- /.content-title -->
+                    <br />
+                    <p>Lets start updating the template. Open index.html file and follow the steps.</p>
+                    <p>Most of the updates are same for all pages. So will explain once here.</p>
+                    <br />
+                    <pre class="code" data-language="html">
+
+    <!-- header logo -->
+    <a href="index.html" class="header_logo">
+        <img src="assets/images/logo_2.png" alt="iMart" class="img-fluid w-100">
+    </a>
+    <!-- header logo -->
+                </pre>
+
+                    <p>Search the name "logo" in the HTML files by opening the files in your code editor and replace
+                        "images/logo.png" with your logo image url source or website name .</p>
+                    <br />
+
+                    <!-- features -->
+                    <div class="sec-content">
+                        <h3 class="content-title">Product</h3>
+                        <br />
+                        <p>This is the basic structure.</p>
+                        <br />
+                        <pre class="code" data-language="html">
+
+    <!-- Product -->
+    <div class="col-xl-1-5 col-6 col-md-4 col-xl-3">
+        <div class="product_item">
+            <div class="product_img">
+                <img src="assets/images/product_4.png" alt="Product" class="img-fluid w-100">
+                <ul class="discount_list">
+                    <li class="new"> new</li>
+                </ul>
+                <ul class="btn_list">
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/compare_icon_white.svg" alt="Compare" class="img-fluid">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/love_icon_white.svg" alt="Love" class="img-fluid">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/cart_icon_white.svg" alt="Love" class="img-fluid">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="product_text">
+                <a class="title" href="#">Comfortable Sports Sneakers</a>
+                <p class="price">$75.00</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(58 reviews)</span>
+                </p>
+                <ul class="color">
+                    <li style="background:#DB4437"></li>
+                    <li style="background:#638C34"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Product -->
+
+                </pre>
+
+                        <p>Search the name "feature" in the HTML files by opening the files in your code editor and
+                            replace the feature names in "h5 tag" with your features name .</p>
+                        <br />
+
+                        <!-- nav menu -->
+                        <h3 class="content-title">Menu</h3>
+                        <br />
+                        <p>This is the basic structure.</p>
+
+                        <pre class="code" data-language="html">
+
+    <!-- main menu start-->
+    <nav class="main_menu_2 main_menu d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap">
+                    <div class="main_menu_area">
+                        <ul class="menu_item">
+                            <li>
+                                <a class="active" href="#">home <i class="fas fa-chevron-down"></i></a>
+                                <ul class="menu_droapdown">
+                                    <li><a class="active" href="index.html">Clothing Fashion 01</a></li>
+                                    <li><a href="home_fashion_2.html">Clothing Fashion 02</a></li>
+                                    <li><a href="home_grocery.html">Grocery Store</a></li>
+                                    <li><a href="home_beauty.html">Beauty & Cosmetics</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">shop <i class="fas fa-chevron-down"></i></a>
+                                <ul class="menu_droapdown">
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="shop_details.html">Shop Details</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Stores <i class="fas fa-chevron-down"></i></a>
+                                <ul class="menu_droapdown">
+                                    <li><a href="vendor.html">Store</a></li>
+                                    <li><a href="vendor_details.html">Store Details</a></li>
+                                    <li><a href="vendor_registration.html">Become a Vendor</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="flash_deals.html">Flash Deals</a></li>
+                            <li><a href="#">pages <i class="fas fa-chevron-down"></i></a>
+                                <ul class="menu_droapdown">
+                                    <li><a href="about_us.html">about us</a></li>
+                                    <li><a href="category.html">Category</a></li>
+                                    <li><a href="brand.html">Brand</a></li>
+                                    <li><a href="cart.html">cart view</a></li>
+                                    <li><a href="wishlist.html">wishlist</a></li>
+                                    <li><a href="compare.html">compare</a></li>
+                                    <li><a href="checkout.html">checkout</a></li>
+                                    <li><a href="payment_success.html">payment success</a></li>
+                                    <li><a href="track_order.html">track order</a></li>
+                                    <li><a href="error.html">error/404</a></li>
+                                    <li><a href="faq.html">FAQ's</a></li>
+                                    <li><a href="privacy_policy.html">privacy Policy</a></li>
+                                    <li><a href="terms_condition.html">terms and condition</a></li>
+                                    <li><a href="return_policy.html">return policy</a></li>
+                                    <li><a href="sign_in.html">sign in</a></li>
+                                    <li><a href="sign_up.html">sign up</a></li>
+                                    <li><a href="forgot_password.html">forgot password</a></li>
+                                    <li><a href="dashboard.html">Dashboard</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">blog <i class="fas fa-chevron-down"></i></a>
+                                <ul class="menu_droapdown">
+                                    <li><a href="blog_classic.html">blog classic</a></li>
+                                    <li><a href="blog_right_sidebar.html">blog right sidebar</a></li>
+                                    <li><a href="blog_left_sidebar.html">blog left sidebar</a></li>
+                                    <li><a href="blog_details.html">blog details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact_us.html">contact</a></li>
+                        </ul>
+                        <ul class="menu_icon">
+                            <li>
+                                <a href="compare.html">
+                                    <b>
+                                        <img src="assets/images/compare_black.svg" alt="Wishlist" class="img-fluid">
+                                    </b>
+                                    <span>2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="wishlist.html">
+                                    <b>
+                                        <img src="assets/images/love_black.svg" alt="Wishlist" class="img-fluid">
+                                    </b>
+                                    <span>5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight">
+                                    <b>
+                                        <img src="assets/images/cart_black.svg" alt="cart" class="img-fluid">
+                                    </b>
+                                    <span>3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="user" href="dashboard.html">
+                                    <b>
+                                        <img src="assets/images/user_icon_black.svg" alt="cart" class="img-fluid">
+                                    </b>
+                                    <h5> Smith Jhon</h5>
+                                </a>
+                                <ul class="user_dropdown">
+                                    <li>
+                                        <a href="dashboard.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
+                                            </svg>
+                                            Dashboard
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dashboard_profile.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                            </svg>
+                                            my account
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dashboard_order.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                            </svg>
+                                            my order
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dashboard_wishlist.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                            </svg>
+                                            wishlist
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                                            </svg>
+                                            logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- main menu end-->
+
+</pre>
+
+                        <br />
+                        <p>Search the name "header-menu" in the HTML files by opening the files in your code editor and
+                            add your own menu item to that ul li item. and if you want to add dropdown menu just make a
+                            nesting ul li.</p>
+
+                        <br />
+
+                        <h3 class="content-title">Footer Copyright</h3>
+                        <br />
+                        <pre class="code" data-language="html">
+
+    <!-- footer copyright -->
+    <div class="footer_copyright mt_75">
+        <p>Copyright @ <b>iMart</b> 2025. All right reserved.</p>
+        <ul class="payment">
+            <li>Payment by :</li>
+            <li>
+                <img src="assets/images/footer_payment_icon_1.jpg" alt="payment"
+                    class="img-fluid w-100">
+            </li>
+            <li>
+                <img src="assets/images/footer_payment_icon_2.jpg" alt="payment"
+                    class="img-fluid w-100">
+            </li>
+            <li>
+                <img src="assets/images/footer_payment_icon_3.jpg" alt="payment"
+                    class="img-fluid w-100">
+            </li>
+        </ul>
+    </div>
+    <!-- footer copyright -->
+                </pre>
+
+                        <br />
+                        <p>Search the name "copyright" in the HTML files by opening the files in your code editor and
+                            add your own copyright.</p>
+
+                    </div>
+
+            </section>
+
+            <!--Sources and Credits-->
+            <section class="section sources-credits" id="sources-credits">
+                <div class="sec-title">
+                    <span class="icon fa fa-credit-card"></span>
+                    <h2>Sources and Credits</h2>
+                </div>
+
+                <br>
+                <div class="sec-content">
+
+                    <br>
+                    <p><strong> Plugins Used Are :</strong></p>
+
+                    <p><a href="https://kenwheeler.github.io/slick/" target="_blank">Slick Slider</a> (can
+                        be located in js folder)</p>
+
+                    <p><a href="https://veno.es/venobox/" target="_blank">Venobox</a> (can be located in js folder)</p>
+
+                    <p><a href="https://www.jqueryscript.net/demo/Text-Scrolling-Plugin-for-jQuery-Marquee/"
+                            target="_blank">Marquee Animation</a> (can be located in js folder)</p>
+
+                    <p><a href="https://www.jqueryscript.net/demo/Tiny-jQuery-Compatible-Countdown-JavaScript-Library-simplyCountdown-js/"
+                            target="_blank">SimplyCountdown</a> (can be located in js folder)</p>
+
+                    <p><a href="https://codepen.io/ig_design/pen/yrwgwO" target="_blank">Scroll Button</a> (can be
+                        located in js folder)</p>
+
+                    <p><a href="https://www.jqueryscript.net/demo/number-counting/" target="_blank">Counter Up</a> (can
+                        be located in plugins folder)</p>
+
+                    <p><a href="https://jquery-plugins.net/jquery-nice-select" target="_blank">Nice Select</a> (can be
+                        located in plugins folder)</p>
+
+                    <p><a href="https://www.jqueryscript.net/demo/Price-Range-Slider-jQuery-UI/" target="_blank">Ranger
+                            slider</a> (can
+                        be located in plugins folder)</p>
+
+                    <p><a href="https://jeesite.gitee.io/front/jquery-select2/4.0/index.htm" target="_blank">Select 2
+                            js</a> (can be located in js folder)</p>
+
+                    <p><a href="https://www.jqueryscript.net/demo/sticky-sidebar-block/" target="_blank">Sticky
+                            Sidebar</a> (can be located in js folder)</p>
+
+                    <p><a href="https://wowjs.uk/" target="_blank">Wow Js</a> (can be located in plugins folder)</p>
+
+                    <p><a href="https://www.jqueryscript.net/demo/Flat-Animated-Tabs-Plugin-For-jQuery-PWS-Tabs/"
+                            target="_blank">PWS Tabs </a> (can be located in plugins folder)</p>
+                    <br>
+                    Every Code is properly commented for Editing Ease.
+                </div>
+
+            </section>
+
+            <!--Support-->
+            <section class="section support" id="support">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2>Support</h2>
+                </div>
+
+                <br>
+                <div class="sec-content">
+
+                    <h3>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad
+                        to help you if you have any questions relating to this theme. No guarantees, but I'll do my best
+                        to assist. If you have any queries, please feel free to contact us at Support Center.</h3>
+
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+    </div>
+    <!--End pagewrapper-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/jquery.highlight.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
