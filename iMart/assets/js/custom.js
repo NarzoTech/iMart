@@ -687,7 +687,13 @@ $(function () {
     //======STICKY SIDEBAR====== 
     $("#sticky_sidebar").stickit({
         top: 70,
+        screenMinWidth: 992,
     });
+    $("#sticky_sidebar_2").stickit({
+        top: 70,
+        screenMinWidth: 1400,
+    });
+
 
     //=====RANGE SLIDER===== 
     $('.basic').alRangeSlider();
